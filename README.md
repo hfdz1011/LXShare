@@ -12,7 +12,7 @@
 
 
 ```ruby
-pod 'LXShare'
+ pod 'LXShare', :git => 'https://github.com/hfdz1011/LXShare.git'
 ```
 
 ## 作者

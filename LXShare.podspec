@@ -9,9 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LXShare'
   s.version          = '0.0.1'
-  s.summary          = 'A short description of LXShare.'
-
-
+  s.summary          = '工具集合'
 
   s.description      = <<-DESC
 
@@ -25,7 +23,6 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hfdz1011' => '18576722857@163.com' }
   s.source           = { :git => 'https://github.com/hfdz1011/LXShare.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
