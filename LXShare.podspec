@@ -26,8 +26,9 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LXShare/Classes/*{h,m}'
   s.source_files = 'LXShare/Classes/LXMangerHeader.h'
+  s.source_files = 'LXShare/Classes/*{h,m}'
+
 
   # s.resource_bundles = {
   #   'LXShare' => ['LXShare/Assets/*.png']

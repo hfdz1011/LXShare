@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "LXMangerHeader.h"
+#import "LXShareTool.h"
 
 FOUNDATION_EXPORT double LXShareVersionNumber;
 FOUNDATION_EXPORT const unsigned char LXShareVersionString[];

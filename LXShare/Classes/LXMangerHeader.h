@@ -8,5 +8,7 @@
 #ifndef LXMangerHeader_h
 #define LXMangerHeader_h
 
+#import "LXShareTool.h"
+
 
 #endif /* LXMangerHeader_h */

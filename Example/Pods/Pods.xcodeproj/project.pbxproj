@@ -6,35 +6,19 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		508EE333DA91CDAC2D0E27185C74D7F9 /* LXShare */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 1E72AD48C67EAEE457411361C304816C /* Build configuration list for PBXAggregateTarget "LXShare" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = LXShare;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		3FFCB0D7C5513949678252E81652C4F6 /* Pods-LXShare_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02AAB3EED4A28F5AA3B0404CD4D73285 /* Pods-LXShare_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		564FCEDBB963F44A8BF039282DC6C3B6 /* Pods-LXShare_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C94C280AAAA0A7F062FC9373B80471 /* Pods-LXShare_Example-dummy.m */; };
+		167A6909414850FA73E15E1E37219C0B /* LXShare-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27ADDCF35B69811B605AAEE11B3C497E /* LXShare-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FFCB0D7C5513949678252E81652C4F6 /* Pods-LXShare_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FD775833BEF7C29E03C48D0AE378BAB /* Pods-LXShare_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		564FCEDBB963F44A8BF039282DC6C3B6 /* Pods-LXShare_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C45FF8BD3CC39FAFB0BA319B0F2DBC /* Pods-LXShare_Example-dummy.m */; };
+		7124425C3ED72BFD2277FE6F3BC1F947 /* LXShare-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5DFF7116439E34BDA465B73F08787A /* LXShare-dummy.m */; };
 		72BA640225FCEDF23DB82E6964791B93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		978B7EF97E37AA31B9D7EFC4B9F20560 /* Pods-LXShare_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 413F421022946AA3E72040A1B1B067F7 /* Pods-LXShare_Tests-dummy.m */; };
-		BC8A26B3261DFE667EB71655631674D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		FBF81B4433CE6A43617C16ABEDD31E16 /* Pods-LXShare_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 342BAFFA658170886917CB44B5EE4884 /* Pods-LXShare_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		838D735C98E64DDCA79515A2FF040B47 /* LXMangerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AEE2B9835A08818ACC314585AFA3E0CB /* LXMangerHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25B790F251EF8E181BF387755ACE3BE /* LXShareTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7330BE6ED9C5A570D434C0AF2EBD897E /* LXShareTool.m */; };
+		E2D9EA38EB2643F3D9BEB1D60296222E /* LXShareTool.h in Headers */ = {isa = PBXBuildFile; fileRef = D35FB6A8D308896561627C32BAEA0C6C /* LXShareTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCE34E92717B852AED924EFBE79971A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8B849E1ECACB4E0600A1C20964691FC3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 24FB3AB72746639730BA8BCBE89BC3CD;
-			remoteInfo = "Pods-LXShare_Example";
-		};
 		C3A95F03F1F3D4FBAE191050A72D11AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -45,40 +29,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02AAB3EED4A28F5AA3B0404CD4D73285 /* Pods-LXShare_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LXShare_Example-umbrella.h"; sourceTree = "<group>"; };
-		0BD05EEB305A0467C15AC2894381977B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		0EDE68023A16BE299B2FB76844FE060B /* LXShare.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LXShare.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1FF3B882675A8DB24C025CABCD1C7C30 /* Pods-LXShare_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LXShare_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		31E1F0DF1C387AE33A299B04320717D6 /* Pods_LXShare_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LXShare_Tests.framework; path = "Pods-LXShare_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B2F7905A93F7DC76F197B500EB2ADDC /* Pods-LXShare_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LXShare_Example-frameworks.sh"; sourceTree = "<group>"; };
+		27ADDCF35B69811B605AAEE11B3C497E /* LXShare-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXShare-umbrella.h"; sourceTree = "<group>"; };
+		27C45FF8BD3CC39FAFB0BA319B0F2DBC /* Pods-LXShare_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LXShare_Example-dummy.m"; sourceTree = "<group>"; };
+		2B5DA98C7ABB730EC2DDB964CBBE4DDB /* Pods-LXShare_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXShare_Example-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		342BAFFA658170886917CB44B5EE4884 /* Pods-LXShare_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LXShare_Tests-umbrella.h"; sourceTree = "<group>"; };
-		413F421022946AA3E72040A1B1B067F7 /* Pods-LXShare_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LXShare_Tests-dummy.m"; sourceTree = "<group>"; };
-		64E65A480A98F77937738BFBE58EA208 /* Pods-LXShare_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXShare_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		670B0F8AAEA1EC899B66355B81F15DFE /* Pods-LXShare_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LXShare_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6C9972F26B83F1F5571EAEFF33ADE516 /* Pods-LXShare_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXShare_Example-Info.plist"; sourceTree = "<group>"; };
-		7DEAB4EDA7D9A468095C10BCA2BCACCB /* LXMangerHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LXMangerHeader.h; path = LXShare/Classes/LXMangerHeader.h; sourceTree = "<group>"; };
-		80EEBB6BB4AD223FF0730EFB8CBD3F36 /* Pods-LXShare_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXShare_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9230A5A5426C95F369986176C9C96A88 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		338C7297A9C2D4B6CF80AFDEFDB404A3 /* LXShare-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LXShare-Info.plist"; sourceTree = "<group>"; };
+		4D715B8E6845D41694A79C456A2712A9 /* LXShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LXShare.release.xcconfig; sourceTree = "<group>"; };
+		67910D123ADC14C30859101A27E72384 /* LXShare.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LXShare.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7330BE6ED9C5A570D434C0AF2EBD897E /* LXShareTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LXShareTool.m; path = LXShare/Classes/LXShareTool.m; sourceTree = "<group>"; };
+		7D2C2E0B60B8AE33076B8F2E94D45571 /* LXShare.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LXShare.modulemap; sourceTree = "<group>"; };
+		7FD775833BEF7C29E03C48D0AE378BAB /* Pods-LXShare_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LXShare_Example-umbrella.h"; sourceTree = "<group>"; };
+		8495B033889FEFBFE53597BB9EB00477 /* Pods-LXShare_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LXShare_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		860CDF4659BDAA4C8DCE2528CED25D15 /* Pods-LXShare_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LXShare_Example.modulemap"; sourceTree = "<group>"; };
+		8B38487F6325832A820F97FC954A04BF /* LXShare-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXShare-prefix.pch"; sourceTree = "<group>"; };
+		8CAA56D690C5A73B0630003A010B49CB /* Pods-LXShare_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXShare_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8E97E80790F49754652B85B6F1C5D648 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2C94C280AAAA0A7F062FC9373B80471 /* Pods-LXShare_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LXShare_Example-dummy.m"; sourceTree = "<group>"; };
-		B9825D6F5FE7E35658E4278AEDB289CC /* Pods-LXShare_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LXShare_Example.modulemap"; sourceTree = "<group>"; };
-		C5BAD614FF6A17EECC89CB1A898CABE6 /* Pods-LXShare_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXShare_Tests-Info.plist"; sourceTree = "<group>"; };
+		9E5DFF7116439E34BDA465B73F08787A /* LXShare-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LXShare-dummy.m"; sourceTree = "<group>"; };
+		9E8273C75CD07985CC3109608E63C87F /* Pods-LXShare_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXShare_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		A74696C1805BCC3302DEDB4A91EDEFBA /* LXShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LXShare.debug.xcconfig; sourceTree = "<group>"; };
+		AEE2B9835A08818ACC314585AFA3E0CB /* LXMangerHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LXMangerHeader.h; path = LXShare/Classes/LXMangerHeader.h; sourceTree = "<group>"; };
+		D35FB6A8D308896561627C32BAEA0C6C /* LXShareTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LXShareTool.h; path = LXShare/Classes/LXShareTool.h; sourceTree = "<group>"; };
+		D684A978BD9E10B7BE52FA8FB1742BD9 /* Pods-LXShare_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXShare_Example.release.xcconfig"; sourceTree = "<group>"; };
+		DEEFD9EBF32892B12C7156C5641177E3 /* LXShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LXShare.framework; path = LXShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E03D85CB0CDC391E14224B2B6BDF99FF /* Pods_LXShare_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LXShare_Example.framework; path = "Pods-LXShare_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2A0B8D8AE6DC1760E3D8DEFC7F762B6 /* Pods-LXShare_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LXShare_Tests.modulemap"; sourceTree = "<group>"; };
-		E8F6827ADF5EBD739E2470133C5BBB5C /* Pods-LXShare_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXShare_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EAC51AECD20233CA80F1EC20E64359E3 /* Pods-LXShare_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXShare_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F7390951B924FBC5C9531CFE07741793 /* Pods-LXShare_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXShare_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FCC74E37E5ADF54C67A7FF018FC9F2B5 /* LXShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LXShare.debug.xcconfig; sourceTree = "<group>"; };
-		FD32AD1F7E00CA2EEFDDF57588EB1CB1 /* Pods-LXShare_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXShare_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FEB6D9D7CDBD7AE3D614501D855D0B34 /* LXShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LXShare.release.xcconfig; sourceTree = "<group>"; };
+		F266F2529406C284799DDEAC629528BE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3F05BCC2546928F8A3E00B9A31270D1B /* Frameworks */ = {
+		495CF3E81F650C56BD2916B887C1D134 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC8A26B3261DFE667EB71655631674D9 /* Foundation.framework in Frameworks */,
+				FCE34E92717B852AED924EFBE79971A4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,67 +77,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15350A9D4B41BF84A812F07DE918C32F /* LXShare */ = {
+		185E6684ED40E10B80738F6BC3B9992C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7DEAB4EDA7D9A468095C10BCA2BCACCB /* LXMangerHeader.h */,
-				9CAEB66DB2212A49AF7647A6B1F222B1 /* Pod */,
-				DB8A9195567F0F0524A89DDEA1C9BD5A /* Support Files */,
+				7D2C2E0B60B8AE33076B8F2E94D45571 /* LXShare.modulemap */,
+				9E5DFF7116439E34BDA465B73F08787A /* LXShare-dummy.m */,
+				338C7297A9C2D4B6CF80AFDEFDB404A3 /* LXShare-Info.plist */,
+				8B38487F6325832A820F97FC954A04BF /* LXShare-prefix.pch */,
+				27ADDCF35B69811B605AAEE11B3C497E /* LXShare-umbrella.h */,
+				A74696C1805BCC3302DEDB4A91EDEFBA /* LXShare.debug.xcconfig */,
+				4D715B8E6845D41694A79C456A2712A9 /* LXShare.release.xcconfig */,
 			);
-			name = LXShare;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LXShare";
 			sourceTree = "<group>";
 		};
-		2CC9E984AD344A2974D03C852AD280CD /* Pods-LXShare_Tests */ = {
+		3C25EFA46ED9134419B445CCDAB338D3 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E2A0B8D8AE6DC1760E3D8DEFC7F762B6 /* Pods-LXShare_Tests.modulemap */,
-				670B0F8AAEA1EC899B66355B81F15DFE /* Pods-LXShare_Tests-acknowledgements.markdown */,
-				80EEBB6BB4AD223FF0730EFB8CBD3F36 /* Pods-LXShare_Tests-acknowledgements.plist */,
-				413F421022946AA3E72040A1B1B067F7 /* Pods-LXShare_Tests-dummy.m */,
-				C5BAD614FF6A17EECC89CB1A898CABE6 /* Pods-LXShare_Tests-Info.plist */,
-				342BAFFA658170886917CB44B5EE4884 /* Pods-LXShare_Tests-umbrella.h */,
-				EAC51AECD20233CA80F1EC20E64359E3 /* Pods-LXShare_Tests.debug.xcconfig */,
-				F7390951B924FBC5C9531CFE07741793 /* Pods-LXShare_Tests.release.xcconfig */,
-			);
-			name = "Pods-LXShare_Tests";
-			path = "Target Support Files/Pods-LXShare_Tests";
-			sourceTree = "<group>";
-		};
-		88C700843600BAF0AB6CE9B0B03DB9FD /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DD5492A6BF54961523CA0364019F5BD0 /* Pods-LXShare_Example */,
-				2CC9E984AD344A2974D03C852AD280CD /* Pods-LXShare_Tests */,
+				E579AD2DFC148DB8F5C22BF32B5FD32A /* Pods-LXShare_Example */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9CAEB66DB2212A49AF7647A6B1F222B1 /* Pod */ = {
+		4FEE85945AC73F25BF9271E4424AE8A5 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				9230A5A5426C95F369986176C9C96A88 /* LICENSE */,
-				0EDE68023A16BE299B2FB76844FE060B /* LXShare.podspec */,
-				0BD05EEB305A0467C15AC2894381977B /* README.md */,
+				F266F2529406C284799DDEAC629528BE /* LICENSE */,
+				67910D123ADC14C30859101A27E72384 /* LXShare.podspec */,
+				8E97E80790F49754652B85B6F1C5D648 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		A7E023C615DFA8DFCF9ABD8B5BDFEF48 /* Products */ = {
+		B77CF3CD6C3DEF959AE02E585CEB9AF7 /* LXShare */ = {
 			isa = PBXGroup;
 			children = (
-				E03D85CB0CDC391E14224B2B6BDF99FF /* Pods_LXShare_Example.framework */,
-				31E1F0DF1C387AE33A299B04320717D6 /* Pods_LXShare_Tests.framework */,
+				AEE2B9835A08818ACC314585AFA3E0CB /* LXMangerHeader.h */,
+				D35FB6A8D308896561627C32BAEA0C6C /* LXShareTool.h */,
+				7330BE6ED9C5A570D434C0AF2EBD897E /* LXShareTool.m */,
+				4FEE85945AC73F25BF9271E4424AE8A5 /* Pod */,
+				185E6684ED40E10B80738F6BC3B9992C /* Support Files */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B0129FD3178CC048E102651FD0B04DA2 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				15350A9D4B41BF84A812F07DE918C32F /* LXShare */,
-			);
-			name = "Development Pods";
+			name = LXShare;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -168,10 +135,10 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				B0129FD3178CC048E102651FD0B04DA2 /* Development Pods */,
+				F924FF9F8DE4364EABF775223439E584 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				A7E023C615DFA8DFCF9ABD8B5BDFEF48 /* Products */,
-				88C700843600BAF0AB6CE9B0B03DB9FD /* Targets Support Files */,
+				F0FAC60BC904FC19DA4C9259DAA39896 /* Products */,
+				3C25EFA46ED9134419B445CCDAB338D3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,40 +150,50 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DB8A9195567F0F0524A89DDEA1C9BD5A /* Support Files */ = {
+		E579AD2DFC148DB8F5C22BF32B5FD32A /* Pods-LXShare_Example */ = {
 			isa = PBXGroup;
 			children = (
-				FCC74E37E5ADF54C67A7FF018FC9F2B5 /* LXShare.debug.xcconfig */,
-				FEB6D9D7CDBD7AE3D614501D855D0B34 /* LXShare.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LXShare";
-			sourceTree = "<group>";
-		};
-		DD5492A6BF54961523CA0364019F5BD0 /* Pods-LXShare_Example */ = {
-			isa = PBXGroup;
-			children = (
-				B9825D6F5FE7E35658E4278AEDB289CC /* Pods-LXShare_Example.modulemap */,
-				1FF3B882675A8DB24C025CABCD1C7C30 /* Pods-LXShare_Example-acknowledgements.markdown */,
-				64E65A480A98F77937738BFBE58EA208 /* Pods-LXShare_Example-acknowledgements.plist */,
-				A2C94C280AAAA0A7F062FC9373B80471 /* Pods-LXShare_Example-dummy.m */,
-				6C9972F26B83F1F5571EAEFF33ADE516 /* Pods-LXShare_Example-Info.plist */,
-				02AAB3EED4A28F5AA3B0404CD4D73285 /* Pods-LXShare_Example-umbrella.h */,
-				E8F6827ADF5EBD739E2470133C5BBB5C /* Pods-LXShare_Example.debug.xcconfig */,
-				FD32AD1F7E00CA2EEFDDF57588EB1CB1 /* Pods-LXShare_Example.release.xcconfig */,
+				860CDF4659BDAA4C8DCE2528CED25D15 /* Pods-LXShare_Example.modulemap */,
+				8495B033889FEFBFE53597BB9EB00477 /* Pods-LXShare_Example-acknowledgements.markdown */,
+				9E8273C75CD07985CC3109608E63C87F /* Pods-LXShare_Example-acknowledgements.plist */,
+				27C45FF8BD3CC39FAFB0BA319B0F2DBC /* Pods-LXShare_Example-dummy.m */,
+				0B2F7905A93F7DC76F197B500EB2ADDC /* Pods-LXShare_Example-frameworks.sh */,
+				2B5DA98C7ABB730EC2DDB964CBBE4DDB /* Pods-LXShare_Example-Info.plist */,
+				7FD775833BEF7C29E03C48D0AE378BAB /* Pods-LXShare_Example-umbrella.h */,
+				8CAA56D690C5A73B0630003A010B49CB /* Pods-LXShare_Example.debug.xcconfig */,
+				D684A978BD9E10B7BE52FA8FB1742BD9 /* Pods-LXShare_Example.release.xcconfig */,
 			);
 			name = "Pods-LXShare_Example";
 			path = "Target Support Files/Pods-LXShare_Example";
 			sourceTree = "<group>";
 		};
+		F0FAC60BC904FC19DA4C9259DAA39896 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEEFD9EBF32892B12C7156C5641177E3 /* LXShare.framework */,
+				E03D85CB0CDC391E14224B2B6BDF99FF /* Pods_LXShare_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F924FF9F8DE4364EABF775223439E584 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B77CF3CD6C3DEF959AE02E585CEB9AF7 /* LXShare */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		ACFFAC1898C6A92122A82E427B823EAF /* Headers */ = {
+		7436D3B260839B201EFCD707D91B0291 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBF81B4433CE6A43617C16ABEDD31E16 /* Pods-LXShare_Tests-umbrella.h in Headers */,
+				838D735C98E64DDCA79515A2FF040B47 /* LXMangerHeader.h in Headers */,
+				167A6909414850FA73E15E1E37219C0B /* LXShare-umbrella.h in Headers */,
+				E2D9EA38EB2643F3D9BEB1D60296222E /* LXShareTool.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,23 +227,22 @@
 			productReference = E03D85CB0CDC391E14224B2B6BDF99FF /* Pods_LXShare_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CFBDDC45AB482794ADD31A673A9F774C /* Pods-LXShare_Tests */ = {
+		508EE333DA91CDAC2D0E27185C74D7F9 /* LXShare */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A80D559877AB1C53ECF841F96AA1BC3A /* Build configuration list for PBXNativeTarget "Pods-LXShare_Tests" */;
+			buildConfigurationList = 192AA2CFCDF0BFBE68265DB399CFEA97 /* Build configuration list for PBXNativeTarget "LXShare" */;
 			buildPhases = (
-				ACFFAC1898C6A92122A82E427B823EAF /* Headers */,
-				A78115642AB0B9D0A085A13921DCDFCD /* Sources */,
-				3F05BCC2546928F8A3E00B9A31270D1B /* Frameworks */,
-				17EE1A1B3AE339A63025B2A7888A7D5B /* Resources */,
+				7436D3B260839B201EFCD707D91B0291 /* Headers */,
+				D6085814357118C8046B8AB83476327A /* Sources */,
+				495CF3E81F650C56BD2916B887C1D134 /* Frameworks */,
+				B0B0ADDDA97A34F53582B221EDCB6F5C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				86EC71E49B73248BE322B6D319156628 /* PBXTargetDependency */,
 			);
-			name = "Pods-LXShare_Tests";
-			productName = "Pods-LXShare_Tests";
-			productReference = 31E1F0DF1C387AE33A299B04320717D6 /* Pods_LXShare_Tests.framework */;
+			name = LXShare;
+			productName = LXShare;
+			productReference = DEEFD9EBF32892B12C7156C5641177E3 /* LXShare.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -287,26 +263,25 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = A7E023C615DFA8DFCF9ABD8B5BDFEF48 /* Products */;
+			productRefGroup = F0FAC60BC904FC19DA4C9259DAA39896 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				508EE333DA91CDAC2D0E27185C74D7F9 /* LXShare */,
 				24FB3AB72746639730BA8BCBE89BC3CD /* Pods-LXShare_Example */,
-				CFBDDC45AB482794ADD31A673A9F774C /* Pods-LXShare_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		17EE1A1B3AE339A63025B2A7888A7D5B /* Resources */ = {
+		9DA26124A990002F2FD574E83D564C45 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DA26124A990002F2FD574E83D564C45 /* Resources */ = {
+		B0B0ADDDA97A34F53582B221EDCB6F5C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -316,14 +291,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A78115642AB0B9D0A085A13921DCDFCD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				978B7EF97E37AA31B9D7EFC4B9F20560 /* Pods-LXShare_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B6FA8038AB34D73B97BF105947D8CBBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,15 +299,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6085814357118C8046B8AB83476327A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7124425C3ED72BFD2277FE6F3BC1F947 /* LXShare-dummy.m in Sources */,
+				E25B790F251EF8E181BF387755ACE3BE /* LXShareTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		86EC71E49B73248BE322B6D319156628 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-LXShare_Example";
-			target = 24FB3AB72746639730BA8BCBE89BC3CD /* Pods-LXShare_Example */;
-			targetProxy = 8B849E1ECACB4E0600A1C20964691FC3 /* PBXContainerItemProxy */;
-		};
 		DFDD9C18E8977B2A3C608BD1F5C8B3F4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LXShare;
@@ -350,55 +320,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1AA33317DD05ABFFADBD80DA25A1EF68 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAC51AECD20233CA80F1EC20E64359E3 /* Pods-LXShare_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LXShare_Tests/Pods-LXShare_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LXShare_Tests/Pods-LXShare_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		25620AC7027AAE7CEAD9E332FAC3C9B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCC74E37E5ADF54C67A7FF018FC9F2B5 /* LXShare.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		2DCEBF26A3C1420BF3FC6AC97FE0C6DB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8F6827ADF5EBD739E2470133C5BBB5C /* Pods-LXShare_Example.debug.xcconfig */;
+			baseConfigurationReference = 8CAA56D690C5A73B0630003A010B49CB /* Pods-LXShare_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -428,6 +352,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		343ECD5FB37FA8A0A3793C387F6841BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D715B8E6845D41694A79C456A2712A9 /* LXShare.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LXShare/LXShare-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LXShare/LXShare-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LXShare/LXShare.modulemap";
+				PRODUCT_MODULE_NAME = LXShare;
+				PRODUCT_NAME = LXShare;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -491,7 +447,7 @@
 		};
 		6671101878BF50A781BCB3B4E26FE1EF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD32AD1F7E00CA2EEFDDF57588EB1CB1 /* Pods-LXShare_Example.release.xcconfig */;
+			baseConfigurationReference = D684A978BD9E10B7BE52FA8FB1742BD9 /* Pods-LXShare_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -587,11 +543,10 @@
 			};
 			name = Debug;
 		};
-		A74846C7B9687D669409E910CAD72354 /* Release */ = {
+		C67AD75D7A2F8E12FC07FBD54E49862E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7390951B924FBC5C9531CFE07741793 /* Pods-LXShare_Tests.release.xcconfig */;
+			baseConfigurationReference = A74696C1805BCC3302DEDB4A91EDEFBA /* LXShare.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -601,39 +556,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LXShare_Tests/Pods-LXShare_Tests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LXShare/LXShare-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LXShare/LXShare-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LXShare_Tests/Pods-LXShare_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/LXShare/LXShare.modulemap";
+				PRODUCT_MODULE_NAME = LXShare;
+				PRODUCT_NAME = LXShare;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		D6A42B7F20AD8E8906806744B536F9AA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEB6D9D7CDBD7AE3D614501D855D0B34 /* LXShare.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -647,11 +586,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1E72AD48C67EAEE457411361C304816C /* Build configuration list for PBXAggregateTarget "LXShare" */ = {
+		192AA2CFCDF0BFBE68265DB399CFEA97 /* Build configuration list for PBXNativeTarget "LXShare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25620AC7027AAE7CEAD9E332FAC3C9B1 /* Debug */,
-				D6A42B7F20AD8E8906806744B536F9AA /* Release */,
+				C67AD75D7A2F8E12FC07FBD54E49862E /* Debug */,
+				343ECD5FB37FA8A0A3793C387F6841BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -661,15 +600,6 @@
 			buildConfigurations = (
 				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
 				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A80D559877AB1C53ECF841F96AA1BC3A /* Build configuration list for PBXNativeTarget "Pods-LXShare_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1AA33317DD05ABFFADBD80DA25A1EF68 /* Debug */,
-				A74846C7B9687D669409E910CAD72354 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
