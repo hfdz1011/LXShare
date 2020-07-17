@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'LXShare_Example' do
+  pod 'LXShare', :path => '../'
+
+  target 'LXShare_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
