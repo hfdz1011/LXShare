@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		099FCEA9B4E70B49214343C1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		099FCEA9B4E70B49214343C1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4365222849C3FFB499125EFF /* Pods-LXShare_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXShare_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LXShare_Tests/Pods-LXShare_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LXShare_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXShare_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,9 +63,9 @@
 		7FDEBB632CFF2A8CFFAC1EB0 /* Pods-LXShare_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXShare_Example.release.xcconfig"; path = "Target Support Files/Pods-LXShare_Example/Pods-LXShare_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF580DEE6748B92763D8B87C /* Pods-LXShare_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXShare_Example.debug.xcconfig"; path = "Target Support Files/Pods-LXShare_Example/Pods-LXShare_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CB49CC7859660D0853C267E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CB49CC7859660D0853C267E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DA747EA5D6269D904B336779 /* Pods_LXShare_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXShare_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFAF31916EF1EBD85D484914 /* LXShare.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LXShare.podspec; path = ../LXShare.podspec; sourceTree = "<group>"; };
+		EFAF31916EF1EBD85D484914 /* LXShare.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LXShare.podspec; path = ../LXShare.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F4B8EBC823577E78484513E3 /* Pods_LXShare_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXShare_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				4365222849C3FFB499125EFF /* Pods-LXShare_Tests.debug.xcconfig */,
 				7A7571384DC8982EDD54C4C2 /* Pods-LXShare_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				3EC91E3DCA8254B602DA0E63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +256,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -295,24 +294,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3EC91E3DCA8254B602DA0E63 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LXShare_Example/Pods-LXShare_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LXShare/LXShare.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LXShare.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LXShare_Example/Pods-LXShare_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6FAD5513C31ACECBB8550EAE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

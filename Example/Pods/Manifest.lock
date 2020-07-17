@@ -1,0 +1,16 @@
+PODS:
+  - LXShare (0.1.0)
+
+DEPENDENCIES:
+  - LXShare (from `../`)
+
+EXTERNAL SOURCES:
+  LXShare:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LXShare: d625cc3b4442fdeeb89bb37cc97968cb2da4e600
+
+PODFILE CHECKSUM: e75065e4106fa6a4571b36be63e8f0bf602e87da
+
+COCOAPODS: 1.9.3

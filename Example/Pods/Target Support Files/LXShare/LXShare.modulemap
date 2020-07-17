@@ -1,0 +1,6 @@
+framework module LXShare {
+  umbrella header "LXShare-umbrella.h"
+
+  export *
+  module * { export * }
+}

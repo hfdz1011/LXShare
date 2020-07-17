@@ -1,0 +1,6 @@
+framework module Pods_LXShare_Example {
+  umbrella header "Pods-LXShare_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

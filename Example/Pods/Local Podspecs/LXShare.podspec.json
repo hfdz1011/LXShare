@@ -1,0 +1,22 @@
+{
+  "name": "LXShare",
+  "version": "0.1.0",
+  "summary": "A short description of LXShare.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/hfdz1011/LXShare",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hfdz1011": "18576722857@163.com"
+  },
+  "source": {
+    "git": "https://github.com/hfdz1011/LXShare.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LXShare/Classes/LXMangerHeader.h"
+}
