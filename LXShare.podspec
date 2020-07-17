@@ -14,7 +14,10 @@ Pod::Spec.new do |s|
 
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+
+   
+                         简介：LXShare是集合日常开发所需的工具集合
+                    
                        DESC
 
   s.homepage         = 'https://github.com/hfdz1011/LXShare'

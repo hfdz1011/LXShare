@@ -1,28 +1,23 @@
 # LXShare
 
-[![CI Status](https://img.shields.io/travis/hfdz1011/LXShare.svg?style=flat)](https://travis-ci.org/hfdz1011/LXShare)
-[![Version](https://img.shields.io/cocoapods/v/LXShare.svg?style=flat)](https://cocoapods.org/pods/LXShare)
-[![License](https://img.shields.io/cocoapods/l/LXShare.svg?style=flat)](https://cocoapods.org/pods/LXShare)
-[![Platform](https://img.shields.io/cocoapods/p/LXShare.svg?style=flat)](https://cocoapods.org/pods/LXShare)
 
-## Example
+## 介绍：
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+1:常规的工具校验集合
 
 ## Requirements
 
-## Installation
+## 安装
 
-LXShare is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+
 
 ```ruby
 pod 'LXShare'
 ```
 
-## Author
+## 作者
 
-hfdz1011, 18576722857@163.com
+会飞的猪, 18576722857@163.com
 
 ## License
 
