@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LXShare'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = '工具集合'
 
   s.description      = <<-DESC
@@ -19,7 +19,6 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/hfdz1011/LXShare'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hfdz1011' => '18576722857@163.com' }
   s.source           = { :git => 'https://github.com/hfdz1011/LXShare.git', :tag => s.version.to_s }

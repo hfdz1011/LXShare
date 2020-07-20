@@ -7,12 +7,20 @@
 //
 
 #import "LXAppDelegate.h"
+#import "LXViewController.h"
 
 @implementation LXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    self.window.rootViewController = [LXViewController new];
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

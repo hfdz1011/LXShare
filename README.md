@@ -3,9 +3,12 @@
 
 ## 介绍：
 
-1:常规的工具校验集合
+1:LXToolManger常规的工具
+2:NSDecimalNumber 字符串的加减乘除（NSDecimalNumber高精度的数据处理）
+3:NSMutableAttributedString 字符串前添加图片
+4:UIAlertController 弹窗的封装处理（已解决有时不能弹出的问题）
+5:UITextField 虚拟文案的颜色，字体设置处理
 
-## Requirements
 
 ## 安装
 

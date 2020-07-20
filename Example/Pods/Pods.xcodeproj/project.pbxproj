@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		167A6909414850FA73E15E1E37219C0B /* LXShare-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27ADDCF35B69811B605AAEE11B3C497E /* LXShare-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		078407E3083870CEC4C9D6BF3EF702F7 /* LXShare-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E89D9D1FA6C7347B1F563D0049C8C2A /* LXShare-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C855BBFD7BEC2176F5EB6A712F97EE3 /* UIColor+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = B8E83096D5E7592FCA6E056FC072552A /* UIColor+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		272F5EF3011B126694DC6C7F2A2E1B71 /* NSMutableAttributedString+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BD178621D6C1ABC18129DA35E234BC6 /* NSMutableAttributedString+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C6354774E12141440450CCDBF00B0B0 /* NSDecimalNumber+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 76A41B3FAF3E3AD551C57222B7AEDB06 /* NSDecimalNumber+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38F68C9902DA49E60FA50F9D103E2A84 /* NSArray+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 9487D8F55EB583083D859465202A37A1 /* NSArray+LX.m */; };
 		3FFCB0D7C5513949678252E81652C4F6 /* Pods-LXShare_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FD775833BEF7C29E03C48D0AE378BAB /* Pods-LXShare_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4ABBBD7373085561DA65500DE35CD7FD /* UITextField+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 5928170F6DF2C295382324D43271A2A1 /* UITextField+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C41602392BBB424C338411E500159DE /* NSDecimalNumber+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = D833223D8D33CEE8D71CA321BE6CEE12 /* NSDecimalNumber+LX.m */; };
+		4ED889FA24E124C2559984BA894D3769 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		50036F56983184189E7E775C05B9A211 /* UIAlertController+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D9D774F76F338FF974AE461103E515 /* UIAlertController+LX.m */; };
 		564FCEDBB963F44A8BF039282DC6C3B6 /* Pods-LXShare_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C45FF8BD3CC39FAFB0BA319B0F2DBC /* Pods-LXShare_Example-dummy.m */; };
-		7124425C3ED72BFD2277FE6F3BC1F947 /* LXShare-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5DFF7116439E34BDA465B73F08787A /* LXShare-dummy.m */; };
+		6D28E4CCDE1DBCDF74228C725E44F79C /* NSDictionary+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 032A924CC38E6B2436E3BAAE0FC93EED /* NSDictionary+LX.m */; };
 		72BA640225FCEDF23DB82E6964791B93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		838D735C98E64DDCA79515A2FF040B47 /* LXMangerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AEE2B9835A08818ACC314585AFA3E0CB /* LXMangerHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E25B790F251EF8E181BF387755ACE3BE /* LXShareTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7330BE6ED9C5A570D434C0AF2EBD897E /* LXShareTool.m */; };
-		E2D9EA38EB2643F3D9BEB1D60296222E /* LXShareTool.h in Headers */ = {isa = PBXBuildFile; fileRef = D35FB6A8D308896561627C32BAEA0C6C /* LXShareTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FCE34E92717B852AED924EFBE79971A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8A2D2EBE1D058CF875CE2C8ED3869520 /* LXShare-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C58FB12B54177850DCC2FA657B75F /* LXShare-dummy.m */; };
+		A398BFF5C27F9496C9192972EE9A184B /* LXMangerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = DF48A559DBCD084BB7694F08902B7C85 /* LXMangerHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B39DF19D50AB62C216A83245B2277E43 /* UITextField+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E28FB03A6087796C081F1D525A0AF6 /* UITextField+LX.m */; };
+		B57613E669641CD059DF0445B263CD50 /* UIAlertController+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 39F41E7B7E2CFA16BEDE520FC72E6976 /* UIAlertController+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8FE44DA25C420A34C4CBCC30FE2A824 /* UIColor+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E74A18F7BAFC448B5AE15D310477CA /* UIColor+LX.m */; };
+		BF508798865A79D33CCEF1EF621A4B2D /* NSDictionary+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = BDF7DC768D5D69E2AC78E17E2F6DEFD3 /* NSDictionary+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6639078062FBC0B177C23AD44786138 /* NSArray+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EFA439EA879ED715641495F9E48A3AB /* NSArray+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEE91DCDF379B9F5B96DC3006B874B4A /* LXToolManger.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F4A10B1B8F42EE9DDAA9B3AF9C0C47 /* LXToolManger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF8EE2755D6E4E8845C35E497AC833C6 /* LXToolManger.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A19CA76B1F4995F42FC2111A906873 /* LXToolManger.m */; };
+		F6F9511C21992BC82C236CA4EE4E0F2D /* NSMutableAttributedString+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB18C10106D405DD0BF6F4F8036B67 /* NSMutableAttributedString+LX.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,40 +43,54 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		032A924CC38E6B2436E3BAAE0FC93EED /* NSDictionary+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+LX.m"; path = "LXShare/Classes/NSDictionary+LX.m"; sourceTree = "<group>"; };
+		0653F2D8C8539BA0851E827F0F094187 /* LXShare-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXShare-prefix.pch"; sourceTree = "<group>"; };
+		0AFC8563A94DC2BAD6AE288912BF6CD7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		0B2F7905A93F7DC76F197B500EB2ADDC /* Pods-LXShare_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LXShare_Example-frameworks.sh"; sourceTree = "<group>"; };
-		27ADDCF35B69811B605AAEE11B3C497E /* LXShare-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXShare-umbrella.h"; sourceTree = "<group>"; };
+		1D5C58FB12B54177850DCC2FA657B75F /* LXShare-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LXShare-dummy.m"; sourceTree = "<group>"; };
 		27C45FF8BD3CC39FAFB0BA319B0F2DBC /* Pods-LXShare_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LXShare_Example-dummy.m"; sourceTree = "<group>"; };
 		2B5DA98C7ABB730EC2DDB964CBBE4DDB /* Pods-LXShare_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXShare_Example-Info.plist"; sourceTree = "<group>"; };
+		2FFB18C10106D405DD0BF6F4F8036B67 /* NSMutableAttributedString+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+LX.m"; path = "LXShare/Classes/NSMutableAttributedString+LX.m"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		338C7297A9C2D4B6CF80AFDEFDB404A3 /* LXShare-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LXShare-Info.plist"; sourceTree = "<group>"; };
-		4D715B8E6845D41694A79C456A2712A9 /* LXShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LXShare.release.xcconfig; sourceTree = "<group>"; };
-		67910D123ADC14C30859101A27E72384 /* LXShare.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LXShare.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		7330BE6ED9C5A570D434C0AF2EBD897E /* LXShareTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LXShareTool.m; path = LXShare/Classes/LXShareTool.m; sourceTree = "<group>"; };
-		7D2C2E0B60B8AE33076B8F2E94D45571 /* LXShare.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LXShare.modulemap; sourceTree = "<group>"; };
+		34A1452BF1D2E697ED52354F6F0C4B11 /* LXShare.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LXShare.modulemap; sourceTree = "<group>"; };
+		363DDB4E4EB270C124BF72E558B5455C /* LXShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LXShare.release.xcconfig; sourceTree = "<group>"; };
+		36F4A10B1B8F42EE9DDAA9B3AF9C0C47 /* LXToolManger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LXToolManger.h; path = LXShare/Classes/LXToolManger.h; sourceTree = "<group>"; };
+		39F41E7B7E2CFA16BEDE520FC72E6976 /* UIAlertController+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+LX.h"; path = "LXShare/Classes/UIAlertController+LX.h"; sourceTree = "<group>"; };
+		45A80576DF0378559EB94C5DBA798F14 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5928170F6DF2C295382324D43271A2A1 /* UITextField+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+LX.h"; path = "LXShare/Classes/UITextField+LX.h"; sourceTree = "<group>"; };
+		5BD178621D6C1ABC18129DA35E234BC6 /* NSMutableAttributedString+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+LX.h"; path = "LXShare/Classes/NSMutableAttributedString+LX.h"; sourceTree = "<group>"; };
+		5E840BFE931B14682BC791D834904B3A /* LXShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LXShare.debug.xcconfig; sourceTree = "<group>"; };
+		5EFA439EA879ED715641495F9E48A3AB /* NSArray+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+LX.h"; path = "LXShare/Classes/NSArray+LX.h"; sourceTree = "<group>"; };
+		76A41B3FAF3E3AD551C57222B7AEDB06 /* NSDecimalNumber+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDecimalNumber+LX.h"; path = "LXShare/Classes/NSDecimalNumber+LX.h"; sourceTree = "<group>"; };
 		7FD775833BEF7C29E03C48D0AE378BAB /* Pods-LXShare_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LXShare_Example-umbrella.h"; sourceTree = "<group>"; };
+		83E28FB03A6087796C081F1D525A0AF6 /* UITextField+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+LX.m"; path = "LXShare/Classes/UITextField+LX.m"; sourceTree = "<group>"; };
 		8495B033889FEFBFE53597BB9EB00477 /* Pods-LXShare_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LXShare_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		860CDF4659BDAA4C8DCE2528CED25D15 /* Pods-LXShare_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LXShare_Example.modulemap"; sourceTree = "<group>"; };
-		8B38487F6325832A820F97FC954A04BF /* LXShare-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXShare-prefix.pch"; sourceTree = "<group>"; };
 		8CAA56D690C5A73B0630003A010B49CB /* Pods-LXShare_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXShare_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8E97E80790F49754652B85B6F1C5D648 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9487D8F55EB583083D859465202A37A1 /* NSArray+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+LX.m"; path = "LXShare/Classes/NSArray+LX.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E5DFF7116439E34BDA465B73F08787A /* LXShare-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LXShare-dummy.m"; sourceTree = "<group>"; };
 		9E8273C75CD07985CC3109608E63C87F /* Pods-LXShare_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXShare_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		A74696C1805BCC3302DEDB4A91EDEFBA /* LXShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LXShare.debug.xcconfig; sourceTree = "<group>"; };
-		AEE2B9835A08818ACC314585AFA3E0CB /* LXMangerHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LXMangerHeader.h; path = LXShare/Classes/LXMangerHeader.h; sourceTree = "<group>"; };
-		D35FB6A8D308896561627C32BAEA0C6C /* LXShareTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LXShareTool.h; path = LXShare/Classes/LXShareTool.h; sourceTree = "<group>"; };
+		9E89D9D1FA6C7347B1F563D0049C8C2A /* LXShare-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXShare-umbrella.h"; sourceTree = "<group>"; };
+		AFED776647C8234C8D3AF72C126D6C37 /* LXShare-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LXShare-Info.plist"; sourceTree = "<group>"; };
+		B8E83096D5E7592FCA6E056FC072552A /* UIColor+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+LX.h"; path = "LXShare/Classes/UIColor+LX.h"; sourceTree = "<group>"; };
+		BDF7DC768D5D69E2AC78E17E2F6DEFD3 /* NSDictionary+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+LX.h"; path = "LXShare/Classes/NSDictionary+LX.h"; sourceTree = "<group>"; };
+		C3D9D774F76F338FF974AE461103E515 /* UIAlertController+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+LX.m"; path = "LXShare/Classes/UIAlertController+LX.m"; sourceTree = "<group>"; };
+		CA4C10113DE7E24DE1DEE2483A780B45 /* LXShare.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LXShare.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D684A978BD9E10B7BE52FA8FB1742BD9 /* Pods-LXShare_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXShare_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D833223D8D33CEE8D71CA321BE6CEE12 /* NSDecimalNumber+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDecimalNumber+LX.m"; path = "LXShare/Classes/NSDecimalNumber+LX.m"; sourceTree = "<group>"; };
 		DEEFD9EBF32892B12C7156C5641177E3 /* LXShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LXShare.framework; path = LXShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF48A559DBCD084BB7694F08902B7C85 /* LXMangerHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LXMangerHeader.h; path = LXShare/Classes/LXMangerHeader.h; sourceTree = "<group>"; };
 		E03D85CB0CDC391E14224B2B6BDF99FF /* Pods_LXShare_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LXShare_Example.framework; path = "Pods-LXShare_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F266F2529406C284799DDEAC629528BE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E3A19CA76B1F4995F42FC2111A906873 /* LXToolManger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LXToolManger.m; path = LXShare/Classes/LXToolManger.m; sourceTree = "<group>"; };
+		E6E74A18F7BAFC448B5AE15D310477CA /* UIColor+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+LX.m"; path = "LXShare/Classes/UIColor+LX.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		495CF3E81F650C56BD2916B887C1D134 /* Frameworks */ = {
+		51E3C029388B37D172C37096AED66411 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCE34E92717B852AED924EFBE79971A4 /* Foundation.framework in Frameworks */,
+				4ED889FA24E124C2559984BA894D3769 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,19 +105,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		185E6684ED40E10B80738F6BC3B9992C /* Support Files */ = {
+		3784C84AE366F7706B56164E53EDD5D5 /* LXShare */ = {
 			isa = PBXGroup;
 			children = (
-				7D2C2E0B60B8AE33076B8F2E94D45571 /* LXShare.modulemap */,
-				9E5DFF7116439E34BDA465B73F08787A /* LXShare-dummy.m */,
-				338C7297A9C2D4B6CF80AFDEFDB404A3 /* LXShare-Info.plist */,
-				8B38487F6325832A820F97FC954A04BF /* LXShare-prefix.pch */,
-				27ADDCF35B69811B605AAEE11B3C497E /* LXShare-umbrella.h */,
-				A74696C1805BCC3302DEDB4A91EDEFBA /* LXShare.debug.xcconfig */,
-				4D715B8E6845D41694A79C456A2712A9 /* LXShare.release.xcconfig */,
+				DF48A559DBCD084BB7694F08902B7C85 /* LXMangerHeader.h */,
+				36F4A10B1B8F42EE9DDAA9B3AF9C0C47 /* LXToolManger.h */,
+				E3A19CA76B1F4995F42FC2111A906873 /* LXToolManger.m */,
+				5EFA439EA879ED715641495F9E48A3AB /* NSArray+LX.h */,
+				9487D8F55EB583083D859465202A37A1 /* NSArray+LX.m */,
+				76A41B3FAF3E3AD551C57222B7AEDB06 /* NSDecimalNumber+LX.h */,
+				D833223D8D33CEE8D71CA321BE6CEE12 /* NSDecimalNumber+LX.m */,
+				BDF7DC768D5D69E2AC78E17E2F6DEFD3 /* NSDictionary+LX.h */,
+				032A924CC38E6B2436E3BAAE0FC93EED /* NSDictionary+LX.m */,
+				5BD178621D6C1ABC18129DA35E234BC6 /* NSMutableAttributedString+LX.h */,
+				2FFB18C10106D405DD0BF6F4F8036B67 /* NSMutableAttributedString+LX.m */,
+				39F41E7B7E2CFA16BEDE520FC72E6976 /* UIAlertController+LX.h */,
+				C3D9D774F76F338FF974AE461103E515 /* UIAlertController+LX.m */,
+				B8E83096D5E7592FCA6E056FC072552A /* UIColor+LX.h */,
+				E6E74A18F7BAFC448B5AE15D310477CA /* UIColor+LX.m */,
+				5928170F6DF2C295382324D43271A2A1 /* UITextField+LX.h */,
+				83E28FB03A6087796C081F1D525A0AF6 /* UITextField+LX.m */,
+				91CDC36AD907CD9BE015F2EEADD0A784 /* Pod */,
+				43AF73CC30CA518333D4F67374D059C8 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LXShare";
+			name = LXShare;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		3C25EFA46ED9134419B445CCDAB338D3 /* Targets Support Files */ = {
@@ -100,27 +140,29 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		4FEE85945AC73F25BF9271E4424AE8A5 /* Pod */ = {
+		43AF73CC30CA518333D4F67374D059C8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F266F2529406C284799DDEAC629528BE /* LICENSE */,
-				67910D123ADC14C30859101A27E72384 /* LXShare.podspec */,
-				8E97E80790F49754652B85B6F1C5D648 /* README.md */,
+				34A1452BF1D2E697ED52354F6F0C4B11 /* LXShare.modulemap */,
+				1D5C58FB12B54177850DCC2FA657B75F /* LXShare-dummy.m */,
+				AFED776647C8234C8D3AF72C126D6C37 /* LXShare-Info.plist */,
+				0653F2D8C8539BA0851E827F0F094187 /* LXShare-prefix.pch */,
+				9E89D9D1FA6C7347B1F563D0049C8C2A /* LXShare-umbrella.h */,
+				5E840BFE931B14682BC791D834904B3A /* LXShare.debug.xcconfig */,
+				363DDB4E4EB270C124BF72E558B5455C /* LXShare.release.xcconfig */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LXShare";
 			sourceTree = "<group>";
 		};
-		B77CF3CD6C3DEF959AE02E585CEB9AF7 /* LXShare */ = {
+		91CDC36AD907CD9BE015F2EEADD0A784 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				AEE2B9835A08818ACC314585AFA3E0CB /* LXMangerHeader.h */,
-				D35FB6A8D308896561627C32BAEA0C6C /* LXShareTool.h */,
-				7330BE6ED9C5A570D434C0AF2EBD897E /* LXShareTool.m */,
-				4FEE85945AC73F25BF9271E4424AE8A5 /* Pod */,
-				185E6684ED40E10B80738F6BC3B9992C /* Support Files */,
+				0AFC8563A94DC2BAD6AE288912BF6CD7 /* LICENSE */,
+				CA4C10113DE7E24DE1DEE2483A780B45 /* LXShare.podspec */,
+				45A80576DF0378559EB94C5DBA798F14 /* README.md */,
 			);
-			name = LXShare;
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -135,7 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				F924FF9F8DE4364EABF775223439E584 /* Development Pods */,
+				FD4FFCD5DB0416E208D0C391184CCDBD /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				F0FAC60BC904FC19DA4C9259DAA39896 /* Products */,
 				3C25EFA46ED9134419B445CCDAB338D3 /* Targets Support Files */,
@@ -176,10 +218,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F924FF9F8DE4364EABF775223439E584 /* Development Pods */ = {
+		FD4FFCD5DB0416E208D0C391184CCDBD /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B77CF3CD6C3DEF959AE02E585CEB9AF7 /* LXShare */,
+				3784C84AE366F7706B56164E53EDD5D5 /* LXShare */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -187,13 +229,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7436D3B260839B201EFCD707D91B0291 /* Headers */ = {
+		7DEE9E5613F85825FDBEFB42C6DA646E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				838D735C98E64DDCA79515A2FF040B47 /* LXMangerHeader.h in Headers */,
-				167A6909414850FA73E15E1E37219C0B /* LXShare-umbrella.h in Headers */,
-				E2D9EA38EB2643F3D9BEB1D60296222E /* LXShareTool.h in Headers */,
+				A398BFF5C27F9496C9192972EE9A184B /* LXMangerHeader.h in Headers */,
+				078407E3083870CEC4C9D6BF3EF702F7 /* LXShare-umbrella.h in Headers */,
+				DEE91DCDF379B9F5B96DC3006B874B4A /* LXToolManger.h in Headers */,
+				C6639078062FBC0B177C23AD44786138 /* NSArray+LX.h in Headers */,
+				2C6354774E12141440450CCDBF00B0B0 /* NSDecimalNumber+LX.h in Headers */,
+				BF508798865A79D33CCEF1EF621A4B2D /* NSDictionary+LX.h in Headers */,
+				272F5EF3011B126694DC6C7F2A2E1B71 /* NSMutableAttributedString+LX.h in Headers */,
+				B57613E669641CD059DF0445B263CD50 /* UIAlertController+LX.h in Headers */,
+				1C855BBFD7BEC2176F5EB6A712F97EE3 /* UIColor+LX.h in Headers */,
+				4ABBBD7373085561DA65500DE35CD7FD /* UITextField+LX.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,12 +278,12 @@
 		};
 		508EE333DA91CDAC2D0E27185C74D7F9 /* LXShare */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 192AA2CFCDF0BFBE68265DB399CFEA97 /* Build configuration list for PBXNativeTarget "LXShare" */;
+			buildConfigurationList = C0D6D1DA5E285DEBB3378DE3BA9F2886 /* Build configuration list for PBXNativeTarget "LXShare" */;
 			buildPhases = (
-				7436D3B260839B201EFCD707D91B0291 /* Headers */,
-				D6085814357118C8046B8AB83476327A /* Sources */,
-				495CF3E81F650C56BD2916B887C1D134 /* Frameworks */,
-				B0B0ADDDA97A34F53582B221EDCB6F5C /* Resources */,
+				7DEE9E5613F85825FDBEFB42C6DA646E /* Headers */,
+				765EBD5F2BC5022936992467762D01C2 /* Sources */,
+				51E3C029388B37D172C37096AED66411 /* Frameworks */,
+				4758F372930C5504AD354F5C3850AD96 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -274,14 +323,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9DA26124A990002F2FD574E83D564C45 /* Resources */ = {
+		4758F372930C5504AD354F5C3850AD96 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0B0ADDDA97A34F53582B221EDCB6F5C /* Resources */ = {
+		9DA26124A990002F2FD574E83D564C45 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -291,20 +340,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		765EBD5F2BC5022936992467762D01C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2D2EBE1D058CF875CE2C8ED3869520 /* LXShare-dummy.m in Sources */,
+				EF8EE2755D6E4E8845C35E497AC833C6 /* LXToolManger.m in Sources */,
+				38F68C9902DA49E60FA50F9D103E2A84 /* NSArray+LX.m in Sources */,
+				4C41602392BBB424C338411E500159DE /* NSDecimalNumber+LX.m in Sources */,
+				6D28E4CCDE1DBCDF74228C725E44F79C /* NSDictionary+LX.m in Sources */,
+				F6F9511C21992BC82C236CA4EE4E0F2D /* NSMutableAttributedString+LX.m in Sources */,
+				50036F56983184189E7E775C05B9A211 /* UIAlertController+LX.m in Sources */,
+				B8FE44DA25C420A34C4CBCC30FE2A824 /* UIColor+LX.m in Sources */,
+				B39DF19D50AB62C216A83245B2277E43 /* UITextField+LX.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6FA8038AB34D73B97BF105947D8CBBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				564FCEDBB963F44A8BF039282DC6C3B6 /* Pods-LXShare_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D6085814357118C8046B8AB83476327A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7124425C3ED72BFD2277FE6F3BC1F947 /* LXShare-dummy.m in Sources */,
-				E25B790F251EF8E181BF387755ACE3BE /* LXShareTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +376,69 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0F093AD6BC5586CAD718BCD80F80827C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E840BFE931B14682BC791D834904B3A /* LXShare.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LXShare/LXShare-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LXShare/LXShare-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LXShare/LXShare.modulemap";
+				PRODUCT_MODULE_NAME = LXShare;
+				PRODUCT_NAME = LXShare;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1C59B5D1D87A0BD1C48E509C5357241D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 363DDB4E4EB270C124BF72E558B5455C /* LXShare.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LXShare/LXShare-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LXShare/LXShare-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LXShare/LXShare.modulemap";
+				PRODUCT_MODULE_NAME = LXShare;
+				PRODUCT_NAME = LXShare;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		2DCEBF26A3C1420BF3FC6AC97FE0C6DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8CAA56D690C5A73B0630003A010B49CB /* Pods-LXShare_Example.debug.xcconfig */;
@@ -352,38 +471,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		343ECD5FB37FA8A0A3793C387F6841BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D715B8E6845D41694A79C456A2712A9 /* LXShare.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LXShare/LXShare-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LXShare/LXShare-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LXShare/LXShare.modulemap";
-				PRODUCT_MODULE_NAME = LXShare;
-				PRODUCT_NAME = LXShare;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -543,37 +630,6 @@
 			};
 			name = Debug;
 		};
-		C67AD75D7A2F8E12FC07FBD54E49862E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A74696C1805BCC3302DEDB4A91EDEFBA /* LXShare.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LXShare/LXShare-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LXShare/LXShare-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LXShare/LXShare.modulemap";
-				PRODUCT_MODULE_NAME = LXShare;
-				PRODUCT_NAME = LXShare;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -586,20 +642,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		192AA2CFCDF0BFBE68265DB399CFEA97 /* Build configuration list for PBXNativeTarget "LXShare" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C67AD75D7A2F8E12FC07FBD54E49862E /* Debug */,
-				343ECD5FB37FA8A0A3793C387F6841BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
 				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0D6D1DA5E285DEBB3378DE3BA9F2886 /* Build configuration list for PBXNativeTarget "LXShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F093AD6BC5586CAD718BCD80F80827C /* Debug */,
+				1C59B5D1D87A0BD1C48E509C5357241D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
