@@ -75,7 +75,6 @@
 		B8E83096D5E7592FCA6E056FC072552A /* UIColor+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+LX.h"; path = "LXShare/Classes/UIColor+LX.h"; sourceTree = "<group>"; };
 		BDF7DC768D5D69E2AC78E17E2F6DEFD3 /* NSDictionary+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+LX.h"; path = "LXShare/Classes/NSDictionary+LX.h"; sourceTree = "<group>"; };
 		C3D9D774F76F338FF974AE461103E515 /* UIAlertController+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+LX.m"; path = "LXShare/Classes/UIAlertController+LX.m"; sourceTree = "<group>"; };
-		C6AD452F24C837A7001FD2EE /* LXConfigHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXConfigHeader.h; sourceTree = "<group>"; };
 		CA4C10113DE7E24DE1DEE2483A780B45 /* LXShare.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LXShare.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D684A978BD9E10B7BE52FA8FB1742BD9 /* Pods-LXShare_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXShare_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D833223D8D33CEE8D71CA321BE6CEE12 /* NSDecimalNumber+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDecimalNumber+LX.m"; path = "LXShare/Classes/NSDecimalNumber+LX.m"; sourceTree = "<group>"; };
@@ -110,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				DF48A559DBCD084BB7694F08902B7C85 /* LXMangerHeader.h */,
-				C6AD452F24C837A7001FD2EE /* LXConfigHeader.h */,
 				36F4A10B1B8F42EE9DDAA9B3AF9C0C47 /* LXToolManger.h */,
 				E3A19CA76B1F4995F42FC2111A906873 /* LXToolManger.m */,
 				5EFA439EA879ED715641495F9E48A3AB /* NSArray+LX.h */,
