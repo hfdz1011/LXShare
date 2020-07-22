@@ -15,7 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// UserDefault存储
 /// @param value 需要保存的值
 /// @param key 存储对应的Key值
-+ (void)lx_saveUserDefaultsWithValue:(NSString *)value forKey:(NSString *) key;
++ (void)lx_saveUserDefaultsWithValue:(NSString *)value
+                              forKey:(NSString *) key;
 
 /// UserDefault 移除
 /// @param key 根据Key移除对应的存储值
@@ -55,7 +56,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param locations 渐变节点位置 0～1
 /// @param spoint 开始点位置
 /// @param epoint 结束点位置
-+ (CAGradientLayer *)lx_backGradientLayerFrame:(CGRect)frame withColorArray:(NSArray *)colors withLocations:(NSArray *)locations withStartPoint:(CGPoint )spoint withEndPoint:(CGPoint) epoint;
++ (CAGradientLayer *)lx_backGradientLayerFrame:(CGRect)frame
+                                withColorArray:(NSArray *)colors
+                                 withLocations:(NSArray *)locations
+                                withStartPoint:(CGPoint )spoint
+                                  withEndPoint:(CGPoint) epoint;
 
 /// 返回APP本地的版本号
 + (NSString *)lx_localVersion;
@@ -63,7 +68,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 检查是否更新APP
 /// @param localVersion 本地版本
 /// @param storeVersion 服务器/App Store版本
-+ (BOOL)lx_checkUpdateAppLocakVersion:(NSString *)localVersion withAppStoreVersion:(NSString *)storeVersion;
++ (BOOL)lx_checkUpdateAppLocakVersion:(NSString *)localVersion
+                  withAppStoreVersion:(NSString *)storeVersion;
 
 @end
 
