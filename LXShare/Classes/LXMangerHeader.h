@@ -18,4 +18,32 @@
 #import "UITextField+LX.h"
 
 
+//======================config=================
+
+#define K_Font_Regular   @"PingFangSC-Regular"
+#define K_Font_Medium    @"PingFangSC-Medium"
+#define K_Font_Light     @"PingFangSC-Light"
+#define K_Font_Semibold  @"PingFangSC-Semibold"
+
+#define KscrendWidth             [UIScreen mainScreen].bounds.size.width
+#define KscrendHeight            [UIScreen mainScreen].bounds.size.height
+
+#define KRealyHeight(value)    ((value) * [UIScreen mainScreen].bounds.size.width)/375
+
+#define KStringIsEmpty(str)                ([str isKindOfClass:[NSNull class]] || [str isEqual: @"(null)"] || [str isEqual: @"<null>"] || [str isEqual: [NSNull null]] || str == nil || [str length] < 1 ? YES : NO )
+
+//是否是iPhone X
+#define KDEVICE_IS_IPHONE_X        ([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896)
+//状态栏、导航栏、标签栏高度
+#define KHeight_StatusBar         [[UIApplication sharedApplication] statusBarFrame].size.height
+
+#define KHeight_NavBar                      44.f
+
+#define KNavigationBarHeight (KHeight_StatusBar + KHeight_NavBar)
+
+#define KTabbarHeight                    (KDEVICE_IS_IPHONE_X ? 83.0f:49.0f)
+
+#define KTabbarSafeBottomMargin          (KDEVICE_IS_IPHONE_X ? 34.0f:0.0f)
+
+
 #endif /* LXMangerHeader_h */

@@ -17,7 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param place 虚拟文字的文案
 /// @param color 颜色
 /// @param font 字体
-+ (UITextField *)lx_setTextFiled:(UITextField *)filed withPlace:(NSString *)place withPlaceColor:(UIColor *)color withFont:(UIFont *)font;
++ (UITextField *)lx_setTextFiled:(UITextField *)filed
+                       withPlace:(NSString *)place
+                  withPlaceColor:(UIColor *)color
+                        withFont:(UIFont *)font;
 @end
 
 NS_ASSUME_NONNULL_END

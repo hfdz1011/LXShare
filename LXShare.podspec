@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
   s.summary          = '工具集合'
 
   s.description      = <<-DESC
-
    
                          简介：LXShare是集合日常开发所需的工具集合
                     

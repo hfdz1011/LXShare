@@ -11,14 +11,12 @@
 @implementation LXToolManger
 
 + (void)lx_saveUserDefaultsWithValue:(NSString *)value forKey:(NSString *) key
-
 {
     [[NSUserDefaults standardUserDefaults] setValue:value forKey:key];
     [[NSUserDefaults standardUserDefaults]synchronize];
 }
 
 + (void)lx_reMoveUserDefaultsForKey:(NSString *)key
-
 {
     
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:key];
@@ -26,13 +24,11 @@
 }
 
 + (NSString *)lx_getUserDefaultsValueForKey:(NSString *)key
-
 {
     return [NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:key]];
 }
 
 + (NSString *)lx_hidenCenterPhoneNumber:(NSString *)phoneString
-
 {
     NSString *phoneNew = [[NSString alloc] init];
     
@@ -172,7 +168,8 @@
     
 }
 
-+ (NSDictionary *)lx_dictoryFormJsonString:(NSString *)jsonString{
++ (NSDictionary *)lx_dictoryFormJsonString:(NSString *)jsonString
+{
     
     if (jsonString == nil) {
         return nil;

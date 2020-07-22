@@ -47,7 +47,6 @@
     
     UITextField *textT = [[UITextField alloc]initWithFrame:CGRectMake(50, 240, 100, 40)];
     textT.borderStyle = UITextBorderStyleRoundedRect;
-    textT.placeholder = @"哈哈哈";
     textT = [UITextField lx_setTextFiled:textT withPlace:@"哈哈哈" withPlaceColor:[UIColor redColor] withFont:[UIFont systemFontOfSize:18]];
     [self.view addSubview:textT];
     
