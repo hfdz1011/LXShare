@@ -16,7 +16,8 @@
 #import "UIAlertController+LX.h"
 #import "UIColor+LX.h"
 #import "UITextField+LX.h"
-
+#import "UIButton+LX.h"
+#import "UILabel+LX.h"
 
 //======================config=================
 

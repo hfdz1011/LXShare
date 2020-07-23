@@ -466,11 +466,13 @@
 			baseConfigurationReference = BF580DEE6748B92763D8B87C /* Pods-LXShare_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1.1.1;
 				DEVELOPMENT_TEAM = G8JRR637WX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LXShare/LXShare-Prefix.pch";
 				INFOPLIST_FILE = "LXShare/LXShare-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MARKETING_VERSION = 1.1.1;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -485,11 +487,13 @@
 			baseConfigurationReference = 7FDEBB632CFF2A8CFFAC1EB0 /* Pods-LXShare_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1.1.1;
 				DEVELOPMENT_TEAM = G8JRR637WX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LXShare/LXShare-Prefix.pch";
 				INFOPLIST_FILE = "LXShare/LXShare-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MARKETING_VERSION = 1.1.1;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -48,7 +48,20 @@
     UITextField *textT = [[UITextField alloc]initWithFrame:CGRectMake(50, 240, 100, 40)];
     textT.borderStyle = UITextBorderStyleRoundedRect;
     textT = [UITextField lx_setTextFiled:textT withPlace:@"哈哈哈" withPlaceColor:[UIColor redColor] withFont:[UIFont systemFontOfSize:18]];
+    
     [self.view addSubview:textT];
+    
+    
+    UIButton *button = [UIButton lx_initButtonWithTitle:@"哈哈哈322323" titleColor:[UIColor blackColor] titleFont:[UIFont systemFontOfSize:13] target:self action:@selector(buttonAction:)];
+    button.frame = CGRectMake(50, 300, 100, 40);
+    button.backgroundColor = [UIColor redColor];
+    [self.view addSubview:button];
+    
+    
+    
+}
+
+- (void)buttonAction:(UIButton *)sender{
     
     
 }

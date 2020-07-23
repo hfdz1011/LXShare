@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "LXMacros.h"
 #import "LXMangerHeader.h"
 #import "LXToolManger.h"
 #import "NSArray+LX.h"
@@ -17,7 +18,10 @@
 #import "NSDictionary+LX.h"
 #import "NSMutableAttributedString+LX.h"
 #import "UIAlertController+LX.h"
+#import "UIButton+LX.h"
 #import "UIColor+LX.h"
+#import "UILabel+LX.h"
+#import "UITableView+LX.h"
 #import "UITextField+LX.h"
 
 FOUNDATION_EXPORT double LXShareVersionNumber;
