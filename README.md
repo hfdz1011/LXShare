@@ -27,6 +27,13 @@
  pod 'LXShare', :git => 'https://github.com/hfdz1011/LXShare.git'
 ```
 
+## 使用
+
+
+```ruby
+ #import "LXMangerHeader.h"
+```
+
 ## 作者
 
 会飞的猪, 18576722857@163.com

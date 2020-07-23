@@ -7,35 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0245E878F4DB47949C53EF7758BBC99E /* NSDecimalNumber+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4CC295DCE5F2C6E3B270E8A0054458 /* NSDecimalNumber+LX.m */; };
-		03495B60857259E5EE1F8BCE91DF0275 /* NSDictionary+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DE538155EFDB0FCF7EE274429753DB /* NSDictionary+LX.m */; };
-		0BDADFA1A4A728710CE2BBCAF2FF0982 /* UIButton+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 5471B178C62567226030B8FB80FAF63E /* UIButton+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F4ED86411131573A6409E4578D5FF68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		1B79C0C18D42DFDE9A4C8CF53F18CB14 /* LXShare-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 227D6DD46CCF0F877E6155CAE329AF0C /* LXShare-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C580CE9DFC4F1097B11CD55484D6887 /* NSDictionary+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E76962332E7CF0EC45C12DEDEA17BD /* NSDictionary+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AE70BAD7FF2A2AB741A82C113461E72 /* UITableView+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = FD684958045868C9FBA767D8D5681C11 /* UITableView+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E14D6D2FCEF5C91487FE8A9141A2CEF /* UIColor+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDCC460DC1C5C5A5E5880CADF84E128 /* UIColor+LX.m */; };
+		1E0CA2685850F9269C29B16661A5C7FF /* NSDictionary+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 77368F16C87B2005C51F40655ED8061B /* NSDictionary+LX.m */; };
+		2E33054EF2B498634451715B69A3C1BC /* UILabel+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 438F8149FA1C40010311B1A6FA39C78B /* UILabel+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3ED36AEA54525E1711E839571D0B38E9 /* UIColor+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 3512AD2578DBFE00A046788D0296F479 /* UIColor+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EF9249A6365E200DC4AD62221BB5A8D /* UIButton+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 953A3EA4A10B3996B45EDF15032180D2 /* UIButton+LX.m */; };
 		3FFCB0D7C5513949678252E81652C4F6 /* Pods-LXShare_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FD775833BEF7C29E03C48D0AE378BAB /* Pods-LXShare_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		457582AA57B30EF52D3DD02694192DE2 /* NSDecimalNumber+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = E05B8E9925A5C6488DA71923093D2B32 /* NSDecimalNumber+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A87D9DB3DD677626EF7D6BA60CBE34 /* LXShare-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FFFE30DFCAE18025FC65FD494978A01 /* LXShare-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		535C69BC789C591BCF63C1AB382AC979 /* LXToolManger.h in Headers */ = {isa = PBXBuildFile; fileRef = BE68F80991B2A1E016F7CACD49507C8B /* LXToolManger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		564FCEDBB963F44A8BF039282DC6C3B6 /* Pods-LXShare_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C45FF8BD3CC39FAFB0BA319B0F2DBC /* Pods-LXShare_Example-dummy.m */; };
-		58B59872AA8F26DAF26AE03EB0D01AC1 /* UIColor+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 027786F89767E872AFFE159442ECEA3C /* UIColor+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F8FDCA14965CBD4A5F0E8E3C53F6E9D /* UIAlertController+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9879B3835764338C060209444F6CBF /* UIAlertController+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6609D4493E19DC1E0E3C951FD6018422 /* UIColor+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DACB40746B697FAF605802944E5DFFE /* UIColor+LX.m */; };
-		6D06E6C5A1F94991CACEED0B4DCC3D0C /* NSMutableAttributedString+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 6852A853023ED5784843586B5B5C294D /* NSMutableAttributedString+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ACD7886F0D0824C99C6A974FE01D59B /* LXMangerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BF192AC583BA528129E0D0BFBC73CE9 /* LXMangerHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		607B21FA01A5BA7108278FB4986A62CD /* NSArray+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0EFEBAB7A03DA0B3DE1166919ABF73 /* NSArray+LX.m */; };
 		72BA640225FCEDF23DB82E6964791B93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		751ADE498AF61E94488B1789DC410578 /* LXToolManger.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DAFD7AD6D973DB6D5165043C22BAF6 /* LXToolManger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		766FF1C7C5B977693869017887EA5EB8 /* UITextField+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD3466F72B28F1844E1AF04173485C9 /* UITextField+LX.m */; };
-		76D5AFD29603F33E480D93DDE4A343F2 /* UILabel+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FB8D02D86B22330E1CF86EB7EF906BB /* UILabel+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E359D45472C802066E39422576E8DB5 /* UITableView+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 962C97FE5D18094D6E578FAB3F0312B5 /* UITableView+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C7467C3BA0E6F03F0D9D4E11734D55E /* UIAlertController+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DC9C74EED1AB49CC23499A59FBC0CF /* UIAlertController+LX.m */; };
-		9D1085A687A055FF7C9A8F355B2E184E /* LXMangerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 21397E0240767F8D90DB922AB76B039B /* LXMangerHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A16C90CC1A4804B4C3649E74206C2F7E /* LXToolManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C42CB665A4BD693CDB8622649A6A01 /* LXToolManger.m */; };
-		B0012AF466F0698D916CB0535E73B3A1 /* NSArray+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = ACE2D14AA9C21FFF96980EC90BBFFAD2 /* NSArray+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B084E1B8F0E7E67BB08934D25D0A51F2 /* LXShare-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E207E210CF2C3C62AD862FE4891F94 /* LXShare-dummy.m */; };
-		BBCB1D3D13E50C475279A1B4098F1956 /* NSMutableAttributedString+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C75B2B0405CA533BC719DF7E8E7B0DF /* NSMutableAttributedString+LX.m */; };
-		BF5DC6377F8DC82406840412FD3A3D8D /* UITableView+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 3128AD36AB84286D266124029590A7CA /* UITableView+LX.m */; };
-		D09C8760B1087FEE89DB6DE2FC37E350 /* NSArray+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FB034E939CAE66EECE9390C684234E /* NSArray+LX.m */; };
-		D1A33985877DE6B10B26C37403E55735 /* UIButton+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7BA711486B954B5B385D3D5D4CEC53 /* UIButton+LX.m */; };
-		E4B646A8D1D9AD8D77B64DAEEF5FB452 /* UILabel+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7E1D933736D628DBC9A7EB26B51D54 /* UILabel+LX.m */; };
-		E6B68D8136D1E870658D8EAB298DE6A3 /* UITextField+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 973CE763E2E937EB5B7BCCBC51ADDD97 /* UITextField+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7590BC37EFD19C872E75DE28181D4FDF /* UIAlertController+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = A932359DAF88E75548DDB0BD51973CE7 /* UIAlertController+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8154BFDB708CA9346A16B278B49BD246 /* UILabel+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A6D1E50725BBC5193CFC82E335D058 /* UILabel+LX.m */; };
+		82DE6328B6DD06297649D1D0FD8E3A01 /* UIAlertController+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B5C16CE85AC559172AF06CB0293AF /* UIAlertController+LX.m */; };
+		858767F73DA7BA9FFFB49CCC1F8D8E44 /* UIButton+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD9B93F4DFA228B8964D5B1D296ED5B /* UIButton+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91DF33C84034A72DBBECBFA028FA6189 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A4FB55A89FF568FC5AC520DDC9B7AF0E /* NSMutableAttributedString+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F2831F90E89618F135E7609A909B5F /* NSMutableAttributedString+LX.m */; };
+		ABEAA26BC9AD4C789772A62B9BE4C956 /* UITextField+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = F213BBF1A083423CD6E9C1595601E677 /* UITextField+LX.m */; };
+		B1B8C320D3EDED5E5780A30F10C2151F /* LXToolManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BEA20EF0953671B0E3BEF33CFE0BA0 /* LXToolManger.m */; };
+		B1C1C23B9CA888530945377529A19DD3 /* NSDecimalNumber+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 59FE32AD2CB9847FD423AF4FCEE156BC /* NSDecimalNumber+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B431D5A70EA21E9296BEF5461AC9BC6F /* NSDictionary+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F94D334A3D63E038BF8FAB9B17A0444 /* NSDictionary+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2EF142C5E61E0C5EE5E878BDB3279C8 /* NSArray+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC48C9AE96CDB7130D5FE0435CAFFCF /* NSArray+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D762719CFDD766CCE3C0E861D6269712 /* LXShare-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C86B8E0C7F3B1A82CB7CF6649AA349EE /* LXShare-dummy.m */; };
+		E4744892E570EE3ADF23CB545F92D8F3 /* UITextField+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 54EC65830FC27148288C0CCA05BA6F81 /* UITextField+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDD2C93D87A7987F63A934F75D79799F /* UITableView+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B17028AB99A9BD5DC2E9DABB5599DFE /* UITableView+LX.m */; };
+		F566C0025D6F88A3BE59810FE7D01A97 /* NSMutableAttributedString+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 4403BF0FEAD24899759F2D807C2E31F7 /* NSMutableAttributedString+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE0D68F9228E72746C6C5B6C9F74AA67 /* NSDecimalNumber+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BC3E1A079EB5BD5E2559B9EA75DFDF /* NSDecimalNumber+LX.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,55 +49,63 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		027786F89767E872AFFE159442ECEA3C /* UIColor+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+LX.h"; path = "LXShare/Classes/UIColor+LX.h"; sourceTree = "<group>"; };
-		030E6A17BF962778A3B88B86ACEF39DD /* LXShare.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LXShare.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0B2F7905A93F7DC76F197B500EB2ADDC /* Pods-LXShare_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LXShare_Example-frameworks.sh"; sourceTree = "<group>"; };
-		21397E0240767F8D90DB922AB76B039B /* LXMangerHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LXMangerHeader.h; path = LXShare/Classes/LXMangerHeader.h; sourceTree = "<group>"; };
-		227D6DD46CCF0F877E6155CAE329AF0C /* LXShare-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXShare-umbrella.h"; sourceTree = "<group>"; };
-		22C42CB665A4BD693CDB8622649A6A01 /* LXToolManger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LXToolManger.m; path = LXShare/Classes/LXToolManger.m; sourceTree = "<group>"; };
+		0CD9B93F4DFA228B8964D5B1D296ED5B /* UIButton+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+LX.h"; path = "LXShare/Classes/UIButton+LX.h"; sourceTree = "<group>"; };
+		0D625C9218AC53EBE4FC5AFE1BA477B3 /* LXShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LXShare.debug.xcconfig; sourceTree = "<group>"; };
 		27C45FF8BD3CC39FAFB0BA319B0F2DBC /* Pods-LXShare_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LXShare_Example-dummy.m"; sourceTree = "<group>"; };
-		2AC58A417323DBD41AA887DF75B66EA6 /* LXShare-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXShare-prefix.pch"; sourceTree = "<group>"; };
 		2B5DA98C7ABB730EC2DDB964CBBE4DDB /* Pods-LXShare_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXShare_Example-Info.plist"; sourceTree = "<group>"; };
-		2DACB40746B697FAF605802944E5DFFE /* UIColor+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+LX.m"; path = "LXShare/Classes/UIColor+LX.m"; sourceTree = "<group>"; };
-		3128AD36AB84286D266124029590A7CA /* UITableView+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+LX.m"; path = "LXShare/Classes/UITableView+LX.m"; sourceTree = "<group>"; };
+		2F94D334A3D63E038BF8FAB9B17A0444 /* NSDictionary+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+LX.h"; path = "LXShare/Classes/NSDictionary+LX.h"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3C75B2B0405CA533BC719DF7E8E7B0DF /* NSMutableAttributedString+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+LX.m"; path = "LXShare/Classes/NSMutableAttributedString+LX.m"; sourceTree = "<group>"; };
-		5471B178C62567226030B8FB80FAF63E /* UIButton+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+LX.h"; path = "LXShare/Classes/UIButton+LX.h"; sourceTree = "<group>"; };
-		5F7BA711486B954B5B385D3D5D4CEC53 /* UIButton+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+LX.m"; path = "LXShare/Classes/UIButton+LX.m"; sourceTree = "<group>"; };
-		5FB8D02D86B22330E1CF86EB7EF906BB /* UILabel+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+LX.h"; path = "LXShare/Classes/UILabel+LX.h"; sourceTree = "<group>"; };
-		639C2CD3DFECC3E098508ABDBD16E84E /* LXShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LXShare.debug.xcconfig; sourceTree = "<group>"; };
-		6852A853023ED5784843586B5B5C294D /* NSMutableAttributedString+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+LX.h"; path = "LXShare/Classes/NSMutableAttributedString+LX.h"; sourceTree = "<group>"; };
-		69DE538155EFDB0FCF7EE274429753DB /* NSDictionary+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+LX.m"; path = "LXShare/Classes/NSDictionary+LX.m"; sourceTree = "<group>"; };
-		769390D5AD85C388631BC8049F6B6374 /* LXShare-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LXShare-Info.plist"; sourceTree = "<group>"; };
+		3512AD2578DBFE00A046788D0296F479 /* UIColor+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+LX.h"; path = "LXShare/Classes/UIColor+LX.h"; sourceTree = "<group>"; };
+		438F8149FA1C40010311B1A6FA39C78B /* UILabel+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+LX.h"; path = "LXShare/Classes/UILabel+LX.h"; sourceTree = "<group>"; };
+		4403BF0FEAD24899759F2D807C2E31F7 /* NSMutableAttributedString+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+LX.h"; path = "LXShare/Classes/NSMutableAttributedString+LX.h"; sourceTree = "<group>"; };
+		45BC3E1A079EB5BD5E2559B9EA75DFDF /* NSDecimalNumber+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDecimalNumber+LX.m"; path = "LXShare/Classes/NSDecimalNumber+LX.m"; sourceTree = "<group>"; };
+		4A5B5C16CE85AC559172AF06CB0293AF /* UIAlertController+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+LX.m"; path = "LXShare/Classes/UIAlertController+LX.m"; sourceTree = "<group>"; };
+		4FFFE30DFCAE18025FC65FD494978A01 /* LXShare-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXShare-umbrella.h"; sourceTree = "<group>"; };
+		54EC65830FC27148288C0CCA05BA6F81 /* UITextField+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+LX.h"; path = "LXShare/Classes/UITextField+LX.h"; sourceTree = "<group>"; };
+		5679D928F6AB580C8E0B5BDB3B0F84F5 /* LXShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LXShare.release.xcconfig; sourceTree = "<group>"; };
+		59FE32AD2CB9847FD423AF4FCEE156BC /* NSDecimalNumber+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDecimalNumber+LX.h"; path = "LXShare/Classes/NSDecimalNumber+LX.h"; sourceTree = "<group>"; };
+		5E0EFEBAB7A03DA0B3DE1166919ABF73 /* NSArray+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+LX.m"; path = "LXShare/Classes/NSArray+LX.m"; sourceTree = "<group>"; };
+		5FC48C9AE96CDB7130D5FE0435CAFFCF /* NSArray+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+LX.h"; path = "LXShare/Classes/NSArray+LX.h"; sourceTree = "<group>"; };
+		60BFAA2A5F29C0EBA9BF0688CC87702E /* LXShare-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXShare-prefix.pch"; sourceTree = "<group>"; };
+		74F2831F90E89618F135E7609A909B5F /* NSMutableAttributedString+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+LX.m"; path = "LXShare/Classes/NSMutableAttributedString+LX.m"; sourceTree = "<group>"; };
+		77368F16C87B2005C51F40655ED8061B /* NSDictionary+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+LX.m"; path = "LXShare/Classes/NSDictionary+LX.m"; sourceTree = "<group>"; };
+		7BF192AC583BA528129E0D0BFBC73CE9 /* LXMangerHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LXMangerHeader.h; path = LXShare/Classes/LXMangerHeader.h; sourceTree = "<group>"; };
 		7FD775833BEF7C29E03C48D0AE378BAB /* Pods-LXShare_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LXShare_Example-umbrella.h"; sourceTree = "<group>"; };
-		80FB034E939CAE66EECE9390C684234E /* NSArray+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+LX.m"; path = "LXShare/Classes/NSArray+LX.m"; sourceTree = "<group>"; };
 		8495B033889FEFBFE53597BB9EB00477 /* Pods-LXShare_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LXShare_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		860CDF4659BDAA4C8DCE2528CED25D15 /* Pods-LXShare_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LXShare_Example.modulemap"; sourceTree = "<group>"; };
-		89BD9E39B1FA9995C6DD58E446777E44 /* LXShare.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LXShare.modulemap; sourceTree = "<group>"; };
 		8CAA56D690C5A73B0630003A010B49CB /* Pods-LXShare_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXShare_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8F7E1D933736D628DBC9A7EB26B51D54 /* UILabel+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+LX.m"; path = "LXShare/Classes/UILabel+LX.m"; sourceTree = "<group>"; };
-		8F9879B3835764338C060209444F6CBF /* UIAlertController+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+LX.h"; path = "LXShare/Classes/UIAlertController+LX.h"; sourceTree = "<group>"; };
-		8FD3466F72B28F1844E1AF04173485C9 /* UITextField+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+LX.m"; path = "LXShare/Classes/UITextField+LX.m"; sourceTree = "<group>"; };
-		95EAE89C35AF69E6DC7F62831078B932 /* LXShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LXShare.release.xcconfig; sourceTree = "<group>"; };
-		962C97FE5D18094D6E578FAB3F0312B5 /* UITableView+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+LX.h"; path = "LXShare/Classes/UITableView+LX.h"; sourceTree = "<group>"; };
-		973CE763E2E937EB5B7BCCBC51ADDD97 /* UITextField+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+LX.h"; path = "LXShare/Classes/UITextField+LX.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		90BEA20EF0953671B0E3BEF33CFE0BA0 /* LXToolManger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LXToolManger.m; path = LXShare/Classes/LXToolManger.m; sourceTree = "<group>"; };
+		953A3EA4A10B3996B45EDF15032180D2 /* UIButton+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+LX.m"; path = "LXShare/Classes/UIButton+LX.m"; sourceTree = "<group>"; };
+		9B17028AB99A9BD5DC2E9DABB5599DFE /* UITableView+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+LX.m"; path = "LXShare/Classes/UITableView+LX.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E8273C75CD07985CC3109608E63C87F /* Pods-LXShare_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXShare_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		ACE2D14AA9C21FFF96980EC90BBFFAD2 /* NSArray+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+LX.h"; path = "LXShare/Classes/NSArray+LX.h"; sourceTree = "<group>"; };
-		BF8B1BFE1EBDA15725145050727B2843 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		C5E207E210CF2C3C62AD862FE4891F94 /* LXShare-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LXShare-dummy.m"; sourceTree = "<group>"; };
-		C7E76962332E7CF0EC45C12DEDEA17BD /* NSDictionary+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+LX.h"; path = "LXShare/Classes/NSDictionary+LX.h"; sourceTree = "<group>"; };
+		A385A8696F45C73B68FD686688F4AEF4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A6374D55BFA394928F65C0AD6B7FE329 /* LXShare.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LXShare.modulemap; sourceTree = "<group>"; };
+		A932359DAF88E75548DDB0BD51973CE7 /* UIAlertController+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+LX.h"; path = "LXShare/Classes/UIAlertController+LX.h"; sourceTree = "<group>"; };
+		B0D4F98C16CEA0AF3DF2EEE415C6989C /* LXShare-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LXShare-Info.plist"; sourceTree = "<group>"; };
+		B68F3B04AE0556B3E2882A1BC7C0C533 /* LXShare.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LXShare.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BCDCC460DC1C5C5A5E5880CADF84E128 /* UIColor+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+LX.m"; path = "LXShare/Classes/UIColor+LX.m"; sourceTree = "<group>"; };
+		BE68F80991B2A1E016F7CACD49507C8B /* LXToolManger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LXToolManger.h; path = LXShare/Classes/LXToolManger.h; sourceTree = "<group>"; };
+		C0A6D1E50725BBC5193CFC82E335D058 /* UILabel+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+LX.m"; path = "LXShare/Classes/UILabel+LX.m"; sourceTree = "<group>"; };
+		C86B8E0C7F3B1A82CB7CF6649AA349EE /* LXShare-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LXShare-dummy.m"; sourceTree = "<group>"; };
 		D684A978BD9E10B7BE52FA8FB1742BD9 /* Pods-LXShare_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXShare_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D83B8249A37740CD74C12C3DDAEF7C44 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		DA4CC295DCE5F2C6E3B270E8A0054458 /* NSDecimalNumber+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDecimalNumber+LX.m"; path = "LXShare/Classes/NSDecimalNumber+LX.m"; sourceTree = "<group>"; };
-		DEEFD9EBF32892B12C7156C5641177E3 /* LXShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LXShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E03D85CB0CDC391E14224B2B6BDF99FF /* Pods_LXShare_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXShare_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E05B8E9925A5C6488DA71923093D2B32 /* NSDecimalNumber+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDecimalNumber+LX.h"; path = "LXShare/Classes/NSDecimalNumber+LX.h"; sourceTree = "<group>"; };
-		E2DAFD7AD6D973DB6D5165043C22BAF6 /* LXToolManger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LXToolManger.h; path = LXShare/Classes/LXToolManger.h; sourceTree = "<group>"; };
-		E7DC9C74EED1AB49CC23499A59FBC0CF /* UIAlertController+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+LX.m"; path = "LXShare/Classes/UIAlertController+LX.m"; sourceTree = "<group>"; };
+		DEEFD9EBF32892B12C7156C5641177E3 /* LXShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LXShare.framework; path = LXShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E03D85CB0CDC391E14224B2B6BDF99FF /* Pods_LXShare_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LXShare_Example.framework; path = "Pods-LXShare_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F213BBF1A083423CD6E9C1595601E677 /* UITextField+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+LX.m"; path = "LXShare/Classes/UITextField+LX.m"; sourceTree = "<group>"; };
+		F29809CE5369F20E1DBC670CB991F3DD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		FD684958045868C9FBA767D8D5681C11 /* UITableView+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+LX.h"; path = "LXShare/Classes/UITableView+LX.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7CAA30A47693D6916CB688150CFD4721 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91DF33C84034A72DBBECBFA028FA6189 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D22C70D6FC1DF93E928507693747CE41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -106,25 +114,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D56AD63FAE238FE9624F8721991A2DEF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0F4ED86411131573A6409E4578D5FF68 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08A1F24AD209ACA827519C98AD868E0F /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CC360A4779F2C6EBC0258CFEAA021C83 /* LXShare */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		3C25EFA46ED9134419B445CCDAB338D3 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,19 +125,45 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		93038903256C1EE43CD1EC76E315FE6A /* Support Files */ = {
+		87B6AB2A2B299FC3A42BFFEF81D2C998 /* LXShare */ = {
 			isa = PBXGroup;
 			children = (
-				89BD9E39B1FA9995C6DD58E446777E44 /* LXShare.modulemap */,
-				C5E207E210CF2C3C62AD862FE4891F94 /* LXShare-dummy.m */,
-				769390D5AD85C388631BC8049F6B6374 /* LXShare-Info.plist */,
-				2AC58A417323DBD41AA887DF75B66EA6 /* LXShare-prefix.pch */,
-				227D6DD46CCF0F877E6155CAE329AF0C /* LXShare-umbrella.h */,
-				639C2CD3DFECC3E098508ABDBD16E84E /* LXShare.debug.xcconfig */,
-				95EAE89C35AF69E6DC7F62831078B932 /* LXShare.release.xcconfig */,
+				7BF192AC583BA528129E0D0BFBC73CE9 /* LXMangerHeader.h */,
+				BE68F80991B2A1E016F7CACD49507C8B /* LXToolManger.h */,
+				90BEA20EF0953671B0E3BEF33CFE0BA0 /* LXToolManger.m */,
+				5FC48C9AE96CDB7130D5FE0435CAFFCF /* NSArray+LX.h */,
+				5E0EFEBAB7A03DA0B3DE1166919ABF73 /* NSArray+LX.m */,
+				59FE32AD2CB9847FD423AF4FCEE156BC /* NSDecimalNumber+LX.h */,
+				45BC3E1A079EB5BD5E2559B9EA75DFDF /* NSDecimalNumber+LX.m */,
+				2F94D334A3D63E038BF8FAB9B17A0444 /* NSDictionary+LX.h */,
+				77368F16C87B2005C51F40655ED8061B /* NSDictionary+LX.m */,
+				4403BF0FEAD24899759F2D807C2E31F7 /* NSMutableAttributedString+LX.h */,
+				74F2831F90E89618F135E7609A909B5F /* NSMutableAttributedString+LX.m */,
+				A932359DAF88E75548DDB0BD51973CE7 /* UIAlertController+LX.h */,
+				4A5B5C16CE85AC559172AF06CB0293AF /* UIAlertController+LX.m */,
+				0CD9B93F4DFA228B8964D5B1D296ED5B /* UIButton+LX.h */,
+				953A3EA4A10B3996B45EDF15032180D2 /* UIButton+LX.m */,
+				3512AD2578DBFE00A046788D0296F479 /* UIColor+LX.h */,
+				BCDCC460DC1C5C5A5E5880CADF84E128 /* UIColor+LX.m */,
+				438F8149FA1C40010311B1A6FA39C78B /* UILabel+LX.h */,
+				C0A6D1E50725BBC5193CFC82E335D058 /* UILabel+LX.m */,
+				FD684958045868C9FBA767D8D5681C11 /* UITableView+LX.h */,
+				9B17028AB99A9BD5DC2E9DABB5599DFE /* UITableView+LX.m */,
+				54EC65830FC27148288C0CCA05BA6F81 /* UITextField+LX.h */,
+				F213BBF1A083423CD6E9C1595601E677 /* UITextField+LX.m */,
+				FE0F435B60FA765653222DF66A009C98 /* Pod */,
+				DE73DDB1637B6B77ED1E047F58341167 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LXShare";
+			name = LXShare;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		9964DD5566DBE04DC2061A25954A85F2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87B6AB2A2B299FC3A42BFFEF81D2C998 /* LXShare */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -156,44 +174,11 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		CC360A4779F2C6EBC0258CFEAA021C83 /* LXShare */ = {
-			isa = PBXGroup;
-			children = (
-				21397E0240767F8D90DB922AB76B039B /* LXMangerHeader.h */,
-				E2DAFD7AD6D973DB6D5165043C22BAF6 /* LXToolManger.h */,
-				22C42CB665A4BD693CDB8622649A6A01 /* LXToolManger.m */,
-				ACE2D14AA9C21FFF96980EC90BBFFAD2 /* NSArray+LX.h */,
-				80FB034E939CAE66EECE9390C684234E /* NSArray+LX.m */,
-				E05B8E9925A5C6488DA71923093D2B32 /* NSDecimalNumber+LX.h */,
-				DA4CC295DCE5F2C6E3B270E8A0054458 /* NSDecimalNumber+LX.m */,
-				C7E76962332E7CF0EC45C12DEDEA17BD /* NSDictionary+LX.h */,
-				69DE538155EFDB0FCF7EE274429753DB /* NSDictionary+LX.m */,
-				6852A853023ED5784843586B5B5C294D /* NSMutableAttributedString+LX.h */,
-				3C75B2B0405CA533BC719DF7E8E7B0DF /* NSMutableAttributedString+LX.m */,
-				8F9879B3835764338C060209444F6CBF /* UIAlertController+LX.h */,
-				E7DC9C74EED1AB49CC23499A59FBC0CF /* UIAlertController+LX.m */,
-				5471B178C62567226030B8FB80FAF63E /* UIButton+LX.h */,
-				5F7BA711486B954B5B385D3D5D4CEC53 /* UIButton+LX.m */,
-				027786F89767E872AFFE159442ECEA3C /* UIColor+LX.h */,
-				2DACB40746B697FAF605802944E5DFFE /* UIColor+LX.m */,
-				5FB8D02D86B22330E1CF86EB7EF906BB /* UILabel+LX.h */,
-				8F7E1D933736D628DBC9A7EB26B51D54 /* UILabel+LX.m */,
-				962C97FE5D18094D6E578FAB3F0312B5 /* UITableView+LX.h */,
-				3128AD36AB84286D266124029590A7CA /* UITableView+LX.m */,
-				973CE763E2E937EB5B7BCCBC51ADDD97 /* UITextField+LX.h */,
-				8FD3466F72B28F1844E1AF04173485C9 /* UITextField+LX.m */,
-				D3B395E94EE442CC7C27CF45272FCDE8 /* Pod */,
-				93038903256C1EE43CD1EC76E315FE6A /* Support Files */,
-			);
-			name = LXShare;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				08A1F24AD209ACA827519C98AD868E0F /* Development Pods */,
+				9964DD5566DBE04DC2061A25954A85F2 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				F0FAC60BC904FC19DA4C9259DAA39896 /* Products */,
 				3C25EFA46ED9134419B445CCDAB338D3 /* Targets Support Files */,
@@ -208,14 +193,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D3B395E94EE442CC7C27CF45272FCDE8 /* Pod */ = {
+		DE73DDB1637B6B77ED1E047F58341167 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BF8B1BFE1EBDA15725145050727B2843 /* LICENSE */,
-				030E6A17BF962778A3B88B86ACEF39DD /* LXShare.podspec */,
-				D83B8249A37740CD74C12C3DDAEF7C44 /* README.md */,
+				A6374D55BFA394928F65C0AD6B7FE329 /* LXShare.modulemap */,
+				C86B8E0C7F3B1A82CB7CF6649AA349EE /* LXShare-dummy.m */,
+				B0D4F98C16CEA0AF3DF2EEE415C6989C /* LXShare-Info.plist */,
+				60BFAA2A5F29C0EBA9BF0688CC87702E /* LXShare-prefix.pch */,
+				4FFFE30DFCAE18025FC65FD494978A01 /* LXShare-umbrella.h */,
+				0D625C9218AC53EBE4FC5AFE1BA477B3 /* LXShare.debug.xcconfig */,
+				5679D928F6AB580C8E0B5BDB3B0F84F5 /* LXShare.release.xcconfig */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LXShare";
 			sourceTree = "<group>";
 		};
 		E579AD2DFC148DB8F5C22BF32B5FD32A /* Pods-LXShare_Example */ = {
@@ -244,26 +234,36 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FE0F435B60FA765653222DF66A009C98 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F29809CE5369F20E1DBC670CB991F3DD /* LICENSE */,
+				B68F3B04AE0556B3E2882A1BC7C0C533 /* LXShare.podspec */,
+				A385A8696F45C73B68FD686688F4AEF4 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5BDD767BD67849B84FD75C3814B15844 /* Headers */ = {
+		A875D570934F2F54ECD72E55EC3C3215 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D1085A687A055FF7C9A8F355B2E184E /* LXMangerHeader.h in Headers */,
-				1B79C0C18D42DFDE9A4C8CF53F18CB14 /* LXShare-umbrella.h in Headers */,
-				751ADE498AF61E94488B1789DC410578 /* LXToolManger.h in Headers */,
-				B0012AF466F0698D916CB0535E73B3A1 /* NSArray+LX.h in Headers */,
-				457582AA57B30EF52D3DD02694192DE2 /* NSDecimalNumber+LX.h in Headers */,
-				1C580CE9DFC4F1097B11CD55484D6887 /* NSDictionary+LX.h in Headers */,
-				6D06E6C5A1F94991CACEED0B4DCC3D0C /* NSMutableAttributedString+LX.h in Headers */,
-				5F8FDCA14965CBD4A5F0E8E3C53F6E9D /* UIAlertController+LX.h in Headers */,
-				0BDADFA1A4A728710CE2BBCAF2FF0982 /* UIButton+LX.h in Headers */,
-				58B59872AA8F26DAF26AE03EB0D01AC1 /* UIColor+LX.h in Headers */,
-				76D5AFD29603F33E480D93DDE4A343F2 /* UILabel+LX.h in Headers */,
-				8E359D45472C802066E39422576E8DB5 /* UITableView+LX.h in Headers */,
-				E6B68D8136D1E870658D8EAB298DE6A3 /* UITextField+LX.h in Headers */,
+				5ACD7886F0D0824C99C6A974FE01D59B /* LXMangerHeader.h in Headers */,
+				47A87D9DB3DD677626EF7D6BA60CBE34 /* LXShare-umbrella.h in Headers */,
+				535C69BC789C591BCF63C1AB382AC979 /* LXToolManger.h in Headers */,
+				C2EF142C5E61E0C5EE5E878BDB3279C8 /* NSArray+LX.h in Headers */,
+				B1C1C23B9CA888530945377529A19DD3 /* NSDecimalNumber+LX.h in Headers */,
+				B431D5A70EA21E9296BEF5461AC9BC6F /* NSDictionary+LX.h in Headers */,
+				F566C0025D6F88A3BE59810FE7D01A97 /* NSMutableAttributedString+LX.h in Headers */,
+				7590BC37EFD19C872E75DE28181D4FDF /* UIAlertController+LX.h in Headers */,
+				858767F73DA7BA9FFFB49CCC1F8D8E44 /* UIButton+LX.h in Headers */,
+				3ED36AEA54525E1711E839571D0B38E9 /* UIColor+LX.h in Headers */,
+				2E33054EF2B498634451715B69A3C1BC /* UILabel+LX.h in Headers */,
+				0AE70BAD7FF2A2AB741A82C113461E72 /* UITableView+LX.h in Headers */,
+				E4744892E570EE3ADF23CB545F92D8F3 /* UITextField+LX.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,12 +299,12 @@
 		};
 		508EE333DA91CDAC2D0E27185C74D7F9 /* LXShare */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8FD7C32F6188AAEF9AB8785A84492D6 /* Build configuration list for PBXNativeTarget "LXShare" */;
+			buildConfigurationList = 7BBF0757D56A44C753CF354CB40DA6C9 /* Build configuration list for PBXNativeTarget "LXShare" */;
 			buildPhases = (
-				5BDD767BD67849B84FD75C3814B15844 /* Headers */,
-				9DA204B4C1D30A142BFB4C31C73EEE22 /* Sources */,
-				D56AD63FAE238FE9624F8721991A2DEF /* Frameworks */,
-				93AA86AD38590AD4BCDAFE52651EB788 /* Resources */,
+				A875D570934F2F54ECD72E55EC3C3215 /* Headers */,
+				711689125A4CE443CBBDAD6AE275D332 /* Sources */,
+				7CAA30A47693D6916CB688150CFD4721 /* Frameworks */,
+				5918BB987173DDD5747578797D09618E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -344,7 +344,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		93AA86AD38590AD4BCDAFE52651EB788 /* Resources */ = {
+		5918BB987173DDD5747578797D09618E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -361,22 +361,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9DA204B4C1D30A142BFB4C31C73EEE22 /* Sources */ = {
+		711689125A4CE443CBBDAD6AE275D332 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B084E1B8F0E7E67BB08934D25D0A51F2 /* LXShare-dummy.m in Sources */,
-				A16C90CC1A4804B4C3649E74206C2F7E /* LXToolManger.m in Sources */,
-				D09C8760B1087FEE89DB6DE2FC37E350 /* NSArray+LX.m in Sources */,
-				0245E878F4DB47949C53EF7758BBC99E /* NSDecimalNumber+LX.m in Sources */,
-				03495B60857259E5EE1F8BCE91DF0275 /* NSDictionary+LX.m in Sources */,
-				BBCB1D3D13E50C475279A1B4098F1956 /* NSMutableAttributedString+LX.m in Sources */,
-				9C7467C3BA0E6F03F0D9D4E11734D55E /* UIAlertController+LX.m in Sources */,
-				D1A33985877DE6B10B26C37403E55735 /* UIButton+LX.m in Sources */,
-				6609D4493E19DC1E0E3C951FD6018422 /* UIColor+LX.m in Sources */,
-				E4B646A8D1D9AD8D77B64DAEEF5FB452 /* UILabel+LX.m in Sources */,
-				BF5DC6377F8DC82406840412FD3A3D8D /* UITableView+LX.m in Sources */,
-				766FF1C7C5B977693869017887EA5EB8 /* UITextField+LX.m in Sources */,
+				D762719CFDD766CCE3C0E861D6269712 /* LXShare-dummy.m in Sources */,
+				B1B8C320D3EDED5E5780A30F10C2151F /* LXToolManger.m in Sources */,
+				607B21FA01A5BA7108278FB4986A62CD /* NSArray+LX.m in Sources */,
+				FE0D68F9228E72746C6C5B6C9F74AA67 /* NSDecimalNumber+LX.m in Sources */,
+				1E0CA2685850F9269C29B16661A5C7FF /* NSDictionary+LX.m in Sources */,
+				A4FB55A89FF568FC5AC520DDC9B7AF0E /* NSMutableAttributedString+LX.m in Sources */,
+				82DE6328B6DD06297649D1D0FD8E3A01 /* UIAlertController+LX.m in Sources */,
+				3EF9249A6365E200DC4AD62221BB5A8D /* UIButton+LX.m in Sources */,
+				0E14D6D2FCEF5C91487FE8A9141A2CEF /* UIColor+LX.m in Sources */,
+				8154BFDB708CA9346A16B278B49BD246 /* UILabel+LX.m in Sources */,
+				EDD2C93D87A7987F63A934F75D79799F /* UITableView+LX.m in Sources */,
+				ABEAA26BC9AD4C789772A62B9BE4C956 /* UITextField+LX.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +400,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		17F4B6707CF33F5B3CB383D3213AF7C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5679D928F6AB580C8E0B5BDB3B0F84F5 /* LXShare.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LXShare/LXShare-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LXShare/LXShare-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LXShare/LXShare.modulemap";
+				PRODUCT_MODULE_NAME = LXShare;
+				PRODUCT_NAME = LXShare;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		2DCEBF26A3C1420BF3FC6AC97FE0C6DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8CAA56D690C5A73B0630003A010B49CB /* Pods-LXShare_Example.debug.xcconfig */;
@@ -432,38 +464,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		3450639722C26A3DE7F9FDC78A9CA798 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95EAE89C35AF69E6DC7F62831078B932 /* LXShare.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LXShare/LXShare-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LXShare/LXShare-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LXShare/LXShare.modulemap";
-				PRODUCT_MODULE_NAME = LXShare;
-				PRODUCT_NAME = LXShare;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -518,7 +518,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -622,9 +623,9 @@
 			};
 			name = Debug;
 		};
-		EF63044A64294598A709FDBDB8DDD92D /* Debug */ = {
+		EDE2206CC568FC44585460726DB0D53B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 639C2CD3DFECC3E098508ABDBD16E84E /* LXShare.debug.xcconfig */;
+			baseConfigurationReference = 0D625C9218AC53EBE4FC5AFE1BA477B3 /* LXShare.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -674,11 +675,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8FD7C32F6188AAEF9AB8785A84492D6 /* Build configuration list for PBXNativeTarget "LXShare" */ = {
+		7BBF0757D56A44C753CF354CB40DA6C9 /* Build configuration list for PBXNativeTarget "LXShare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EF63044A64294598A709FDBDB8DDD92D /* Debug */,
-				3450639722C26A3DE7F9FDC78A9CA798 /* Release */,
+				EDE2206CC568FC44585460726DB0D53B /* Debug */,
+				17F4B6707CF33F5B3CB383D3213AF7C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
