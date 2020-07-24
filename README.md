@@ -12,7 +12,7 @@
 3:NSMutableAttributedString 字符串前添加图片
 
 
-4:UIAlertController 弹窗的封装处理（已解决有时不能弹出的问题)
+4:UIAlertController 弹窗的封装处理
 
 
 5:常用UI的扩展
@@ -25,6 +25,13 @@
 
 ```ruby
  pod 'LXShare', :git => 'https://github.com/hfdz1011/LXShare.git'
+```
+
+## 使用
+
+
+```ruby
+ #import "LXMangerHeader.h"
 ```
 
 ## 作者
