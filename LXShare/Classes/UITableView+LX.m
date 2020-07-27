@@ -19,6 +19,8 @@
     
     if (@available(iOS 11.0, *)) {
         table.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }else{
+//         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     return table;
 }
