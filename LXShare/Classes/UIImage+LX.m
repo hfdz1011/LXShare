@@ -9,7 +9,6 @@
 #import "UIColor+LX.h"
 @implementation UIImage (LX)
 
-
 + (UIImage *)pictureMosaicForImageArray:(NSMutableArray *)imageArray withSizeWidth:(CGFloat)width withNorBackgroundColor:(UIColor *)color
 {
     CGSize offScreenSize = CGSizeMake(width, width);

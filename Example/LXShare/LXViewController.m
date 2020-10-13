@@ -22,8 +22,6 @@
     self.view.backgroundColor = [UIColor purpleColor];
     
     UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 100, 50)];
-    lab.attributedText = [NSMutableAttributedString lx_inserIconFirst:@"syt_code" withAttributedString:@" 哈哈哈" withFont:[UIFont boldSystemFontOfSize:18] withColor:[UIColor redColor]];
-    
     [self.view addSubview:lab];
     
     [UIAlertController lx_showAlertWithTitle:@"标题部分"
@@ -56,11 +54,10 @@
     button.frame = CGRectMake(50, 300, 100, 40);
     button.backgroundColor = [UIColor redColor];
     [self.view addSubview:button];
-        
+    
 }
 
 - (void)buttonAction:(UIButton *)sender{
-    
     
 }
 

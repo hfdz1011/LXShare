@@ -10,23 +10,24 @@
 #import <UIKit/UIKit.h>
 @implementation LXToolManger
 
+///保存值
 + (void)lx_saveUserDefaultsWithValue:(NSString *)value forKey:(NSString *) key
 {
     [[NSUserDefaults standardUserDefaults] setValue:value forKey:key];
     [[NSUserDefaults standardUserDefaults]synchronize];
 }
-
+///删除值
 + (void)lx_reMoveUserDefaultsForKey:(NSString *)key
 {
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:key];
     [[NSUserDefaults standardUserDefaults]synchronize];
 }
-
+///获取值
 + (NSString *)lx_getUserDefaultsValueForKey:(NSString *)key
 {
     return [NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:key]];
 }
-
+///隐藏手机号中间数字
 + (NSString *)lx_hidenCenterPhoneNumber:(NSString *)phoneString
 {
     NSString *phoneNew = [[NSString alloc] init];
@@ -46,7 +47,7 @@
     return phoneNew;
 }
 
-//检查银行卡是否合法
+///检查银行卡是否合法
 + (BOOL)lx_checkCardNumber:(NSString *)cardNumber
 {
     NSString *digitsOnly = [self getDigitsOnly:cardNumber];
@@ -74,7 +75,7 @@
     return modulus == 0;
 }
 
-//剔除卡号里的非法字符
+///剔除卡号里的非法字符
 + (NSString *)getDigitsOnly:(NSString*)s
 {
     NSString *digitsOnly = @"";
@@ -89,7 +90,7 @@
     }
     return digitsOnly;
 }
-
+///数组转化为json字符串
 + (NSString *)lx_jsonStringFormArray:(NSArray*)array
 {
     NSData *data = [NSJSONSerialization dataWithJSONObject:array
@@ -101,7 +102,7 @@
     NSString *str=[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     return str;
 }
-
+///json字符串转化为数组
 + (NSMutableArray *)lx_arrayFormJsonString:(NSString *)json
 {
     NSMutableArray *arr = [NSMutableArray array];
@@ -130,7 +131,7 @@
         return arr;
     }
 }
-
+///字典转化为json字符串
 + (NSString *)lx_jsonStringFormDictory:(NSDictionary *)dictory
 {
     
@@ -159,7 +160,7 @@
     return mutStr;
     
 }
-
+///json字符串转化为字典
 + (NSDictionary *)lx_dictoryFormJsonString:(NSString *)jsonString
 {
     
@@ -180,7 +181,7 @@
 }
 
 //========================================================
-
+///添加渐变效果
 + (CAGradientLayer *)lx_backGradientLayerFrame:(CGRect)frame withColorArray:(NSArray *)colors withLocations:(NSArray *)locations withStartPoint:(CGPoint )spoint withEndPoint:(CGPoint) epoint
 {
     CAGradientLayer *layer =  [CAGradientLayer layer];
@@ -201,7 +202,7 @@
     return layer;
 }
 
-
+///根据文本内容返回二维码【可添加logo】
 + (UIImage *)lx_returnQrCodeImageForMessage:(NSString *)message withLogoImageName:(NSString * _Nullable) logoIconName{
     
     CIFilter *qrImageFilter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
@@ -236,7 +237,7 @@
     
     return finalyImage;
 }
-
+///为视图添加抖动效果
 + (void)lx_popViewAction:(UIView *)view{
     
     @autoreleasepool {
@@ -273,12 +274,12 @@
 }
 
 //------------------------------APP----------------------------
-
+///获取本地版本号信息
 + (NSString *)lx_localVersion
 {
     return  [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleShortVersionString"];
 }
-
+///判断是否更新应用
 + (BOOL)lx_checkUpdateAppLocakVersion:(NSString *)localVersion withAppStoreVersion:(NSString *)storeVersion
 {
     

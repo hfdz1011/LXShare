@@ -12,26 +12,19 @@
 
 + (UITextField *)lx_initTextFiledWithPlace:(NSString *)placeString withColor:(UIColor *)color withFont:(UIFont *)font  withPlacecolor:(UIColor *)placeColor withplaceFont:(UIFont *)placeFont
 {
-    
     UITextField *filed = [[UITextField alloc]init];
     filed.font = font;
     filed.textColor = color;
-    
     filed.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeString attributes:@{NSForegroundColorAttributeName: placeColor,NSFontAttributeName:placeFont}];
     
     return filed;
 }
 
-
-
-
 + (UITextField *)lx_setTextFiled:(UITextField *)filed withPlace:(NSString *)place withPlaceColor:(UIColor *)color withFont:(UIFont *)font
 {
-    
     filed.attributedPlaceholder = [[NSAttributedString alloc] initWithString:place attributes:@{NSForegroundColorAttributeName: color,NSFontAttributeName:font}];
    
     return filed;
 }
-
 
 @end
