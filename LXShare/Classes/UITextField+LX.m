@@ -17,17 +17,7 @@
     filed.font = font;
     filed.textColor = color;
     
-     filed.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeString attributes:@{NSForegroundColorAttributeName: placeColor,NSFontAttributeName:placeFont}];
-    
-//    if ([UIDevice currentDevice].systemVersion.floatValue >= 13.0) {
-//
-//        filed.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeString attributes:@{NSForegroundColorAttributeName: placeColor,NSFontAttributeName:placeFont}];
-//    }else{
-//
-//        filed.placeholder = placeString;
-//        [filed setValue:placeColor forKeyPath:@"_placeholderLabel.textColor"];
-//        [filed setValue:NSProgressFileOperationKindDecompressingAfterDownloading forKeyPath:@"_placeholderLabel.font"];
-//    }
+    filed.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeString attributes:@{NSForegroundColorAttributeName: placeColor,NSFontAttributeName:placeFont}];
     
     return filed;
 }
@@ -38,17 +28,8 @@
 + (UITextField *)lx_setTextFiled:(UITextField *)filed withPlace:(NSString *)place withPlaceColor:(UIColor *)color withFont:(UIFont *)font
 {
     
-     filed.attributedPlaceholder = [[NSAttributedString alloc] initWithString:place attributes:@{NSForegroundColorAttributeName: color,NSFontAttributeName:font}];
-    
-//    if ([UIDevice currentDevice].systemVersion.floatValue >= 13.0) {
-//        
-//        filed.attributedPlaceholder = [[NSAttributedString alloc] initWithString:place attributes:@{NSForegroundColorAttributeName: color,NSFontAttributeName:font}];
-//    }else{
-//        
-//        filed.placeholder = place;
-//        [filed setValue:color forKeyPath:@"_placeholderLabel.textColor"];
-//        [filed setValue:font forKeyPath:@"_placeholderLabel.font"];
-//    }
+    filed.attributedPlaceholder = [[NSAttributedString alloc] initWithString:place attributes:@{NSForegroundColorAttributeName: color,NSFontAttributeName:font}];
+   
     return filed;
 }
 

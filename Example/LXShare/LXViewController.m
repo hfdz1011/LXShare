@@ -56,9 +56,7 @@
     button.frame = CGRectMake(50, 300, 100, 40);
     button.backgroundColor = [UIColor redColor];
     [self.view addSubview:button];
-    
-    
-    
+        
 }
 
 - (void)buttonAction:(UIButton *)sender{
