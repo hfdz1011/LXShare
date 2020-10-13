@@ -9,14 +9,10 @@
 2:NSDecimalNumber 字符串的加减乘除（NSDecimalNumber高精度的数据处理)
 
 
-3:NSMutableAttributedString 字符串前添加图片
+3:常用UI的扩展
 
 
 4:UIAlertController 弹窗的封装处理
-
-
-5:常用UI的扩展
-
 
 
 ## 安装

@@ -10,30 +10,104 @@
 
 @implementation NSMutableAttributedString (LX)
 
++ (NSMutableAttributedString *)attributedString:(NSString *)attributedString
+                                    stringArray:(NSArray *)stringArray
+                                appendImaheName:(NSString *)iconName
+                                  withFontArray:(NSArray *)fontArray
+                                 withColorArray:(NSArray *)colorArray
+                                      withRange:(CGRect)range
+{
+    NSMutableAttributedString *attr = [[NSMutableAttributedString alloc] initWithString:attributedString];
+    
+    if (iconName.length) {
+        NSTextAttachment *attch = [[NSTextAttachment alloc] init];
+        attch.bounds = range;
+        attch.image = [UIImage imageNamed:iconName];
+        NSAttributedString *string = [NSAttributedString attributedStringWithAttachment:attch];
+        [attr insertAttributedString:string atIndex:attributedString.length];
+    }
+    
+    NSString *indexString = @"";
+    
+    for (int i = 0; i < stringArray.count; i++) {
+        
+        NSString *titleString = stringArray[i];
+        
+        UIColor *color = (UIColor *)colorArray[i];
+        UIFont *font = (UIFont *)fontArray[i];
+        
+        if (iconName.length) {
+            
+            [attr addAttribute:NSForegroundColorAttributeName
+                         value:color
+                         range:NSMakeRange(indexString.length, titleString.length)];
+            [attr addAttribute:NSFontAttributeName
+                         value:font
+                         range:NSMakeRange(indexString.length, titleString.length)];
+            
+        }else{
+            
+            [attr addAttribute:NSForegroundColorAttributeName
+                         value:color
+                         range:NSMakeRange(indexString.length, titleString.length)];
+            [attr addAttribute:NSFontAttributeName
+                         value:font
+                         range:NSMakeRange(indexString.length, titleString.length)];
+        }
+        indexString = [NSString stringWithFormat:@"%@%@",indexString,titleString];
+    }
+    return attr;
+}
 
-+ (NSMutableAttributedString *)lx_inserIconFirst:(NSString *)iconName withAttributedString:(NSString *)attributedString withFont:(UIFont *)font withColor:(UIColor *)color
++ (NSMutableAttributedString *)attributedString:(NSString *)attributedString
+                                    stringArray:(NSArray *)stringArray
+                                insertImaheName:(NSString *)iconName
+                                  withFontArray:(NSArray *)fontArray
+                                 withColorArray:(NSArray *)colorArray
+                                      withRange:(CGRect)range
 {
     
     NSMutableAttributedString *attr = [[NSMutableAttributedString alloc] initWithString:attributedString];
     
-    NSTextAttachment *attch = [[NSTextAttachment alloc] init];
-    attch.bounds = CGRectMake(2, -2, 18, 18);
-    attch.image = [UIImage imageNamed:iconName];
+    if (iconName.length) {
+        NSTextAttachment *attch = [[NSTextAttachment alloc] init];
+        attch.bounds = range;
+        attch.image = [UIImage imageNamed:iconName];
+        NSAttributedString *string = [NSAttributedString attributedStringWithAttachment:attch];
+        [attr insertAttributedString:string atIndex:0];
+    }
     
-    NSAttributedString *string = [NSAttributedString attributedStringWithAttachment:attch];
+    NSString *indexString = @"";
     
-    [attr insertAttributedString:string atIndex:0];
-    [attr addAttribute:NSForegroundColorAttributeName
-                 value:color
-                 range:NSMakeRange(0, attr.length)];
-    [attr addAttribute:NSFontAttributeName
-                 value:font
-                 range:NSMakeRange(0 , attr.length)];
+    for (int i = 0; i < stringArray.count; i++) {
+        
+        NSString *titleString = stringArray[i];
+        
+        UIColor *color = (UIColor *)colorArray[i];
+        UIFont *font = (UIFont *)fontArray[i];
+        
+        if (iconName.length) {
+            
+            [attr addAttribute:NSForegroundColorAttributeName
+                         value:color
+                         range:NSMakeRange(indexString.length+1, titleString.length)];
+            [attr addAttribute:NSFontAttributeName
+                         value:font
+                         range:NSMakeRange(indexString.length+1, titleString.length)];
+            
+        }else{
+            
+            [attr addAttribute:NSForegroundColorAttributeName
+                         value:color
+                         range:NSMakeRange(indexString.length, titleString.length)];
+            [attr addAttribute:NSFontAttributeName
+                         value:font
+                         range:NSMakeRange(indexString.length, titleString.length)];
+        }
+        
+        indexString = [NSString stringWithFormat:@"%@%@",indexString,titleString];
+    }
     return attr;
-    
 }
-
-
-
 
 @end

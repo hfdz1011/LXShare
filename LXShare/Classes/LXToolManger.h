@@ -61,6 +61,14 @@ NS_ASSUME_NONNULL_BEGIN
                                  withLocations:(NSArray *)locations
                                 withStartPoint:(CGPoint )spoint
                                   withEndPoint:(CGPoint) epoint;
+/// 根据文本内容返回二维码
+/// @param message 文本内容
+/// @param logoIconName logo图片名称
++ (UIImage *)lx_returnQrCodeImageForMessage:(NSString *)message withLogoImageName:(NSString * _Nullable) logoIconName;
+
+/// 视图抖动
+/// @param view 视图
++ (void)lx_popViewAction:(UIView *)view;
 
 /// 返回APP本地的版本号
 + (NSString *)lx_localVersion;

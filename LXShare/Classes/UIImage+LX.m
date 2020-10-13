@@ -13,98 +13,98 @@
 + (UIImage *)pictureMosaicForImageArray:(NSMutableArray *)imageArray withSizeWidth:(CGFloat)width withNorBackgroundColor:(UIColor *)color
 {
     CGSize offScreenSize = CGSizeMake(width, width);
-       
-       UIGraphicsBeginImageContext(offScreenSize);
-       
-       CGContextRef context = UIGraphicsGetCurrentContext();
-       CGContextSetFillColorWithColor(context,color.CGColor);//图片背景色
-       CGContextFillRect(context, CGRectMake(0, 0, width, width));
-       //确定拼接图片的宽度
-       CGFloat imageWidth = [self generateImageWidthWithImageCount:imageArray.count withWidth:width];
-       
-       switch (imageArray.count) {
-               
-           case 2:
-           {
-               CGFloat row_1_origin_y = (width - imageWidth) / 2;
-               [self generatorMatrix:imageArray beginOriginY:row_1_origin_y withWidth:width];
-           }
-               break;
-           case 3:
-           {
-               CGFloat row_1_origin_y = (width - imageWidth * 2) / 3;
-               
-               UIImage* image_1 = imageArray[0];
-               CGRect rect_1 = CGRectMake((width - imageWidth) / 2, row_1_origin_y, imageWidth, imageWidth);
-               [image_1 drawInRect:rect_1];
-               [self generatorMatrix:imageArray beginOriginY:row_1_origin_y + imageWidth + 10 withWidth:width];
-           }
-               break;
-           case 4:
-           {
-               CGFloat row_1_origin_y = (width - imageWidth * 2) / 3;
-               [self generatorMatrix:imageArray beginOriginY:row_1_origin_y withWidth:width];
-           }
-               break;
-           case 5:
-           {
-               CGFloat row_1_origin_y = (width - imageWidth * 2 - 10) / 2;
-               
-               UIImage* image_1 = imageArray[0];
-               CGRect rect_1 = CGRectMake((width - 2 * imageWidth - 10) / 2, row_1_origin_y, imageWidth, imageWidth);
-               [image_1 drawInRect:rect_1];
-               
-               UIImage* image_2 = imageArray[1];
-               CGRect rect_2 = CGRectMake(rect_1.origin.x + imageWidth + 10, row_1_origin_y, imageWidth, imageWidth);
-               [image_2 drawInRect:rect_2];
-               
-               [self generatorMatrix:imageArray beginOriginY:row_1_origin_y + imageWidth + 10 withWidth:width];
-           }
-               break;
-           case 6:
-           {
-               CGFloat row_1_origin_y = (width - imageWidth * 2 - 10) / 2;
-               
-               [self generatorMatrix:imageArray beginOriginY:row_1_origin_y withWidth:width];
-           }
-               break;
-           case 7:
-           {
-               CGFloat row_1_origin_y = (width - imageWidth * 3) / 4;
-               
-               UIImage* image_1 = imageArray[0];
-               CGRect rect_1 = CGRectMake((width - imageWidth) / 2, row_1_origin_y, imageWidth, imageWidth);
-               [image_1 drawInRect:rect_1];
-               [self generatorMatrix:imageArray beginOriginY:row_1_origin_y + imageWidth + 10 withWidth:width];
-           }
-               break;
-           case 8:
-           {
-               CGFloat row_1_origin_y = (width - imageWidth * 3) / 4;
-               
-               UIImage* image_1 = imageArray[0];
-               CGRect rect_1 = CGRectMake((width - 2 * imageWidth - 10) / 2, row_1_origin_y, imageWidth, imageWidth);
-               [image_1 drawInRect:rect_1];
-               UIImage* image_2 = imageArray[1];
-               CGRect rect_2 = CGRectMake(rect_1.origin.x + imageWidth + 10, row_1_origin_y, imageWidth, imageWidth);
-               [image_2 drawInRect:rect_2];
-               [self generatorMatrix:imageArray beginOriginY:row_1_origin_y + imageWidth + 10 withWidth:width];
-           }
-               break;
-           case 9:
-           {
-               CGFloat row_1_origin_y = (width - imageWidth * 3) / 4;
-               [self generatorMatrix:imageArray beginOriginY:row_1_origin_y withWidth:width];
-           }
-               break;
-           default:
-               break;
-       }
-       UIImage* imagez = UIGraphicsGetImageFromCurrentImageContext();
-       
-       UIGraphicsEndImageContext();
-       
-       return imagez;
+    
+    UIGraphicsBeginImageContext(offScreenSize);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context,color.CGColor);//图片背景色
+    CGContextFillRect(context, CGRectMake(0, 0, width, width));
+    //确定拼接图片的宽度
+    CGFloat imageWidth = [self generateImageWidthWithImageCount:imageArray.count withWidth:width];
+    
+    switch (imageArray.count) {
+            
+        case 2:
+        {
+            CGFloat row_1_origin_y = (width - imageWidth) / 2;
+            [self generatorMatrix:imageArray beginOriginY:row_1_origin_y withWidth:width];
+        }
+            break;
+        case 3:
+        {
+            CGFloat row_1_origin_y = (width - imageWidth * 2) / 3;
+            
+            UIImage* image_1 = imageArray[0];
+            CGRect rect_1 = CGRectMake((width - imageWidth) / 2, row_1_origin_y, imageWidth, imageWidth);
+            [image_1 drawInRect:rect_1];
+            [self generatorMatrix:imageArray beginOriginY:row_1_origin_y + imageWidth + 10 withWidth:width];
+        }
+            break;
+        case 4:
+        {
+            CGFloat row_1_origin_y = (width - imageWidth * 2) / 3;
+            [self generatorMatrix:imageArray beginOriginY:row_1_origin_y withWidth:width];
+        }
+            break;
+        case 5:
+        {
+            CGFloat row_1_origin_y = (width - imageWidth * 2 - 10) / 2;
+            
+            UIImage* image_1 = imageArray[0];
+            CGRect rect_1 = CGRectMake((width - 2 * imageWidth - 10) / 2, row_1_origin_y, imageWidth, imageWidth);
+            [image_1 drawInRect:rect_1];
+            
+            UIImage* image_2 = imageArray[1];
+            CGRect rect_2 = CGRectMake(rect_1.origin.x + imageWidth + 10, row_1_origin_y, imageWidth, imageWidth);
+            [image_2 drawInRect:rect_2];
+            
+            [self generatorMatrix:imageArray beginOriginY:row_1_origin_y + imageWidth + 10 withWidth:width];
+        }
+            break;
+        case 6:
+        {
+            CGFloat row_1_origin_y = (width - imageWidth * 2 - 10) / 2;
+            
+            [self generatorMatrix:imageArray beginOriginY:row_1_origin_y withWidth:width];
+        }
+            break;
+        case 7:
+        {
+            CGFloat row_1_origin_y = (width - imageWidth * 3) / 4;
+            
+            UIImage* image_1 = imageArray[0];
+            CGRect rect_1 = CGRectMake((width - imageWidth) / 2, row_1_origin_y, imageWidth, imageWidth);
+            [image_1 drawInRect:rect_1];
+            [self generatorMatrix:imageArray beginOriginY:row_1_origin_y + imageWidth + 10 withWidth:width];
+        }
+            break;
+        case 8:
+        {
+            CGFloat row_1_origin_y = (width - imageWidth * 3) / 4;
+            
+            UIImage* image_1 = imageArray[0];
+            CGRect rect_1 = CGRectMake((width - 2 * imageWidth - 10) / 2, row_1_origin_y, imageWidth, imageWidth);
+            [image_1 drawInRect:rect_1];
+            UIImage* image_2 = imageArray[1];
+            CGRect rect_2 = CGRectMake(rect_1.origin.x + imageWidth + 10, row_1_origin_y, imageWidth, imageWidth);
+            [image_2 drawInRect:rect_2];
+            [self generatorMatrix:imageArray beginOriginY:row_1_origin_y + imageWidth + 10 withWidth:width];
+        }
+            break;
+        case 9:
+        {
+            CGFloat row_1_origin_y = (width - imageWidth * 3) / 4;
+            [self generatorMatrix:imageArray beginOriginY:row_1_origin_y withWidth:width];
+        }
+            break;
+        default:
+            break;
+    }
+    UIImage* imagez = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return imagez;
 }
 
 + (void)generatorMatrix:(NSArray *)images beginOriginY:(CGFloat)beginOriginY withWidth:(CGFloat)width{

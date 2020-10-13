@@ -18,7 +18,6 @@
 
 + (void)lx_reMoveUserDefaultsForKey:(NSString *)key
 {
-    
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:key];
     [[NSUserDefaults standardUserDefaults]synchronize];
 }
@@ -44,9 +43,7 @@
         }
         phoneNew = [phoneNew stringByAppendingString:str];
     }
-    
     return phoneNew;
-    
 }
 
 //检查银行卡是否合法
@@ -95,23 +92,18 @@
 
 + (NSString *)lx_jsonStringFormArray:(NSArray*)array
 {
-    
     NSData *data = [NSJSONSerialization dataWithJSONObject:array
                                                    options:NSJSONWritingPrettyPrinted
                                                      error:nil];
     if (data == nil) {
-        
         return nil;
-        
     }
     NSString *str=[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    
     return str;
 }
 
 + (NSMutableArray *)lx_arrayFormJsonString:(NSString *)json
 {
-    
     NSMutableArray *arr = [NSMutableArray array];
     if (json) {
         id tmp = [NSJSONSerialization JSONObjectWithData:[json dataUsingEncoding:NSUTF8StringEncoding]
@@ -209,6 +201,77 @@
     return layer;
 }
 
+
++ (UIImage *)lx_returnQrCodeImageForMessage:(NSString *)message withLogoImageName:(NSString * _Nullable) logoIconName{
+    
+    CIFilter *qrImageFilter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
+    [qrImageFilter setDefaults];
+    
+    NSData *qrImageData = [message dataUsingEncoding:NSUTF8StringEncoding];
+    [qrImageFilter setValue:qrImageData forKey:@"inputMessage"];
+    
+    //取出图片
+    CIImage *qrImage = [qrImageFilter outputImage];
+    qrImage = [qrImage imageByApplyingTransform:CGAffineTransformMakeScale(20, 20)];
+    //转成 UI的 类型
+    UIImage *qrUIImage = [UIImage imageWithCIImage:qrImage];
+    UIGraphicsBeginImageContext(qrUIImage.size);
+    [qrUIImage drawInRect:CGRectMake(0, 0, qrUIImage.size.width, qrUIImage.size.height)];
+    
+    if (logoIconName.length) {
+        
+        //再把小图片画上去
+        UIImage *sImage = [UIImage imageNamed:logoIconName];
+        CGFloat sImageW = 140;
+        CGFloat sImageH = sImageW;
+        CGFloat sImageX = (qrUIImage.size.width - sImageW) * 0.5;
+        CGFloat sImgaeY = (qrUIImage.size.height - sImageH) * 0.5;
+        [sImage drawInRect:CGRectMake(sImageX, sImgaeY, sImageW, sImageH)];
+    }
+    
+    //获取当前画得的这张图片
+    UIImage *finalyImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return finalyImage;
+}
+
++ (void)lx_popViewAction:(UIView *)view{
+    
+    @autoreleasepool {
+        
+        CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+        
+        CATransform3D scale1 = CATransform3DMakeScale(0.5, 0.5, 1);
+        CATransform3D scale2 = CATransform3DMakeScale(1.2, 1.2, 1);
+        CATransform3D scale3 = CATransform3DMakeScale(0.9, 0.9, 1);
+        CATransform3D scale4 = CATransform3DMakeScale(1.0, 1.0, 1);
+        
+        NSArray *frameValues = [NSArray arrayWithObjects:
+                                [NSValue valueWithCATransform3D:scale1],
+                                [NSValue valueWithCATransform3D:scale2],
+                                [NSValue valueWithCATransform3D:scale3],
+                                [NSValue valueWithCATransform3D:scale4],
+                                nil];
+        
+        [animation setValues:frameValues];
+        
+        NSArray *frameTimes = [NSArray arrayWithObjects:
+                               [NSNumber numberWithFloat:0.0],
+                               [NSNumber numberWithFloat:0.5],
+                               [NSNumber numberWithFloat:0.9],
+                               [NSNumber numberWithFloat:1.0],
+                               nil];
+        [animation setKeyTimes:frameTimes];
+        
+        animation.fillMode = kCAFillModeForwards;
+        animation.duration = 0.3f;
+        
+        [view.layer addAnimation:animation forKey:@"DSPopUpAnimation"];
+    }
+}
+
 //------------------------------APP----------------------------
 
 + (NSString *)lx_localVersion
@@ -220,9 +283,9 @@
 {
     
     if (([localVersion compare:storeVersion options:NSNumericSearch] == NSOrderedAscending)){
-               
+        
         return YES;
-            
+        
     }else{
         return NO;
     }

@@ -22,7 +22,13 @@
     
 }
 
-+ (UILabel *)lx_initLableWithString:(NSString * _Nullable)text color:(UIColor * _Nullable)color font:(UIFont * _Nullable)font
+/// UILabel初始化
+/// @param text 设置默认值
+/// @param color 颜色
+/// @param font 字体
++ (UILabel *)lx_initLableWithString:(NSString * _Nullable)text
+                              color:(UIColor * _Nullable)color
+                               font:(UIFont * _Nullable)font
 {
     UILabel *lable = [[UILabel alloc]init];
     lable.text = text;

@@ -12,15 +12,33 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSMutableAttributedString (LX)
 
-/// 在字符串前添加图片
-/// @param iconName 图片名称
-/// @param attributedString 字符串
-/// @param font 字符串的字体设置
-/// @param color 字符串的颜色设置
-+ (NSMutableAttributedString *)lx_inserIconFirst:(NSString *)iconName
-                            withAttributedString:(NSString *)attributedString
-                                        withFont:(UIFont *)font
-                                       withColor:(UIColor *)color;
+/// 字符串【后面】添加图片
+/// @param attributedString 完整字符串
+/// @param stringArray 字符串数组
+/// @param iconName 尾部图片名称
+/// @param fontArray 字体数组（对应字符串数组）
+/// @param colorArray 字体颜色（对应字符串数组）
+/// @param range 图片的位置调整设置
++ (NSMutableAttributedString *)attributedString:(NSString *)attributedString
+                                    stringArray:(NSArray *)stringArray
+                                appendImaheName:(NSString *)iconName
+                                  withFontArray:(NSArray *)fontArray
+                                 withColorArray:(NSArray *)colorArray
+                                      withRange:(CGRect)range;
+
+/// 字符串【前面】添加图片
+/// @param attributedString 完整字符串
+/// @param stringArray 字符串数组
+/// @param iconName 头部图片名称
+/// @param fontArray 字体数组（对应字符串数组）
+/// @param colorArray 字体颜色（对应字符串数组）
+/// @param range 图片的位置调整设置
++ (NSMutableAttributedString *)attributedString:(NSString *)attributedString
+                                    stringArray:(NSArray *)stringArray
+                                insertImaheName:(NSString *)iconName
+                                  withFontArray:(NSArray *)fontArray
+                                 withColorArray:(NSArray *)colorArray
+                                      withRange:(CGRect)range;
 
 @end
 
