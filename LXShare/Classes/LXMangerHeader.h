@@ -37,7 +37,7 @@
 //#define KDEVICE_IS_IPHONE_X        ([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896)
 
 #define rmStatusBarH ([UIApplication sharedApplication].statusBarFrame.size.height)//(44/20)
-#define KDEVICE_IS_IPHONE_X ((rmStatusBarH == 44.0) ? YES : NO)
+#define KDEVICE_IS_IPHONE_X ((rmStatusBarH > 20.0) ? YES : NO)
 
 //状态栏、导航栏、标签栏高度
 #define KHeight_StatusBar         [[UIApplication sharedApplication] statusBarFrame].size.height
