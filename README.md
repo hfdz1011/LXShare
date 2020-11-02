@@ -18,7 +18,6 @@
 ## 安装
 
 
-
 ```ruby
  pod 'LXShare', :git => 'https://github.com/hfdz1011/LXShare.git'
 ```
