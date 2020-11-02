@@ -34,6 +34,10 @@
 		C6AE9DC824CA7B59002ACA18 /* UIImage+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = C6AE9DC624CA7B58002ACA18 /* UIImage+LX.h */; };
 		C6AE9DC924CA7B59002ACA18 /* UIImage+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AE9DC724CA7B58002ACA18 /* UIImage+LX.m */; };
 		D762719CFDD766CCE3C0E861D6269712 /* LXShare-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C86B8E0C7F3B1A82CB7CF6649AA349EE /* LXShare-dummy.m */; };
+		DFFA291F253D85CA008A9EC5 /* UIImageView+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFA291D253D85CA008A9EC5 /* UIImageView+LX.h */; };
+		DFFA2920253D85CA008A9EC5 /* UIImageView+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFA291E253D85CA008A9EC5 /* UIImageView+LX.m */; };
+		DFFA292D253D8D54008A9EC5 /* LXTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFA292B253D8D54008A9EC5 /* LXTextView.h */; };
+		DFFA292E253D8D54008A9EC5 /* LXTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFA292C253D8D54008A9EC5 /* LXTextView.m */; };
 		E4744892E570EE3ADF23CB545F92D8F3 /* UITextField+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 54EC65830FC27148288C0CCA05BA6F81 /* UITextField+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDD2C93D87A7987F63A934F75D79799F /* UITableView+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B17028AB99A9BD5DC2E9DABB5599DFE /* UITableView+LX.m */; };
 		F566C0025D6F88A3BE59810FE7D01A97 /* NSMutableAttributedString+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 4403BF0FEAD24899759F2D807C2E31F7 /* NSMutableAttributedString+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -95,6 +99,10 @@
 		C86B8E0C7F3B1A82CB7CF6649AA349EE /* LXShare-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LXShare-dummy.m"; sourceTree = "<group>"; };
 		D684A978BD9E10B7BE52FA8FB1742BD9 /* Pods-LXShare_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXShare_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DEEFD9EBF32892B12C7156C5641177E3 /* LXShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LXShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFFA291D253D85CA008A9EC5 /* UIImageView+LX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LX.h"; sourceTree = "<group>"; };
+		DFFA291E253D85CA008A9EC5 /* UIImageView+LX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LX.m"; sourceTree = "<group>"; };
+		DFFA292B253D8D54008A9EC5 /* LXTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXTextView.h; sourceTree = "<group>"; };
+		DFFA292C253D8D54008A9EC5 /* LXTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXTextView.m; sourceTree = "<group>"; };
 		E03D85CB0CDC391E14224B2B6BDF99FF /* Pods_LXShare_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXShare_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F213BBF1A083423CD6E9C1595601E677 /* UITextField+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+LX.m"; path = "LXShare/Classes/UITextField+LX.m"; sourceTree = "<group>"; };
 		F29809CE5369F20E1DBC670CB991F3DD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -151,6 +159,10 @@
 				BCDCC460DC1C5C5A5E5880CADF84E128 /* UIColor+LX.m */,
 				438F8149FA1C40010311B1A6FA39C78B /* UILabel+LX.h */,
 				C0A6D1E50725BBC5193CFC82E335D058 /* UILabel+LX.m */,
+				DFFA291D253D85CA008A9EC5 /* UIImageView+LX.h */,
+				DFFA291E253D85CA008A9EC5 /* UIImageView+LX.m */,
+				DFFA292B253D8D54008A9EC5 /* LXTextView.h */,
+				DFFA292C253D8D54008A9EC5 /* LXTextView.m */,
 				FD684958045868C9FBA767D8D5681C11 /* UITableView+LX.h */,
 				9B17028AB99A9BD5DC2E9DABB5599DFE /* UITableView+LX.m */,
 				54EC65830FC27148288C0CCA05BA6F81 /* UITextField+LX.h */,
@@ -263,9 +275,11 @@
 				C2EF142C5E61E0C5EE5E878BDB3279C8 /* NSArray+LX.h in Headers */,
 				C6AE9DC824CA7B59002ACA18 /* UIImage+LX.h in Headers */,
 				B1C1C23B9CA888530945377529A19DD3 /* NSDecimalNumber+LX.h in Headers */,
+				DFFA292D253D8D54008A9EC5 /* LXTextView.h in Headers */,
 				B431D5A70EA21E9296BEF5461AC9BC6F /* NSDictionary+LX.h in Headers */,
 				F566C0025D6F88A3BE59810FE7D01A97 /* NSMutableAttributedString+LX.h in Headers */,
 				7590BC37EFD19C872E75DE28181D4FDF /* UIAlertController+LX.h in Headers */,
+				DFFA291F253D85CA008A9EC5 /* UIImageView+LX.h in Headers */,
 				858767F73DA7BA9FFFB49CCC1F8D8E44 /* UIButton+LX.h in Headers */,
 				3ED36AEA54525E1711E839571D0B38E9 /* UIColor+LX.h in Headers */,
 				2E33054EF2B498634451715B69A3C1BC /* UILabel+LX.h in Headers */,
@@ -372,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFFA2920253D85CA008A9EC5 /* UIImageView+LX.m in Sources */,
 				D762719CFDD766CCE3C0E861D6269712 /* LXShare-dummy.m in Sources */,
 				B1B8C320D3EDED5E5780A30F10C2151F /* LXToolManger.m in Sources */,
 				607B21FA01A5BA7108278FB4986A62CD /* NSArray+LX.m in Sources */,
@@ -384,6 +399,7 @@
 				0E14D6D2FCEF5C91487FE8A9141A2CEF /* UIColor+LX.m in Sources */,
 				8154BFDB708CA9346A16B278B49BD246 /* UILabel+LX.m in Sources */,
 				EDD2C93D87A7987F63A934F75D79799F /* UITableView+LX.m in Sources */,
+				DFFA292E253D8D54008A9EC5 /* LXTextView.m in Sources */,
 				ABEAA26BC9AD4C789772A62B9BE4C956 /* UITextField+LX.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
