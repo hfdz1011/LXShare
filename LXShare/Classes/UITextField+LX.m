@@ -23,7 +23,6 @@
 + (UITextField *)lx_setTextFiled:(UITextField *)filed withPlace:(NSString *)place withPlaceColor:(UIColor *)color withFont:(UIFont *)font
 {
     filed.attributedPlaceholder = [[NSAttributedString alloc] initWithString:place attributes:@{NSForegroundColorAttributeName: color,NSFontAttributeName:font}];
-   
     return filed;
 }
 
