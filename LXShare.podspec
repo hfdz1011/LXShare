@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LXShare'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = '工具集合'
 
   s.description      = <<-DESC
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.author           = { 'hfdz1011' => '18576722857@163.com' }
   s.source           = { :git => 'https://github.com/hfdz1011/LXShare.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'LXShare/Classes/LXMangerHeader.h'
   s.source_files = 'LXShare/Classes/*{h,m}'

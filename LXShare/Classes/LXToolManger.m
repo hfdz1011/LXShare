@@ -37,7 +37,6 @@
         NSString *str = [[NSString alloc] init];
         
         if (!(i > 2 && i < 7)) {
-            
             str = [phoneString substringWithRange:NSMakeRange(i, 1)];
         }else{
             str = @"*";
@@ -163,7 +162,6 @@
 ///json字符串转化为字典
 + (NSDictionary *)lx_dictoryFormJsonString:(NSString *)jsonString
 {
-    
     if (jsonString == nil) {
         return nil;
     }
@@ -203,7 +201,8 @@
 }
 
 ///根据文本内容返回二维码【可添加logo】
-+ (UIImage *)lx_returnQrCodeImageForMessage:(NSString *)message withLogoImageName:(NSString * _Nullable) logoIconName{
++ (UIImage *)lx_returnQrCodeImageForMessage:(NSString *)message withLogoImageName:(NSString * _Nullable) logoIconName
+{
     
     CIFilter *qrImageFilter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
     [qrImageFilter setDefaults];
@@ -238,8 +237,8 @@
     return finalyImage;
 }
 ///为视图添加抖动效果
-+ (void)lx_popViewAction:(UIView *)view{
-    
++ (void)lx_popViewAction:(UIView *)view
+{
     @autoreleasepool {
         
         CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
@@ -295,6 +294,85 @@
 
 //~~~~~~~~
 
+///精度参数的处理 -解决解析float或double 精度异常
++ (NSString *)lx_decimalNumberWithDouble:(NSString *)changeString
+{
+    
+    NSString *doubleString        = [NSString stringWithFormat:@"%lf", [changeString doubleValue]];
+    NSDecimalNumber *decNumber    = [NSDecimalNumber decimalNumberWithString:doubleString];
+    return [decNumber stringValue];
+    
+}
 
+/// 银行卡号间隔
+/// @param cardNumber 银行卡号
++ (NSString *)lx_backBankCardNumberIntervalWithNumber:(NSString *)cardNumber
+{
+    NSString *getString = @"";
+    
+    int a = (int)cardNumber.length/4;
+    int b = (int)cardNumber.length%4;
+    int c = a;
+    if (b>0)
+    {
+        c = a+1;
+    }
+    else
+    {
+        c = a;
+    }
+    for (int i = 0 ; i<c; i++)
+    {
+        NSString *string = @"";
+        
+        if (i == (c-1))
+        {
+            if (b>0)
+            {
+                string = [cardNumber substringWithRange:NSMakeRange(4*(c-1), b)];
+            }
+            else
+            {
+                string = [cardNumber substringWithRange:NSMakeRange(4*i, 4)];
+            }
+            
+        }
+        else
+        {
+            string = [cardNumber substringWithRange:NSMakeRange(4*i, 4)];
+        }
+        getString = [NSString stringWithFormat:@"%@ %@",getString,string];
+    }
+    return getString;
+    
+}
+
+/** 给控件添加部分圆角
+ * @param rect 控件的rect
+ * @param corners 需要设置为圆角的角 UIRectCornerTopLeft | UIRectCornerTopRight | UIRectCornerBottomLeft | UIRectCornerBottomRight | UIRectCornerAllCorners
+ * @param cornerRadii 需要设置的圆角大小 CGSize
+ * @param roundView 需要设置圆角的控件
+ **/
++ (void)lx_addCornerWithRoundedRect:(CGRect)rect
+                 RoundingCorners:(UIRectCorner)corners
+                     cornerRadii:(CGSize)cornerRadii
+                       roundView:(UIView *)roundView
+{
+    [roundView layoutIfNeeded];
+    UIBezierPath* rounded = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:corners cornerRadii:cornerRadii];
+    CAShapeLayer* shape = [[CAShapeLayer alloc] init];
+    [shape setPath:rounded.CGPath];
+    roundView.layer.mask = shape;
+}
+/// base64转文字
+/// @param base64String base64字符
++ (NSString *)lx_base64ToJsonString:(NSString *)base64String
+{
+    
+    NSData *data = [[NSData alloc] initWithBase64EncodedString:base64String
+                                                       options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    
+}
 
 @end

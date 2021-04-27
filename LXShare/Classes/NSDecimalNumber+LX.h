@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSDecimalNumber (LX)
 
-//         NSDecimalNumber 高精度国际货币计算
+// NSDecimalNumber 高精度国际货币计算
 
 /// 加法
 /// @param first 第一位

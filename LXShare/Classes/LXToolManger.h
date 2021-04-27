@@ -79,6 +79,26 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL)lx_checkUpdateAppLocakVersion:(NSString *)localVersion
                   withAppStoreVersion:(NSString *)storeVersion;
 
+///精度参数的处理
++ (NSString *)lx_decimalNumberWithDouble:(NSString *)changeString;
+/// 银行卡号间隔
+/// @param cardNumber 银行卡号
++ (NSString *)lx_backBankCardNumberIntervalWithNumber:(NSString *)cardNumber;
+
+/// 给控件添加部分圆角
+/// @param rect 控件的rect
+/// @param corners 需要设置为圆角的角 UIRectCornerTopLeft | UIRectCornerTopRight | UIRectCornerBottomLeft | UIRectCornerBottomRight | UIRectCornerAllCorners
+/// @param cornerRadii 需要设置的圆角大小 CGSize
+/// @param roundView 需要设置圆角的控件
++ (void)lx_addCornerWithRoundedRect:(CGRect)rect
+                 RoundingCorners:(UIRectCorner)corners
+                     cornerRadii:(CGSize)cornerRadii
+                       roundView:(UIView *)roundView;
+
+/// base64转文字
+/// @param base64String base64字符
++ (NSString *)lx_base64ToJsonString:(NSString *)base64String;
+
 @end
 
 NS_ASSUME_NONNULL_END

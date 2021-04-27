@@ -33,8 +33,6 @@
 
 #define KStringIsEmpty(str)                ([str isKindOfClass:[NSNull class]] || [str isEqual: @"(null)"] || [str isEqual: @"<null>"] || [str isEqual: [NSNull null]] || str == nil || [str length] < 1 ? YES : NO )
 
-//是否是iPhone X
-//#define KDEVICE_IS_IPHONE_X        ([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896)
 
 #define rmStatusBarH ([UIApplication sharedApplication].statusBarFrame.size.height)//(44/20)
 #define KDEVICE_IS_IPHONE_X ((rmStatusBarH > 20.0) ? YES : NO)
