@@ -46,6 +46,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param dictory 字典
 + (NSString *)lx_jsonStringFormDictory:(NSDictionary *)dictory;
 
+///字典转化为json字符串 允许空格
++ (NSString *)lx_jsonStringForm_Dictory:(NSDictionary *)dictory;
+
 /// json字符串转为字典
 /// @param jsonString json字符串
 + (NSDictionary *)lx_dictoryFormJsonString:(NSString *)jsonString;
@@ -98,6 +101,46 @@ NS_ASSUME_NONNULL_BEGIN
 /// base64转文字
 /// @param base64String base64字符
 + (NSString *)lx_base64ToJsonString:(NSString *)base64String;
+
+
+/// 压缩图片
+/// @param image 需要被压缩的图片
+/// @param maxLength 压缩到的大小 500*1024 = 500KB
++(NSData *)lx_compressWithImage:(UIImage*)image imageKB:(NSUInteger)maxLength;
+
+/// 给钱千位分隔符
+/// @param money 钱
+/// @param isBool 是否带￥
++ (NSString *)lx_changeMoneyComma:(id)money isAndDecimal:(BOOL)isBool;
+
+/// 获取随机数
+/// @param kNumber 长度
++ (NSString *)lx_generateTradeNumberWithCount:(NSInteger)kNumber;
+
+
+/// 获取毫秒时间戳
++(NSString *)lx_getNowTimeTimestamp;
+
+/**
+ * 加密方式,MAC算法: HmacSHA256
+ *  @param secret       秘钥
+ *  @param content 要加密的文本
+ *  @return 加密后的字符串
+ */
+
++ (NSString *)lx_hmacSHA256WithSecret:(NSString *)secret content:(NSString *)content;
+
+/// sha1加密处理
+/// @param str 需要处理的字符串
++(NSString*)lx_sha1WithStr:(NSString *)str;
+
+/// 加密参数整理
+/// @param dictory 参数数组
+/// @param firstSpace 键值拼接符号 如：： 对应值 key:value
+/// @param lastSpace 值与值拼接符号 如：& 对应值 key:value&key:value
++ (NSString *)lx_encryptionParameterSortingWithDictory:(NSMutableDictionary *)dictory
+                                         keySpaceValue:(NSString *)firstSpace
+                                       valueSpaceValue:(NSString *)lastSpace;
 
 @end
 

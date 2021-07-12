@@ -8,8 +8,16 @@
 
 #import "LXAppDelegate.h"
 #import "LXViewController.h"
+#import "LXMangerHeader.h"
 
 @implementation LXAppDelegate
+
+static inline void Prevent_App_Flashback(NSException *exception)
+{
+    //防止APP闪退
+    [[NSRunLoop currentRunLoop] run];
+    [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSRunLoopCommonModes];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -19,6 +27,10 @@
     self.window.rootViewController = [LXViewController new];
     
     [self.window makeKeyAndVisible];
+    
+    NSSetUncaughtExceptionHandler(Prevent_App_Flashback);
+    
+    
     
     return YES;
 }

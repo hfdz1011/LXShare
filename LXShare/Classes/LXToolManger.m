@@ -8,6 +8,9 @@
 
 #import "LXToolManger.h"
 #import <UIKit/UIKit.h>
+#import <CommonCrypto/CommonDigest.h>
+#import <CommonCrypto/CommonHMAC.h>
+
 @implementation LXToolManger
 
 ///保存值
@@ -159,6 +162,31 @@
     return mutStr;
     
 }
+
+///字典转化为json字符串 允许空格
++ (NSString *)lx_jsonStringForm_Dictory:(NSDictionary *)dictory
+{
+    
+    NSError *error;
+    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictory options:NSJSONWritingPrettyPrinted error:&error];
+    
+    NSString *jsonString;
+    
+    if (!jsonData) {
+        
+    }else{
+        jsonString = [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
+    }
+    
+    NSMutableString *mutStr = [NSMutableString stringWithString:jsonString];
+    NSRange range2 = {0,mutStr.length};
+    
+    [mutStr replaceOccurrencesOfString:@"\n" withString:@"" options:NSLiteralSearch range:range2];
+    
+    return mutStr;
+    
+}
 ///json字符串转化为字典
 + (NSDictionary *)lx_dictoryFormJsonString:(NSString *)jsonString
 {
@@ -281,15 +309,11 @@
 ///判断是否更新应用
 + (BOOL)lx_checkUpdateAppLocakVersion:(NSString *)localVersion withAppStoreVersion:(NSString *)storeVersion
 {
-    
     if (([localVersion compare:storeVersion options:NSNumericSearch] == NSOrderedAscending)){
-        
         return YES;
-        
     }else{
         return NO;
     }
-    
 }
 
 //~~~~~~~~
@@ -297,11 +321,9 @@
 ///精度参数的处理 -解决解析float或double 精度异常
 + (NSString *)lx_decimalNumberWithDouble:(NSString *)changeString
 {
-    
     NSString *doubleString        = [NSString stringWithFormat:@"%lf", [changeString doubleValue]];
     NSDecimalNumber *decNumber    = [NSDecimalNumber decimalNumberWithString:doubleString];
     return [decNumber stringValue];
-    
 }
 
 /// 银行卡号间隔
@@ -374,5 +396,166 @@
     return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     
 }
+
+
+/// 压缩图片
+/// @param image 需要被压缩的图片
+/// @param maxLength 压缩到的大小 500*1024 = 500KB
++(NSData *)lx_compressWithImage:(UIImage*)image imageKB:(NSUInteger)maxLength
+{
+    CGFloat compression = 1;
+    NSData *data = UIImageJPEGRepresentation(image, compression);
+    if (data.length < maxLength) return data;
+    
+    CGFloat max = 1;
+    CGFloat min = 0;
+    for (int i = 0; i < 6; ++i) {
+        compression = (max + min) / 2;
+        data = UIImageJPEGRepresentation(image, compression);
+        if (data.length < maxLength * 0.9) {
+            min = compression;
+        } else if (data.length > maxLength) {
+            max = compression;
+        } else {
+            break;
+        }
+    }
+    if (data.length < maxLength) return data;
+    UIImage *resultImage = [UIImage imageWithData:data];
+    NSUInteger lastDataLength = 0;
+    while (data.length > maxLength && data.length != lastDataLength) {
+        lastDataLength = data.length;
+        CGFloat ratio = (CGFloat)maxLength / data.length;
+        CGSize size = CGSizeMake((NSUInteger)(resultImage.size.width * sqrtf(ratio)),
+                                 (NSUInteger)(resultImage.size.height * sqrtf(ratio)));
+        UIGraphicsBeginImageContext(size);
+        [resultImage drawInRect:CGRectMake(0, 0, size.width, size.height)];
+        resultImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        data = UIImageJPEGRepresentation(resultImage, compression);
+    }
+    return data;
+}
+
+
+/// 给钱千位分隔符
+/// @param money 钱
+/// @param isBool 是否带￥
++ (NSString *)lx_changeMoneyComma:(id)money isAndDecimal:(BOOL)isBool
+{
+    NSString *moneyStr = [LXToolManger lx_decimalNumberWithDouble:[NSString stringWithFormat:@"%@",money]];
+    if([moneyStr doubleValue] <= 0 || money == nil){
+        if (isBool) {
+            return @"¥0.00";
+        }
+        return @"0.00";
+    }
+    NSNumber *moneyNumber = [NSNumber numberWithDouble:[moneyStr doubleValue]];
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    numberFormatter.positiveFormat = @"###,##0.00";
+    [numberFormatter setRoundingMode:NSNumberFormatterRoundDown];
+    NSString *formatString = [numberFormatter stringFromNumber:moneyNumber];
+    if (isBool) {
+        formatString = [NSString stringWithFormat:@"¥%@",formatString];
+    }
+    return formatString;
+}
+
+
+/// 获取随机数
+/// @param kNumber 长度
++ (NSString *)lx_generateTradeNumberWithCount:(NSInteger)kNumber
+{
+    NSString *sourceStr = @"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    NSMutableString *resultStr = [[NSMutableString alloc] init];
+    srand((unsigned)time(0));
+    for (int i = 0; i < kNumber; i++){
+        unsigned index = rand() % [sourceStr length];
+        NSString *oneStr = [sourceStr substringWithRange:NSMakeRange(index, 1)];
+        [resultStr appendString:oneStr];
+    }
+    return resultStr;
+}
+
+/// 获取毫秒时间戳
++(NSString *)lx_getNowTimeTimestamp{
+
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init] ;
+    [formatter setDateStyle:NSDateFormatterMediumStyle];
+    [formatter setTimeStyle:NSDateFormatterShortStyle];
+    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss SSS"]; // 设置想要的格式，hh与HH的区别:分别表示12小时制,24小时制
+    //设置时区,这一点对时间的处理有时很重要
+    NSTimeZone* timeZone = [NSTimeZone timeZoneWithName:@"Asia/Shanghai"];
+    [formatter setTimeZone:timeZone];
+    NSDate *datenow = [NSDate date];
+    NSString *timeSp = [NSString stringWithFormat:@"%ld", (long)[datenow timeIntervalSince1970]*1000];
+    return timeSp;
+}
+
+/**
+ * 加密方式,MAC算法: HmacSHA256
+ *  @param secret       秘钥
+ *  @param content 要加密的文本
+ *  @return 加密后的字符串
+ */
+
++ (NSString *)lx_hmacSHA256WithSecret:(NSString *)secret content:(NSString *)content
+{
+    const char *cKey  = [secret cStringUsingEncoding:NSASCIIStringEncoding];
+    const char *cData = [content cStringUsingEncoding:NSUTF8StringEncoding];// 有可能有中文 所以用NSUTF8StringEncoding -> NSASCIIStringEncoding
+    unsigned char cHMAC[CC_SHA256_DIGEST_LENGTH];
+    CCHmac(kCCHmacAlgSHA256, cKey, strlen(cKey), cData, strlen(cData), cHMAC);
+    NSData *HMACData = [NSData dataWithBytes:cHMAC length:sizeof(cHMAC)];
+    const unsigned char *buffer = (const unsigned char *)[HMACData bytes];
+    NSMutableString *HMAC = [NSMutableString stringWithCapacity:HMACData.length * 2];
+    for (int i = 0; i < HMACData.length; ++i){
+        [HMAC appendFormat:@"%02x", buffer[i]];
+    }
+    return HMAC;
+}
+
+
+/// sha1加密处理
+/// @param str 需要处理的字符串
++(NSString*)lx_sha1WithStr:(NSString *)str
+
+{
+   const char *cstr = [str cStringUsingEncoding:NSUTF8StringEncoding];
+   NSData *data = [NSData dataWithBytes:cstr length: strlen(cstr)];
+   uint8_t digest[CC_SHA1_DIGEST_LENGTH];
+
+   CC_SHA1(data.bytes, [[NSString stringWithFormat:@"%lu",(unsigned long)data.length] intValue], digest);
+   NSMutableString* output = [NSMutableString stringWithCapacity:CC_SHA1_DIGEST_LENGTH * 2];
+   for(int i = 0; i < CC_SHA1_DIGEST_LENGTH; i++){
+        [output appendFormat:@"%02x", digest[i]];
+    }
+    return output;
+}
+
+
+/// 加密参数整理
+/// @param dictory 参数数组
+/// @param firstSpace 键值拼接符号 如：： 对应值 key:value
+/// @param lastSpace 值与值拼接符号 如：& 对应值 key:value&key:value
++ (NSString *)lx_encryptionParameterSortingWithDictory:(NSMutableDictionary *)dictory keySpaceValue:(NSString *)firstSpace valueSpaceValue:(NSString *)lastSpace
+{
+    
+    NSArray *sortedArray = [[dictory allKeys] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2){
+        return [obj1 compare:obj2 options:NSNumericSearch];
+    }];
+    
+    NSString *stringA;
+    for (int i=0; i<sortedArray.count; i++) {
+        if (i==0) {
+            stringA=[NSString stringWithFormat:@"%@%@%@%@%@%@%@",@"\"",sortedArray[i],@"\"",@"\"",firstSpace,dictory[sortedArray[i]],@"\""];
+        }else{
+            stringA=[NSString stringWithFormat:@"%@%@%@%@%@%@%@%@%@",stringA,lastSpace,@"\"",sortedArray[i],@"\"",@"\"",firstSpace,dictory[sortedArray[i]],@"\""];
+        }
+    }
+    return [NSString stringWithFormat:@"%@%@%@",@"{",stringA,@"}"];
+}
+
+
+
 
 @end
