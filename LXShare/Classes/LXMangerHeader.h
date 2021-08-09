@@ -19,12 +19,25 @@
 #import "UIButton+LX.h"
 #import "UILabel+LX.h"
 
+#import "DateTools.h"
+
+#import "Masonry.h"
+
+#import "UIViewController+Navigation.h"
+
 //======================config=================
 
 #define K_Font_Regular   @"PingFangSC-Regular"
 #define K_Font_Medium    @"PingFangSC-Medium"
 #define K_Font_Light     @"PingFangSC-Light"
 #define K_Font_Semibold  @"PingFangSC-Semibold"
+
+
+///展示年月日时分秒
+static inline NSString * lx_showAllTimes(NSDate * changeDate){
+    
+    return  [NSString stringWithFormat:@"%ld-%02ld-%02ld",(long)changeDate.year,(long)changeDate.month,(long)changeDate.day];
+}
 
 #define KscrendWidth             [UIScreen mainScreen].bounds.size.width
 #define KscrendHeight            [UIScreen mainScreen].bounds.size.height

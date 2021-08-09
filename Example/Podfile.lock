@@ -1,16 +1,29 @@
 PODS:
-  - LXShare (0.0.2)
+  - DateTools (2.0.0)
+  - LXShare (0.0.5):
+    - DateTools
+    - Masonry
+  - Masonry (1.1.0)
 
 DEPENDENCIES:
+  - DateTools
   - LXShare (from `../`)
+  - Masonry
+
+SPEC REPOS:
+  trunk:
+    - DateTools
+    - Masonry
 
 EXTERNAL SOURCES:
   LXShare:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LXShare: 52b6628af996060ba9730d25a74a3fd7c88c7b4a
+  DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
+  LXShare: d59e04f38c09d7bc116095b9fd6e4e57fa1f45d7
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: 4ed178a06bc129016566ef3f6ede224074e339df
+PODFILE CHECKSUM: 7f088a4ec2cab6740368c5863aad52d3e58a38d7
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

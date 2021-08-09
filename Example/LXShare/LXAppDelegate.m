@@ -24,7 +24,7 @@ static inline void Prevent_App_Flashback(NSException *exception)
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.rootViewController = [LXViewController new];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[LXViewController new]];
     
     [self.window makeKeyAndVisible];
     

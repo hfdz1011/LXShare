@@ -9,6 +9,7 @@
 #import "LXViewController.h"
 
 #import "LXMangerHeader.h"
+#import "LXNextViewController.h"
 
 @interface LXViewController ()
 
@@ -16,14 +17,10 @@
 
 @implementation LXViewController
 
-- (void)viewDidLoad
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidLoad];
-    
-    self.view.backgroundColor = [UIColor purpleColor];
-    
-    UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 100, 50)];
-    [self.view addSubview:lab];
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
     
     [UIAlertController lx_showAlertWithTitle:@"标题部分"
                                      message:@"信息部分"
@@ -31,10 +28,35 @@
                                clickedHandle:^(UIAlertAction *action) {
         
         if ([action.title isEqualToString:@"确定"]) {
+            
+            LXNextViewController *next = [[LXNextViewController alloc]init];
+            
+            [self.navigationController pushViewController:next animated:YES];
+            
         }
     } buttons:@{
         @(UIAlertActionStyleDefault):@"确定"},@{@(UIAlertActionStyleCancel):@"取消"},nil];
     
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor purpleColor];
+    
+    [self lx_createNavigationWithTitle:@"数据测试" titleColor:[UIColor redColor] titleFont:[UIFont fontWithName:K_Font_Medium size:18] withBgColor:[UIColor blueColor]];
+    
+    UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 100, 50)];
+    [self.view addSubview:lab];
+    
+  
     
     UIView *calyer = [[UIView alloc]initWithFrame:CGRectMake(100, 200, 50, 100)];
     
@@ -56,6 +78,8 @@
     button.backgroundColor = [UIColor redColor];
     [self.view addSubview:button];
     
+    
+
 }
 
 - (void)buttonAction:(UIButton *)sender{

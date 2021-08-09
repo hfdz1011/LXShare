@@ -19,9 +19,11 @@
 #import "UIAlertController+LX.h"
 #import "UIButton+LX.h"
 #import "UIColor+LX.h"
+#import "UIImage+LX.h"
 #import "UILabel+LX.h"
 #import "UITableView+LX.h"
 #import "UITextField+LX.h"
+#import "UIViewController+Navigation.h"
 
 FOUNDATION_EXPORT double LXShareVersionNumber;
 FOUNDATION_EXPORT const unsigned char LXShareVersionString[];
