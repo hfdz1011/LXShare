@@ -583,8 +583,32 @@
     }
     return [NSString stringWithFormat:@"%@%@%@",@"{",stringA,@"}"];
 }
-
-
+/// 返回缩放对应的高度
+/// @param oldWidth 原宽度
+/// @param oldHeight 原高度
+/// @param newWidth 新宽度
++ (CGFloat)lx_backChangeHeightActionWithOldWidth:(CGFloat)oldWidth withOldHeight:(CGFloat)oldHeight withNewWidth:(CGFloat)newWidth
+{
+    
+    CGFloat itemWidth = newWidth;
+    CGFloat image_width = oldWidth;
+    CGFloat image_height = oldHeight;
+    CGFloat change_image_Height = itemWidth*image_height/image_width;
+    return change_image_Height;
+}
+/// 返回缩放对应的宽度
+/// @param oldWidth 原宽度
+/// @param oldHeight 原高度
+/// @param newHeight 新高度
++ (CGFloat)lx_backChangeWidthActionWithOldWidth:(CGFloat)oldWidth withOldHeight:(CGFloat)oldHeight withNewHeight:(CGFloat)newHeight
+{
+    
+    CGFloat itemHeight = newHeight;
+    CGFloat image_width = oldWidth;
+    CGFloat image_height = oldHeight;
+    CGFloat change_image_Width = itemHeight*image_width/image_height;
+    return change_image_Width;
+}
 
 
 @end

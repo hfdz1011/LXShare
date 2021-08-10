@@ -142,6 +142,22 @@ NS_ASSUME_NONNULL_BEGIN
                                          keySpaceValue:(NSString *)firstSpace
                                        valueSpaceValue:(NSString *)lastSpace;
 
+
+/// 返回缩放对应的高度
+/// @param oldWidth 原宽度
+/// @param oldHeight 原高度
+/// @param newWidth 新宽度
++ (CGFloat)lx_backChangeHeightActionWithOldWidth:(CGFloat)oldWidth withOldHeight:(CGFloat)oldHeight withNewWidth:(CGFloat)newWidth
+;
+
+
+/// 返回缩放对应的宽度
+/// @param oldWidth 原宽度
+/// @param oldHeight 原高度
+/// @param newHeight 新高度
++ (CGFloat)lx_backChangeWidthActionWithOldWidth:(CGFloat)oldWidth withOldHeight:(CGFloat)oldHeight withNewHeight:(CGFloat)newHeight
+;
+
 @end
 
 NS_ASSUME_NONNULL_END
