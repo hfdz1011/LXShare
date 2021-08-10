@@ -13,24 +13,35 @@
 
 @implementation LXToolManger
 
-///保存值
+///
+
+
+/// 保存值
+/// @param value 值
+/// @param key 键
 + (void)lx_saveUserDefaultsWithValue:(NSString *)value forKey:(NSString *) key
 {
     [[NSUserDefaults standardUserDefaults] setValue:value forKey:key];
     [[NSUserDefaults standardUserDefaults]synchronize];
 }
-///删除值
+
+/// 删除值
+/// @param key 键
 + (void)lx_reMoveUserDefaultsForKey:(NSString *)key
 {
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:key];
     [[NSUserDefaults standardUserDefaults]synchronize];
 }
-///获取值
+
+/// 获取值
+/// @param key 键
 + (NSString *)lx_getUserDefaultsValueForKey:(NSString *)key
 {
     return [NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:key]];
 }
-///隐藏手机号中间数字
+
+/// 隐藏手机号中间数字
+/// @param phoneString 手机号
 + (NSString *)lx_hidenCenterPhoneNumber:(NSString *)phoneString
 {
     NSString *phoneNew = [[NSString alloc] init];
@@ -49,7 +60,9 @@
     return phoneNew;
 }
 
-///检查银行卡是否合法
+
+/// 检查银行卡是否合法
+/// @param cardNumber 银行卡号
 + (BOOL)lx_checkCardNumber:(NSString *)cardNumber
 {
     NSString *digitsOnly = [self getDigitsOnly:cardNumber];
@@ -92,7 +105,9 @@
     }
     return digitsOnly;
 }
-///数组转化为json字符串
+
+/// 数组转化为json字符串
+/// @param array 数组
 + (NSString *)lx_jsonStringFormArray:(NSArray*)array
 {
     NSData *data = [NSJSONSerialization dataWithJSONObject:array
@@ -104,7 +119,9 @@
     NSString *str=[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     return str;
 }
-///json字符串转化为数组
+
+/// json字符串转化为数组
+/// @param json 字符串
 + (NSMutableArray *)lx_arrayFormJsonString:(NSString *)json
 {
     NSMutableArray *arr = [NSMutableArray array];
@@ -133,7 +150,9 @@
         return arr;
     }
 }
-///字典转化为json字符串
+
+/// 字典转化为json字符串
+/// @param dictory 字典
 + (NSString *)lx_jsonStringFormDictory:(NSDictionary *)dictory
 {
     
@@ -163,7 +182,9 @@
     
 }
 
-///字典转化为json字符串 允许空格
+
+/// 字典转化为json字符串 允许空格
+/// @param dictory 字典
 + (NSString *)lx_jsonStringForm_Dictory:(NSDictionary *)dictory
 {
     
@@ -187,7 +208,9 @@
     return mutStr;
     
 }
-///json字符串转化为字典
+
+/// json字符串转化为字典
+/// @param jsonString 字符串
 + (NSDictionary *)lx_dictoryFormJsonString:(NSString *)jsonString
 {
     if (jsonString == nil) {
@@ -207,7 +230,12 @@
 }
 
 //========================================================
-///添加渐变效果
+/// 给视图添加渐变颜色
+/// @param frame frame
+/// @param colors 颜色数组
+/// @param locations 渐变节点位置 0～1
+/// @param spoint 开始点位置
+/// @param epoint 结束点位置
 + (CAGradientLayer *)lx_backGradientLayerFrame:(CGRect)frame withColorArray:(NSArray *)colors withLocations:(NSArray *)locations withStartPoint:(CGPoint )spoint withEndPoint:(CGPoint) epoint
 {
     CAGradientLayer *layer =  [CAGradientLayer layer];
@@ -228,7 +256,9 @@
     return layer;
 }
 
-///根据文本内容返回二维码【可添加logo】
+/// 根据文本内容返回二维码
+/// @param message 文本内容
+/// @param logoIconName logo图片名称
 + (UIImage *)lx_returnQrCodeImageForMessage:(NSString *)message withLogoImageName:(NSString * _Nullable) logoIconName
 {
     
@@ -498,7 +528,6 @@
  *  @param content 要加密的文本
  *  @return 加密后的字符串
  */
-
 + (NSString *)lx_hmacSHA256WithSecret:(NSString *)secret content:(NSString *)content
 {
     const char *cKey  = [secret cStringUsingEncoding:NSASCIIStringEncoding];
