@@ -18,10 +18,7 @@ typedef  void (^rightButtonBlock)(void);
 /// @param titleColor 颜色
 /// @param titleFont 字体
 /// @param bgColor 导航背景色
-- (void)lx_createNavigationWithTitle:(NSString *)title
-                          titleColor:(UIColor *)titleColor
-                           titleFont:(UIFont *)titleFont
-                         withBgColor:(UIColor *)bgColor;
+- (void)lx_createNavigationWithTitle:(NSString *)title   titleColor:(UIColor *)titleColor   titleFont:(UIFont *)titleFont   withBgColor:(UIColor *)bgColor;
 
 /// 创建 左边返回按钮+中间文本 导航
 /// @param icon 按钮图标
@@ -31,13 +28,7 @@ typedef  void (^rightButtonBlock)(void);
 /// @param color 颜色
 /// @param font 字体
 /// @param bgColor 背景颜色
-- (void)lx_createNavigationLeftIcon:(UIImage *)icon
-                          leftWidth:(CGFloat)leftwidth
-                         leftHeight:(CGFloat)leftHeight
-                              title:(NSString *)title
-                              color:(UIColor *)color
-                               font:(UIFont *)font
-                            bgColor:(UIColor *)bgColor;
+- (void)lx_createNavigationLeftIcon:(UIImage *)icon  leftWidth:(CGFloat)leftwidth leftHeight:(CGFloat)leftHeight  title:(NSString *)title  color:(UIColor *)color     font:(UIFont *)font   bgColor:(UIColor *)bgColor;
 
 /// 创建 左边返回按钮+中间文本+右边文本 导航
 /// @param icon 按钮图标
@@ -51,17 +42,7 @@ typedef  void (^rightButtonBlock)(void);
 /// @param rightFont 右边文本字体
 /// @param bgColor 背景颜色
 /// @param rightBlock 右边点击事件
-- (void)lx_createNavigationLeftIcon:(UIImage *)icon
-                          leftWidth:(CGFloat)leftwidth
-                         leftHeight:(CGFloat)leftHeight
-                        centerTitle:(NSString *)centerTitle
-                        centerColor:(UIColor *)centerColor
-                         centerFont:(UIFont *)centerFont
-                         rightTitle:(NSString *)rightTitle
-                         rightColor:(UIColor *)rightColor
-                          rightFont:(UIFont *)rightFont
-                            bgColor:(UIColor *)bgColor
-                    rightClickBlock:(rightButtonBlock)rightBlock;
+- (void)lx_createNavigationLeftIcon:(UIImage *)icon     leftWidth:(CGFloat)leftwidth     leftHeight:(CGFloat)leftHeight    centerTitle:(NSString *)centerTitle    centerColor:(UIColor *)centerColor   centerFont:(UIFont *)centerFont   rightTitle:(NSString *)rightTitle   rightColor:(UIColor *)rightColor   rightFont:(UIFont *)rightFont  bgColor:(UIColor *)bgColor  rightClickBlock:(rightButtonBlock)rightBlock;
 
 /// 创建 左边返回按钮+中间文本+右边图标 导航
 /// @param icon 按钮图标
@@ -74,16 +55,7 @@ typedef  void (^rightButtonBlock)(void);
 /// @param iconWidth 按钮宽度
 /// @param bgColor 背景颜色
 /// @param rightBlock 右边点击事件
-- (void)lx_createNavigationLeftIcon:(UIImage *)icon
-                          leftWidth:(CGFloat)leftwidth
-                         leftHeight:(CGFloat)leftHeight
-                        centerTitle:(NSString *)centerTitle
-                        centerColor:(UIColor *)centerColor
-                         centerFont:(UIFont *)centerFont
-                          rightIcon:(UIImage *)rightIcon
-                          iconWidth:(CGFloat)iconWidth
-                            bgColor:(UIColor *)bgColor
-                    rightClickBlock:(rightButtonBlock)rightBlock;
+- (void)lx_createNavigationLeftIcon:(UIImage *)icon  leftWidth:(CGFloat)leftwidth    leftHeight:(CGFloat)leftHeight  centerTitle:(NSString *)centerTitle  centerColor:(UIColor *)centerColor    centerFont:(UIFont *)centerFont   rightIcon:(UIImage *)rightIcon   iconWidth:(CGFloat)iconWidth   bgColor:(UIColor *)bgColor   rightClickBlock:(rightButtonBlock)rightBlock;
 
 @end
 

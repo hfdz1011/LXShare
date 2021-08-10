@@ -27,7 +27,7 @@ static CGFloat z_left_icon_width = 1;
     UIView *headV = [[UIView alloc]initWithFrame:CGRectMake(0, KHeight_StatusBar, KscrendWidth, 44)];
     headV.userInteractionEnabled = YES;
     [navigationView addSubview:headV];
-        
+    
     UILabel *titleLable = [UILabel lx_initLableWithString:title
                                                     color:titleColor
                                                      font:titleFont];
@@ -70,7 +70,7 @@ static CGFloat z_left_icon_width = 1;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]init];
     [tap addTarget:self action:@selector(leftTapAction)];
     [leftView addGestureRecognizer:tap];
-
+    
     
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [leftButton setImage:icon forState:UIControlStateNormal];
@@ -138,7 +138,7 @@ static CGFloat z_left_icon_width = 1;
         make.centerY.mas_equalTo(headV.mas_centerY);
         make.left.equalTo(@(z_left_icon_width));
     }];
-        
+    
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]init];
     [tap addTarget:self action:@selector(leftTapAction)];
     [leftView addGestureRecognizer:tap];
@@ -156,7 +156,7 @@ static CGFloat z_left_icon_width = 1;
         make.centerX.mas_equalTo(leftView.mas_centerX);
     }];
     
-   
+    
     
     UILabel *titleLable = [UILabel lx_initLableWithString:centerTitle
                                                     color:centerColor
@@ -174,7 +174,7 @@ static CGFloat z_left_icon_width = 1;
                                                    titleFont:rightFont];
     //关联对象
     objc_setAssociatedObject(rightButton, @"rightBlock_KEY", rightBlock, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-
+    
     [rightButton addTarget:self action:@selector(rightButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [headV addSubview:rightButton];
     [rightButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -225,7 +225,7 @@ static CGFloat z_left_icon_width = 1;
         make.centerY.mas_equalTo(headV.mas_centerY);
         make.left.equalTo(@(z_left_icon_width));
     }];
-        
+    
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]init];
     [tap addTarget:self action:@selector(leftTapAction)];
     [leftView addGestureRecognizer:tap];

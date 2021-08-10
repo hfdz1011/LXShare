@@ -13,9 +13,6 @@
 
 @implementation LXToolManger
 
-///
-
-
 /// 保存值
 /// @param value 值
 /// @param key 键
@@ -59,7 +56,6 @@
     }
     return phoneNew;
 }
-
 
 /// 检查银行卡是否合法
 /// @param cardNumber 银行卡号
@@ -182,16 +178,12 @@
     
 }
 
-
 /// 字典转化为json字符串 允许空格
 /// @param dictory 字典
 + (NSString *)lx_jsonStringForm_Dictory:(NSDictionary *)dictory
 {
-    
     NSError *error;
-    
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictory options:NSJSONWritingPrettyPrinted error:&error];
-    
     NSString *jsonString;
     
     if (!jsonData) {
@@ -199,14 +191,12 @@
     }else{
         jsonString = [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
     }
-    
     NSMutableString *mutStr = [NSMutableString stringWithString:jsonString];
     NSRange range2 = {0,mutStr.length};
     
     [mutStr replaceOccurrencesOfString:@"\n" withString:@"" options:NSLiteralSearch range:range2];
     
     return mutStr;
-    
 }
 
 /// json字符串转化为字典
@@ -229,7 +219,6 @@
     return dic;
 }
 
-//========================================================
 /// 给视图添加渐变颜色
 /// @param frame frame
 /// @param colors 颜色数组
@@ -406,9 +395,9 @@
  * @param roundView 需要设置圆角的控件
  **/
 + (void)lx_addCornerWithRoundedRect:(CGRect)rect
-                 RoundingCorners:(UIRectCorner)corners
-                     cornerRadii:(CGSize)cornerRadii
-                       roundView:(UIView *)roundView
+                    RoundingCorners:(UIRectCorner)corners
+                        cornerRadii:(CGSize)cornerRadii
+                          roundView:(UIView *)roundView
 {
     [roundView layoutIfNeeded];
     UIBezierPath* rounded = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:corners cornerRadii:cornerRadii];
@@ -509,7 +498,7 @@
 
 /// 获取毫秒时间戳
 +(NSString *)lx_getNowTimeTimestamp{
-
+    
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init] ;
     [formatter setDateStyle:NSDateFormatterMediumStyle];
     [formatter setTimeStyle:NSDateFormatterShortStyle];
@@ -549,13 +538,13 @@
 +(NSString*)lx_sha1WithStr:(NSString *)str
 
 {
-   const char *cstr = [str cStringUsingEncoding:NSUTF8StringEncoding];
-   NSData *data = [NSData dataWithBytes:cstr length: strlen(cstr)];
-   uint8_t digest[CC_SHA1_DIGEST_LENGTH];
-
-   CC_SHA1(data.bytes, [[NSString stringWithFormat:@"%lu",(unsigned long)data.length] intValue], digest);
-   NSMutableString* output = [NSMutableString stringWithCapacity:CC_SHA1_DIGEST_LENGTH * 2];
-   for(int i = 0; i < CC_SHA1_DIGEST_LENGTH; i++){
+    const char *cstr = [str cStringUsingEncoding:NSUTF8StringEncoding];
+    NSData *data = [NSData dataWithBytes:cstr length: strlen(cstr)];
+    uint8_t digest[CC_SHA1_DIGEST_LENGTH];
+    
+    CC_SHA1(data.bytes, [[NSString stringWithFormat:@"%lu",(unsigned long)data.length] intValue], digest);
+    NSMutableString* output = [NSMutableString stringWithCapacity:CC_SHA1_DIGEST_LENGTH * 2];
+    for(int i = 0; i < CC_SHA1_DIGEST_LENGTH; i++){
         [output appendFormat:@"%02x", digest[i]];
     }
     return output;
