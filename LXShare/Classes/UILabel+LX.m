@@ -42,4 +42,51 @@
     return lable;
 }
 
+
+/// 字体
+- (UILabel *(^)(UIFont *font))lx_font
+{
+    return ^id(UIFont *font){
+        self.font = font;
+        return self;
+    };
+}
+
+/// 颜色
+- (UILabel *(^)(UIColor *color))lx_color
+{
+    return ^id(UIColor *colors){
+        self.textColor = colors;
+        return self;
+    };
+}
+
+/// 行数
+- (UILabel *(^)(NSInteger numberOfLines))lx_numbers
+{
+    return ^id(NSInteger numberOfLines){
+        self.numberOfLines = numberOfLines;
+        return self;
+    };
+}
+
+/// 对齐
+- (UILabel *(^)(NSTextAlignment textAlignment))lx_textAlignment
+{
+    return ^id(NSTextAlignment textAlignment){
+        self.textAlignment = textAlignment;
+        return self;
+    };
+}
+
+/// 文本
+- (UILabel *(^)(NSString *text))lx_text
+{
+    return ^id(NSString *text){
+        self.text = text;
+        return self;
+    };
+}
+
+
 @end

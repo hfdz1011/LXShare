@@ -31,6 +31,22 @@ NS_ASSUME_NONNULL_BEGIN
                               color:(UIColor * _Nullable)color
                                font:(UIFont * _Nullable)font;
 
+/// 字体
+- (UILabel *(^)(UIFont *font))lx_font;
+
+/// 颜色
+- (UILabel *(^)(UIColor *color))lx_color;
+
+/// 行数
+- (UILabel *(^)(NSInteger numberOfLines))lx_numbers;
+
+/// 对齐
+- (UILabel *(^)(NSTextAlignment textAlignment))lx_textAlignment;
+
+/// 内容
+- (UILabel *(^)(NSString *text))lx_text;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
