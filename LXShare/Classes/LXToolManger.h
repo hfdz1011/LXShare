@@ -158,6 +158,16 @@ NS_ASSUME_NONNULL_BEGIN
 + (CGFloat)lx_backChangeWidthActionWithOldWidth:(CGFloat)oldWidth withOldHeight:(CGFloat)oldHeight withNewHeight:(CGFloat)newHeight
 ;
 
+/// UIColor转化为UIImage
+/// @param color 颜色
++ (UIImage *)lx_imageWithColor:(UIColor *)color;
+
+/// 计算文本的高度或者宽度
+/// @param string 文本字符串
+/// @param stringFont 文本字体
+/// @param widths 宽度 如果为‘0’或者‘MAXFLOAT’或者‘CGFLOAT_MAX’，该方法为计算文字宽度
+/// @param heights 高度 如果为‘0’或者‘MAXFLOAT’或者‘CGFLOAT_MAX’，该方法为计算文字高度
++ (CGSize)lx_calculationString:(NSString *)string withFont:(UIFont *)stringFont withWidth:(CGFloat)widths withHeight:(CGFloat)heights;
 @end
 
 NS_ASSUME_NONNULL_END

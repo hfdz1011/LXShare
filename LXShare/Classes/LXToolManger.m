@@ -599,4 +599,51 @@
 }
 
 
+/// UIColor转化为UIImage
+/// @param color 颜色
++ (UIImage *)lx_imageWithColor:(UIColor *)color {
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    //开启图片上下文
+    UIGraphicsBeginImageContext(rect.size);
+    //获取上下文
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    //设置颜色
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    //设置rect
+    CGContextFillRect(context, rect);
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    //上下文使用完毕,关闭上下文
+    UIGraphicsEndImageContext();
+    //返回image
+    return image;
+}
+
+
+
+/// 计算文本的高度或者宽度
+/// @param string 文本字符串
+/// @param stringFont 文本字体
+/// @param widths 宽度 如果为‘0’或者‘MAXFLOAT’或者‘CGFLOAT_MAX’，该方法为计算文字宽度
+/// @param heights 高度 如果为‘0’或者‘MAXFLOAT’或者‘CGFLOAT_MAX’，该方法为计算文字高度
++ (CGSize)lx_calculationString:(NSString *)string withFont:(UIFont *)stringFont withWidth:(CGFloat)widths withHeight:(CGFloat)heights
+
+{
+  
+    if (widths == MAXFLOAT || widths == CGFLOAT_MAX || widths == 0) {
+        return  [string boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, heights)
+                                           options:NSStringDrawingTruncatesLastVisibleLine| NSStringDrawingUsesFontLeading |NSStringDrawingUsesLineFragmentOrigin
+                                        attributes:@{NSFontAttributeName: stringFont}
+                                           context:nil].size;
+   
+    } else if (heights == MAXFLOAT || heights == CGFLOAT_MAX || heights == 0) {
+      
+        return  [string boundingRectWithSize:CGSizeMake(widths, CGFLOAT_MAX)
+                                           options:NSStringDrawingTruncatesLastVisibleLine| NSStringDrawingUsesFontLeading |NSStringDrawingUsesLineFragmentOrigin
+                                        attributes:@{NSFontAttributeName: stringFont}
+                                           context:nil].size;
+    }else{
+        return CGSizeMake(0, 0);
+    }
+}
+
 @end
