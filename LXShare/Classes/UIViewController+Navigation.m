@@ -186,9 +186,7 @@ static CGFloat z_left_icon_width = 1;
 
 - (void)rightButtonAction:(UIButton *)sender
 {
-    
     rightButtonBlock block =  objc_getAssociatedObject(sender, @"rightBlock_KEY");
-    
     if (block) {
         block();
     }

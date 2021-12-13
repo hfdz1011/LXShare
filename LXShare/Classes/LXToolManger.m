@@ -531,7 +531,6 @@
     return HMAC;
 }
 
-
 /// sha1加密处理
 /// @param str 需要处理的字符串
 +(NSString*)lx_sha1WithStr:(NSString *)str
@@ -548,7 +547,6 @@
     }
     return output;
 }
-
 
 /// 加密参数整理
 /// @param dictory 参数数组
@@ -598,7 +596,6 @@
     return change_image_Width;
 }
 
-
 /// UIColor转化为UIImage
 /// @param color 颜色
 + (UIImage *)lx_imageWithColor:(UIColor *)color {
@@ -617,8 +614,6 @@
     //返回image
     return image;
 }
-
-
 
 /// 计算文本的高度或者宽度
 /// @param string 文本字符串

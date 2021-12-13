@@ -20,8 +20,8 @@
     UITextField *filed = [[UITextField alloc]init];
     filed.font = font;
     filed.textColor = color;
-    filed.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeString attributes:@{NSForegroundColorAttributeName: placeColor,NSFontAttributeName:placeFont}];
-    
+    filed.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeString
+                                                                  attributes:@{NSForegroundColorAttributeName: placeColor,NSFontAttributeName:placeFont}];
     return filed;
 }
 /// UITextField 设置虚拟文字的颜色和字体
