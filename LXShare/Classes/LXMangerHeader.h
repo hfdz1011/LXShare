@@ -18,9 +18,9 @@
 #import "UITextField+LX.h"
 #import "UIButton+LX.h"
 #import "UILabel+LX.h"
+#import "LXTimeConfig.h"
 
 #import "DateTools.h"
-
 #import "Masonry.h"
 
 #import "UIViewController+Navigation.h"
@@ -35,7 +35,6 @@
 
 ///展示年月日时分秒
 static inline NSString * lx_showAllTimes(NSDate * changeDate){
-    
     return  [NSString stringWithFormat:@"%ld-%02ld-%02ld",(long)changeDate.year,(long)changeDate.month,(long)changeDate.day];
 }
 

@@ -35,20 +35,20 @@
 //    [self lx_createNavigationLeftIcon:[UIImage imageNamed:@"syt_code"] title:@"我只是好奇而已" color:[UIColor redColor] font:[UIFont fontWithName:K_Font_Medium size:18] bgColor:[UIColor orangeColor]];
     
     
-    [self lx_createNavigationLeftIcon:[UIImage imageNamed:@"syt_code"]
-                          centerTitle:@"我只是来测试的"
-                          centerColor:[UIColor redColor]
-                           centerFont:[UIFont fontWithName:K_Font_Medium size:18]
-                           rightTitle:@"点击"
-                           rightColor:[UIColor blackColor]
-                            rightFont:[UIFont fontWithName:K_Font_Medium size:15]
-                              bgColor:[UIColor orangeColor]
-                      rightClickBlock:^{
-        
-        
-        NSLog(@"responseObject===???   %@",@"成功实现了点击的回掉处理");
-        
-    }];
+//    [self lx_createNavigationLeftIcon:[UIImage imageNamed:@"syt_code"]
+//                          centerTitle:@"我只是来测试的"
+//                          centerColor:[UIColor redColor]
+//                           centerFont:[UIFont fontWithName:K_Font_Medium size:18]
+//                           rightTitle:@"点击"
+//                           rightColor:[UIColor blackColor]
+//                            rightFont:[UIFont fontWithName:K_Font_Medium size:15]
+//                              bgColor:[UIColor orangeColor]
+//                      rightClickBlock:^{
+//        
+//        
+//        NSLog(@"responseObject===???   %@",@"成功实现了点击的回掉处理");
+//        
+//    }];
 }
 
 

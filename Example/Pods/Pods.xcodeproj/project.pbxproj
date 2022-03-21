@@ -82,6 +82,10 @@
 		D4DEB9E661E07E543268808595FE625F /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = D96D143BA3B2E5252071D00D04C7CF71 /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB90A8CD81C9400CFF83FFE8044B4A37 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F8AD130489F842877D8528FD39F64D8 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF086FDE9EC39AD74143B0312485C01C /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 536260168EF0ADB1618350117FEC4744 /* View+MASAdditions.m */; };
+		DFE531E127E85B210000715B /* LXTimeConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = DFE531DF27E85B210000715B /* LXTimeConfig.h */; };
+		DFE531E227E85B210000715B /* LXTimeConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = DFE531DF27E85B210000715B /* LXTimeConfig.h */; };
+		DFE531E327E85B210000715B /* LXTimeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE531E027E85B210000715B /* LXTimeConfig.m */; };
+		DFE531E427E85B210000715B /* LXTimeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE531E027E85B210000715B /* LXTimeConfig.m */; };
 		EAB989B01444EB9A21541384258B42CA /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A05DA955109C6B6CCA9DB9AE5945FD3 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB062CA8D5EB8D1BB2ADAB713CA4A130 /* LXShare-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 264B698E17921FCA641AF0273618B074 /* LXShare-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EBFBA3BDBC960A00CA44637D30292AD7 /* UITextField+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 475F4CDA177C9C906CF93F53876524D7 /* UITextField+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -140,7 +144,7 @@
 		1170625930130ECCC7B2AC873BADAD4D /* LXShare-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LXShare-dummy.m"; sourceTree = "<group>"; };
 		1691CCD31E2407596EA7EEE0ACA074CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1C5803E5B4D4C94C604CBDB6472FA2DC /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
-		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		264B698E17921FCA641AF0273618B074 /* LXShare-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXShare-umbrella.h"; sourceTree = "<group>"; };
 		26BCC52C58E186561FCE73A606706179 /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodCollection.m; path = DateTools/DateTools/DTTimePeriodCollection.m; sourceTree = "<group>"; };
 		27C45FF8BD3CC39FAFB0BA319B0F2DBC /* Pods-LXShare_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LXShare_Example-dummy.m"; sourceTree = "<group>"; };
@@ -158,7 +162,7 @@
 		46F4B390C8CD1F39867E372A5AEA5276 /* LXShare.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LXShare.modulemap; sourceTree = "<group>"; };
 		475F4CDA177C9C906CF93F53876524D7 /* UITextField+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+LX.h"; path = "LXShare/Classes/UITextField+LX.h"; sourceTree = "<group>"; };
 		49BF0995249ABB9EADA86BACBDD6EA13 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
-		4AF171581392AD234F23BE913F0C22FE /* DateTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DateTools.framework; path = DateTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AF171581392AD234F23BE913F0C22FE /* DateTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DateTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B82F22893C2E94A28B95C4ADF6BAE1D /* DateTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTools.release.xcconfig; sourceTree = "<group>"; };
 		51B8BD6D84A0B34BDB1FAFD1E3F1954B /* UITableView+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+LX.h"; path = "LXShare/Classes/UITableView+LX.h"; sourceTree = "<group>"; };
 		5308FAE86F1B78843226925B3BAC6C95 /* UILabel+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+LX.m"; path = "LXShare/Classes/UILabel+LX.m"; sourceTree = "<group>"; };
@@ -197,7 +201,7 @@
 		9B6B60D1C6C1666D66689B6DE1433C62 /* NSDecimalNumber+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDecimalNumber+LX.h"; path = "LXShare/Classes/NSDecimalNumber+LX.h"; sourceTree = "<group>"; };
 		9C8E70DFED7C67DA40092C1A5805F475 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
 		9D0C12D03912FE4AB7690DE68E6C7E67 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E8273C75CD07985CC3109608E63C87F /* Pods-LXShare_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXShare_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		9F3BDDA5BDFE42A6322F0C5ABD42C34E /* DTTimePeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriod.m; path = DateTools/DateTools/DTTimePeriod.m; sourceTree = "<group>"; };
 		A009F125674B09AC2E75757756DBC39A /* DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTError.h; path = DateTools/DateTools/DTError.h; sourceTree = "<group>"; };
@@ -206,7 +210,7 @@
 		A94E4FBB7D761EB4C90BDACF0BC15D21 /* NSDate+DateTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DateTools.m"; path = "DateTools/DateTools/NSDate+DateTools.m"; sourceTree = "<group>"; };
 		ABEB67EEE6443418B16B3DED2FE5621D /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
 		AC0A7FA42F1CDE449827C98D432C0483 /* DateTools.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DateTools.bundle; path = DateTools/DateTools/DateTools.bundle; sourceTree = "<group>"; };
-		AC3061336BD598355E97F902B60B7CC4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		AC3061336BD598355E97F902B60B7CC4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AC9DFD80EAE69BAFDEC1B66D2006B42C /* UIColor+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+LX.m"; path = "LXShare/Classes/UIColor+LX.m"; sourceTree = "<group>"; };
 		ACFA5A73A3329F1DED9DD9D8D7A9C28D /* DateTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTools-prefix.pch"; sourceTree = "<group>"; };
 		AF1986F3C286A0F1842EB2EB970C4465 /* LXShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LXShare.release.xcconfig; sourceTree = "<group>"; };
@@ -220,14 +224,16 @@
 		CB9454A692444EF5F938FB25D34EE4F4 /* UITableView+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+LX.m"; path = "LXShare/Classes/UITableView+LX.m"; sourceTree = "<group>"; };
 		CEE3FE735D9E549503D9BC12DFC4A357 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
 		CFB02D5AEEEA2CC453FFAFC22672B950 /* DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateTools.h; path = DateTools/DateTools/DateTools.h; sourceTree = "<group>"; };
-		D4AA23D2DB448DD87924AE7F88957437 /* LXShare.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LXShare.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D4AA23D2DB448DD87924AE7F88957437 /* LXShare.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LXShare.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D684A978BD9E10B7BE52FA8FB1742BD9 /* Pods-LXShare_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXShare_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D70E244E005932CEAF91079DBE53253D /* LXToolManger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LXToolManger.m; path = LXShare/Classes/LXToolManger.m; sourceTree = "<group>"; };
-		D7B1D0803900659F444F2A571B76A65F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D7B1D0803900659F444F2A571B76A65F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D96D143BA3B2E5252071D00D04C7CF71 /* NSDate+DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+DateTools.h"; path = "DateTools/DateTools/NSDate+DateTools.h"; sourceTree = "<group>"; };
 		DAA0D381C9DAD2217C7F1BAC97840200 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
-		DEEFD9EBF32892B12C7156C5641177E3 /* LXShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LXShare.framework; path = LXShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E03D85CB0CDC391E14224B2B6BDF99FF /* Pods_LXShare_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LXShare_Example.framework; path = "Pods-LXShare_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEEFD9EBF32892B12C7156C5641177E3 /* LXShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LXShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE531DF27E85B210000715B /* LXTimeConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXTimeConfig.h; sourceTree = "<group>"; };
+		DFE531E027E85B210000715B /* LXTimeConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXTimeConfig.m; sourceTree = "<group>"; };
+		E03D85CB0CDC391E14224B2B6BDF99FF /* Pods_LXShare_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXShare_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24AC6D9CEEAF7745A595493E3CDE846 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		E40AFA24FF39AB3A934396651FB1DAB5 /* UIAlertController+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+LX.m"; path = "LXShare/Classes/UIAlertController+LX.m"; sourceTree = "<group>"; };
 		EA6D107F6661AAC2D82207552A5248F8 /* NSDecimalNumber+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDecimalNumber+LX.m"; path = "LXShare/Classes/NSDecimalNumber+LX.m"; sourceTree = "<group>"; };
@@ -334,7 +340,6 @@
 				C0F811EF4D9E6330643F808033B6D4CF /* Resources */,
 				925F1A66CC45607FEA510996FB849AAD /* Support Files */,
 			);
-			name = DateTools;
 			path = DateTools;
 			sourceTree = "<group>";
 		};
@@ -452,7 +457,6 @@
 				35BD30B723DD48588C5432240901CC4E /* ViewController+MASAdditions.m */,
 				2D08B556B29C540D19C2860C6C72443E /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -462,6 +466,8 @@
 				FB336915B039A0397F35C73B8F9748FA /* LXMangerHeader.h */,
 				8F46380EFF6456E6FCB9FA7A4F110267 /* LXToolManger.h */,
 				D70E244E005932CEAF91079DBE53253D /* LXToolManger.m */,
+				DFE531DF27E85B210000715B /* LXTimeConfig.h */,
+				DFE531E027E85B210000715B /* LXTimeConfig.m */,
 				0E27CC64ACC7340CAAE469CF1122B229 /* NSArray+LX.h */,
 				626890B2E7EE1A1CA09E701A5A6BE27F /* NSArray+LX.m */,
 				9B6B60D1C6C1666D66689B6DE1433C62 /* NSDecimalNumber+LX.h */,
@@ -545,6 +551,7 @@
 				A4A283219EB1925D1AAE5943A4325386 /* UIImage+LX.h in Headers */,
 				CA1B963E8C120138CC02C390BA925AB4 /* UILabel+LX.h in Headers */,
 				C3BF3BE2FF9FFA5E84FB92059DB5EDA9 /* UITableView+LX.h in Headers */,
+				DFE531E127E85B210000715B /* LXTimeConfig.h in Headers */,
 				EBFBA3BDBC960A00CA44637D30292AD7 /* UITextField+LX.h in Headers */,
 				4A8B8F9164E1BF8AEDEC2DA0A167126D /* UIViewController+Navigation.h in Headers */,
 			);
@@ -555,6 +562,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				852E1122490E37E54D7AE7D485771920 /* Pods-LXShare_Example-umbrella.h in Headers */,
+				DFE531E227E85B210000715B /* LXTimeConfig.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,6 +752,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFE531E427E85B210000715B /* LXTimeConfig.m in Sources */,
 				038640CFF4D57C813A0AC4DF6B7EB94A /* Pods-LXShare_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -794,6 +803,7 @@
 				FA994C2D143D5C0B1783286646CC9AF8 /* UIAlertController+LX.m in Sources */,
 				994E374C175F2BDDD8A1291F9E44F7CB /* UIButton+LX.m in Sources */,
 				8144DF9748EB0835D73E069D0C1C332C /* UIColor+LX.m in Sources */,
+				DFE531E327E85B210000715B /* LXTimeConfig.m in Sources */,
 				03AFD6AF02A1A2009B3BEA7CB71BE43C /* UIImage+LX.m in Sources */,
 				B042A39F2075F775B799ECC633B1A051 /* UILabel+LX.m in Sources */,
 				21EF59922E17094CE4EE8E6D84104387 /* UITableView+LX.m in Sources */,
@@ -1115,8 +1125,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
