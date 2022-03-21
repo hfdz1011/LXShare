@@ -18,7 +18,10 @@
 #import "UITextField+LX.h"
 #import "UIButton+LX.h"
 #import "UILabel+LX.h"
+///时间配置
 #import "LXTimeConfig.h"
+///内联函数配置
+#import "LXInlineFunction.h"
 
 #import "DateTools.h"
 #import "Masonry.h"

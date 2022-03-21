@@ -86,6 +86,10 @@
 		DFE531E227E85B210000715B /* LXTimeConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = DFE531DF27E85B210000715B /* LXTimeConfig.h */; };
 		DFE531E327E85B210000715B /* LXTimeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE531E027E85B210000715B /* LXTimeConfig.m */; };
 		DFE531E427E85B210000715B /* LXTimeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE531E027E85B210000715B /* LXTimeConfig.m */; };
+		DFE531E727E8626A0000715B /* LXInlineFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = DFE531E527E8626A0000715B /* LXInlineFunction.h */; };
+		DFE531E827E8626A0000715B /* LXInlineFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = DFE531E527E8626A0000715B /* LXInlineFunction.h */; };
+		DFE531E927E8626A0000715B /* LXInlineFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE531E627E8626A0000715B /* LXInlineFunction.m */; };
+		DFE531EA27E8626A0000715B /* LXInlineFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE531E627E8626A0000715B /* LXInlineFunction.m */; };
 		EAB989B01444EB9A21541384258B42CA /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A05DA955109C6B6CCA9DB9AE5945FD3 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB062CA8D5EB8D1BB2ADAB713CA4A130 /* LXShare-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 264B698E17921FCA641AF0273618B074 /* LXShare-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EBFBA3BDBC960A00CA44637D30292AD7 /* UITextField+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 475F4CDA177C9C906CF93F53876524D7 /* UITextField+LX.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -233,6 +237,8 @@
 		DEEFD9EBF32892B12C7156C5641177E3 /* LXShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LXShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE531DF27E85B210000715B /* LXTimeConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXTimeConfig.h; sourceTree = "<group>"; };
 		DFE531E027E85B210000715B /* LXTimeConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXTimeConfig.m; sourceTree = "<group>"; };
+		DFE531E527E8626A0000715B /* LXInlineFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXInlineFunction.h; sourceTree = "<group>"; };
+		DFE531E627E8626A0000715B /* LXInlineFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXInlineFunction.m; sourceTree = "<group>"; };
 		E03D85CB0CDC391E14224B2B6BDF99FF /* Pods_LXShare_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXShare_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24AC6D9CEEAF7745A595493E3CDE846 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		E40AFA24FF39AB3A934396651FB1DAB5 /* UIAlertController+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+LX.m"; path = "LXShare/Classes/UIAlertController+LX.m"; sourceTree = "<group>"; };
@@ -468,6 +474,8 @@
 				D70E244E005932CEAF91079DBE53253D /* LXToolManger.m */,
 				DFE531DF27E85B210000715B /* LXTimeConfig.h */,
 				DFE531E027E85B210000715B /* LXTimeConfig.m */,
+				DFE531E527E8626A0000715B /* LXInlineFunction.h */,
+				DFE531E627E8626A0000715B /* LXInlineFunction.m */,
 				0E27CC64ACC7340CAAE469CF1122B229 /* NSArray+LX.h */,
 				626890B2E7EE1A1CA09E701A5A6BE27F /* NSArray+LX.m */,
 				9B6B60D1C6C1666D66689B6DE1433C62 /* NSDecimalNumber+LX.h */,
@@ -538,6 +546,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFE531E727E8626A0000715B /* LXInlineFunction.h in Headers */,
 				C6F858FD24E43725FE8F000BCA8AEA32 /* LXMangerHeader.h in Headers */,
 				EB062CA8D5EB8D1BB2ADAB713CA4A130 /* LXShare-umbrella.h in Headers */,
 				A3556BDC187BDCAA8203EA23F85AE992 /* LXToolManger.h in Headers */,
@@ -561,6 +570,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFE531E827E8626A0000715B /* LXInlineFunction.h in Headers */,
 				852E1122490E37E54D7AE7D485771920 /* Pods-LXShare_Example-umbrella.h in Headers */,
 				DFE531E227E85B210000715B /* LXTimeConfig.h in Headers */,
 			);
@@ -753,6 +763,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFE531E427E85B210000715B /* LXTimeConfig.m in Sources */,
+				DFE531EA27E8626A0000715B /* LXInlineFunction.m in Sources */,
 				038640CFF4D57C813A0AC4DF6B7EB94A /* Pods-LXShare_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -800,6 +811,7 @@
 				0BE6E4E42E7FB49F3668B6269666D6C8 /* NSDecimalNumber+LX.m in Sources */,
 				B2A0FC3E85CAC6CB4B350C462EC79FBC /* NSDictionary+LX.m in Sources */,
 				B11E2EADFD8E5CB89B4D63966A4D5021 /* NSMutableAttributedString+LX.m in Sources */,
+				DFE531E927E8626A0000715B /* LXInlineFunction.m in Sources */,
 				FA994C2D143D5C0B1783286646CC9AF8 /* UIAlertController+LX.m in Sources */,
 				994E374C175F2BDDD8A1291F9E44F7CB /* UIButton+LX.m in Sources */,
 				8144DF9748EB0835D73E069D0C1C332C /* UIColor+LX.m in Sources */,
