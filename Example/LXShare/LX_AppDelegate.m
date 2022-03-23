@@ -33,10 +33,8 @@ static inline void Prevent_App_Flashback(NSException *exception)
     
     [self.window makeKeyAndVisible];
     
-    NSSetUncaughtExceptionHandler(lx_prevent_flash_back);
-    
-    
-    
+    NSSetUncaughtExceptionHandler(Prevent_App_Flashback);
+        
     return YES;
 }
 

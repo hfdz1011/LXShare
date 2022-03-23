@@ -40,12 +40,6 @@
 #define K_Font_Light     @"PingFangSC-Light"
 #define K_Font_Semibold  @"PingFangSC-Semibold"
 
-/// lx_prevent_flash_back 防止闪退
-void lx_prevent_flash_back(NSException *exception)
-{
-    [[NSRunLoop currentRunLoop] run];
-    [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSRunLoopCommonModes];
-}
 
 #define KscrendWidth             [UIScreen mainScreen].bounds.size.width
 #define KscrendHeight            [UIScreen mainScreen].bounds.size.height
