@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import "LXAppDelegate.h"
 #import "XAspect.h"
+#import "LXUMShareConfigManger.h"
 
 /**
  必须要有的宏定义, 而且必须写在最前面
@@ -36,6 +37,17 @@ AspectPatch(-, BOOL, application:(UIApplication *)application didFinishLaunching
 {
     //日志初始化
     NSLog(@"日志初始化");
+
+    LXUMShareConfigManger *umManger = [LXUMShareConfigManger sharedInstance];
+    
+    if (umManger.umAppKey.length) {
+        
+        NSLog(@"开始注册");
+        
+    }else{
+        
+        NSLog(@"没有开启注册");
+    }
 
     
     return XAMessageForward(application:application didFinishLaunchingWithOptions:launchOptions);

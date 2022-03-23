@@ -621,7 +621,6 @@
 /// @param widths 宽度 如果为‘0’或者‘MAXFLOAT’或者‘CGFLOAT_MAX’，该方法为计算文字宽度
 /// @param heights 高度 如果为‘0’或者‘MAXFLOAT’或者‘CGFLOAT_MAX’，该方法为计算文字高度
 + (CGSize)lx_calculationString:(NSString *)string withFont:(UIFont *)stringFont withWidth:(CGFloat)widths withHeight:(CGFloat)heights
-
 {
   
     if (widths == MAXFLOAT || widths == CGFLOAT_MAX || widths == 0) {

@@ -20,8 +20,6 @@
 #import "UILabel+LX.h"
 ///时间配置
 #import "LXTimeConfig.h"
-///内联函数配置
-#import "LXInlineFunction.h"
 
 #import "DateTools.h"
 #import "Masonry.h"
@@ -42,10 +40,11 @@
 #define K_Font_Light     @"PingFangSC-Light"
 #define K_Font_Semibold  @"PingFangSC-Semibold"
 
-
-///展示年月日时分秒
-static inline NSString * lx_showAllTimes(NSDate * changeDate){
-    return  [NSString stringWithFormat:@"%ld-%02ld-%02ld",(long)changeDate.year,(long)changeDate.month,(long)changeDate.day];
+/// lx_prevent_flash_back 防止闪退
+void lx_prevent_flash_back(NSException *exception)
+{
+    [[NSRunLoop currentRunLoop] run];
+    [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSRunLoopCommonModes];
 }
 
 #define KscrendWidth             [UIScreen mainScreen].bounds.size.width

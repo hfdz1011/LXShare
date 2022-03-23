@@ -22,20 +22,20 @@
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = YES;
     
-    [UIAlertController lx_showAlertWithTitle:@"标题部分"
-                                     message:@"信息部分"
-                                      target:self
-                               clickedHandle:^(UIAlertAction *action) {
-        
-        if ([action.title isEqualToString:@"确定"]) {
-            
-            LXNextViewController *next = [[LXNextViewController alloc]init];
-            
-            [self.navigationController pushViewController:next animated:YES];
-            
-        }
-    } buttons:@{
-        @(UIAlertActionStyleDefault):@"确定"},@{@(UIAlertActionStyleCancel):@"取消"},nil];
+//    [UIAlertController lx_showAlertWithTitle:@"标题部分"
+//                                     message:@"信息部分"
+//                                      target:self
+//                               clickedHandle:^(UIAlertAction *action) {
+//
+//        if ([action.title isEqualToString:@"确定"]) {
+//
+//            LXNextViewController *next = [[LXNextViewController alloc]init];
+//
+//            [self.navigationController pushViewController:next animated:YES];
+//
+//        }
+//    } buttons:@{
+//        @(UIAlertActionStyleDefault):@"确定"},@{@(UIAlertActionStyleCancel):@"取消"},nil];
     
 }
 

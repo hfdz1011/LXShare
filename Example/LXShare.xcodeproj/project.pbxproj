@@ -13,7 +13,7 @@
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* LXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LXAppDelegate.m */; };
+		6003F59E195388D20070C39A /* LX_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LX_AppDelegate.m */; };
 		6003F5A7195388D20070C39A /* LXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LXViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
@@ -49,8 +49,8 @@
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* LXShare-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LXShare-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* LXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* LXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXAppDelegate.m; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* LX_AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LX_AppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* LX_AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LX_AppDelegate.m; sourceTree = "<group>"; };
 		6003F5A5195388D20070C39A /* LXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* LXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -65,6 +65,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF580DEE6748B92763D8B87C /* Pods-LXShare_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXShare_Example.debug.xcconfig"; path = "Target Support Files/Pods-LXShare_Example/Pods-LXShare_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CB49CC7859660D0853C267E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DF44F2EC27EB2B3800329905 /* LXShare_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LXShare_Example.entitlements; sourceTree = "<group>"; };
 		EFAF31916EF1EBD85D484914 /* LXShare.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LXShare.podspec; path = ../LXShare.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -96,6 +97,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				DF44F2EC27EB2B3800329905 /* LXShare_Example.entitlements */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for LXShare */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -129,8 +131,8 @@
 		6003F593195388D20070C39A /* Example for LXShare */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* LXAppDelegate.h */,
-				6003F59D195388D20070C39A /* LXAppDelegate.m */,
+				6003F59C195388D20070C39A /* LX_AppDelegate.h */,
+				6003F59D195388D20070C39A /* LX_AppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* LXViewController.h */,
 				6003F5A6195388D20070C39A /* LXViewController.m */,
@@ -345,7 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* LXAppDelegate.m in Sources */,
+				6003F59E195388D20070C39A /* LX_AppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* LXViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				0022FF0C26C12D2500769558 /* LXNextViewController.m in Sources */,
@@ -476,6 +478,7 @@
 			baseConfigurationReference = BF580DEE6748B92763D8B87C /* Pods-LXShare_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LXShare_Example.entitlements;
 				CURRENT_PROJECT_VERSION = 1.1.1;
 				DEVELOPMENT_TEAM = LWRQR6X5T4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -497,6 +500,7 @@
 			baseConfigurationReference = 7FDEBB632CFF2A8CFFAC1EB0 /* Pods-LXShare_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LXShare_Example.entitlements;
 				CURRENT_PROJECT_VERSION = 1.1.1;
 				DEVELOPMENT_TEAM = LWRQR6X5T4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

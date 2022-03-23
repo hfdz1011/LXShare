@@ -7,18 +7,34 @@
 
 #import "LXUMShareConfigManger.h"
 
+static LXUMShareConfigManger *manger = nil;
+
 @implementation LXUMShareConfigManger
 
-+ (LXUMShareConfigManger *)sharedInstance
-{
-    static LXUMShareConfigManger* instance = nil;
-
++ (instancetype)sharedInstance{
+    
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        instance = [LXUMShareConfigManger new];
+        manger =[[LXUMShareConfigManger alloc]init];
     });
-
-    return instance;
+    return manger;
 }
+
++(id)allocWithZone:(NSZone *)zone{
+    
+    if (manger == nil) {
+        manger = [super allocWithZone:zone];
+    }
+    return manger;
+}
+
+-(id)copyWithZone:(NSZone *)zone{
+    return manger;
+}
+
++ (void)cleanUserInfor{
+    manger = nil;
+}
+
 
 @end

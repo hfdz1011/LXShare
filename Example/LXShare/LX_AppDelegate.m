@@ -6,11 +6,11 @@
 //  Copyright (c) 2020 hfdz1011. All rights reserved.
 //
 
-#import "LXAppDelegate.h"
+#import "LX_AppDelegate.h"
 #import "LXViewController.h"
 #import "LXMangerHeader.h"
 
-@implementation LXAppDelegate
+@implementation LX_AppDelegate
 
 static inline void Prevent_App_Flashback(NSException *exception)
 {
@@ -22,13 +22,18 @@ static inline void Prevent_App_Flashback(NSException *exception)
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    LXUMShareConfigManger *um = [LXUMShareConfigManger sharedInstance];
+    um.umAppKey = @"124";
+    
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    NSLog(@"输出内容为：%@\n",um.umAppKey);
     
     self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[LXViewController new]];
     
     [self.window makeKeyAndVisible];
     
-    NSSetUncaughtExceptionHandler(Prevent_App_Flashback);
+    NSSetUncaughtExceptionHandler(lx_prevent_flash_back);
     
     
     

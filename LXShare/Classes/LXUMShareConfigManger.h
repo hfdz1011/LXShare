@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (LXUMShareConfigManger *)sharedInstance;
 
 //个推配置
-@property (strong, nonatomic) NSString *jiaGTAppId;
+@property (strong, nonatomic) NSString *umAppKey;
 @property (strong, nonatomic) NSString *jiaGTAppKey;
 @property (strong, nonatomic) NSString *jiaGTAppSecret;
 

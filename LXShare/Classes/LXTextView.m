@@ -19,7 +19,9 @@
         self.placeholderColor = [UIColor grayColor];
  
         // 使用通知监听文字改变
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChange:) name:UITextViewTextDidChangeNotification object:self];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(textDidChange:) name:UITextViewTextDidChangeNotification
+                                                   object:self];
     }
     return self;
 }
@@ -58,7 +60,6 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
- 
     [self setNeedsDisplay];
 }
  
