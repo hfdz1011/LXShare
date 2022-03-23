@@ -1,12 +1,12 @@
 //
-//  XAspect-AppDelegate.m
+//  XAspect-LXAppDelegate.m
 //  Pods
 //
 //  Created by 万商通 on 2022/3/23.
 //
 
 #import <Foundation/Foundation.h>
-#import "AppDelegate.h"
+#import "LXAppDelegate.h"
 #import "XAspect.h"
 
 /**
@@ -21,9 +21,9 @@
  @param AtAspectOfClass: 固定字段, 不能修改
  @param AppDelegate: 需要注入代码的类
  */
-#define AtAspectOfClass AppDelegate
+#define AtAspectOfClass LXAppDelegate
 // 开辟空间, 这个参数类名需和上面的类一致
-@classPatchField(AppDelegate)
+@classPatchField(LXAppDelegate)
 
 /**
  需要添加的方法
@@ -36,6 +36,8 @@ AspectPatch(-, BOOL, application:(UIApplication *)application didFinishLaunching
 {
     //日志初始化
     NSLog(@"日志初始化");
+
+    
     return XAMessageForward(application:application didFinishLaunchingWithOptions:launchOptions);
 }
 @end

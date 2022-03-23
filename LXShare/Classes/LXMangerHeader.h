@@ -28,6 +28,13 @@
 #import "XAspect.h"
 #import "UIViewController+Navigation.h"
 
+
+//------------------??
+#import "LXAppDelegate.h"
+#import "LXAppDelegate+UMShare.h"
+#import "LXUMShareConfigManger.h"
+
+
 //======================config=================
 
 #define K_Font_Regular   @"PingFangSC-Regular"
