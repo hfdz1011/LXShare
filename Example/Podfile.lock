@@ -3,7 +3,38 @@ PODS:
   - LXShare (0.0.5):
     - DateTools
     - Masonry
+    - UMAPM
+    - UMCCommonLog
+    - UMCommon
+    - UMCSecurityPlugins
+    - UMDevice
+    - UMPush
+    - UMShare/Social/WeChat
+    - XAspect
   - Masonry (1.1.0)
+  - UMAPM (1.5.6)
+  - UMCCommonLog (2.0.2)
+  - UMCommon (7.3.5):
+    - UMDevice
+  - UMCSecurityPlugins (1.0.6)
+  - UMDevice (2.1.0)
+  - UMPush (4.0.2):
+    - UMCommon
+  - UMShare/Core (6.10.4):
+    - UMCommon
+  - UMShare/Social/ReducedWeChat (6.10.4):
+    - UMCommon
+    - UMShare/Core
+  - UMShare/Social/WeChat (6.10.4):
+    - UMCommon
+    - UMShare/Core
+    - UMShare/Social/ReducedWeChat
+  - XAspect (1.0.5):
+    - XAspect/Core (= 1.0.5)
+    - XAspect/Macros (= 1.0.5)
+  - XAspect/Core (1.0.5):
+    - XAspect/Macros
+  - XAspect/Macros (1.0.5)
 
 DEPENDENCIES:
   - DateTools
@@ -14,6 +45,14 @@ SPEC REPOS:
   trunk:
     - DateTools
     - Masonry
+    - UMAPM
+    - UMCCommonLog
+    - UMCommon
+    - UMCSecurityPlugins
+    - UMDevice
+    - UMPush
+    - UMShare
+    - XAspect
 
 EXTERNAL SOURCES:
   LXShare:
@@ -21,9 +60,17 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
-  LXShare: d59e04f38c09d7bc116095b9fd6e4e57fa1f45d7
+  LXShare: 4250f39790b9feb21c4990d297ff5a2677334cc1
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  UMAPM: 5ab988b8bedfd090ee2307cb80530ba79b8ac264
+  UMCCommonLog: bea707e50c85cef4b0eb47cc5c7226bb843245ca
+  UMCommon: ab4d875ddefe1b06c60b577e4a58bc4d433ee067
+  UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
+  UMDevice: 04948a92184e8d25f1369b635dff5490c1f063e0
+  UMPush: c420e1cf2d1c96f1257f390bc626314fb7e6d9e6
+  UMShare: 84edf6d080f524d109271164ba2b07650f69d691
+  XAspect: db50bf487f92dbb8557a7a5365556966c8493af8
 
-PODFILE CHECKSUM: 7f088a4ec2cab6740368c5863aad52d3e58a38d7
+PODFILE CHECKSUM: 39d7485de6bf80e75aa198221ec3ae4d575f2e94
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2

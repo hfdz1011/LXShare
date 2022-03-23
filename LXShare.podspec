@@ -37,4 +37,18 @@ Pod::Spec.new do |s|
    s.dependency 'Masonry'
    s.dependency 'DateTools'
    
+   #添加友盟分享----开始
+   #  友盟基础库
+   s.dependency 'UMCommon'
+   s.dependency 'UMPush'
+   s.dependency 'UMDevice'
+   s.dependency 'UMAPM'
+   s.dependency 'UMCCommonLog'
+   s.dependency 'UMCSecurityPlugins'
+   #  友盟分享库
+   s.dependency 'UMShare/Social/WeChat'
+   s.dependency 'XAspect'
+
+#   ---------------结束
+   
 end

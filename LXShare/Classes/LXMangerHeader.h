@@ -25,7 +25,7 @@
 
 #import "DateTools.h"
 #import "Masonry.h"
-
+#import "XAspect.h"
 #import "UIViewController+Navigation.h"
 
 //======================config=================

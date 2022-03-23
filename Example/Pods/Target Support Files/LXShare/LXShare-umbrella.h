@@ -10,7 +10,9 @@
 #endif
 #endif
 
+#import "LXInlineFunction.h"
 #import "LXMangerHeader.h"
+#import "LXTimeConfig.h"
 #import "LXToolManger.h"
 #import "NSArray+LX.h"
 #import "NSDecimalNumber+LX.h"
