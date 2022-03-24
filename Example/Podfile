@@ -3,6 +3,4 @@ platform :ios, '9.0'
 
 target 'LXShare_Example' do
   pod 'LXShare', :path => '../'
-  pod 'Masonry'
-  pod 'DateTools'
 end

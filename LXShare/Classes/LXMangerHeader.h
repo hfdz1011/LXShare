@@ -28,8 +28,6 @@
 
 
 //------------------??
-#import "LXAppDelegate.h"
-#import "LXAppDelegate+UMShare.h"
 #import "LXUMShareConfigManger.h"
 
 
@@ -64,8 +62,8 @@
 #define KTabbarSafeBottomMargin          (KDEVICE_IS_IPHONE_X ? 34.0f:0.0f)
 
 //控制台的完整的输出
-#define CLog(format, ...)  NSLog(format, ## __VA_ARGS__)
-#define NSLog(FORMAT, ...) printf("%s\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+//#define CLog(format, ...)  NSLog(format, ## __VA_ARGS__)
+//#define NSLog(FORMAT, ...) printf("%s\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 
 
 

@@ -7,11 +7,11 @@
 //
 
 @import UIKit;
-#import "LXAppDelegate.h"
+#import "LX_AppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([LXAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([LX_AppDelegate class]));
     }
 }

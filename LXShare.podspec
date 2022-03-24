@@ -47,7 +47,6 @@ Pod::Spec.new do |s|
 #   s.dependency 'UMCSecurityPlugins'
    #  友盟分享库
 #   s.dependency 'UMShare/Social/WeChat'
-   s.dependency 'XAspect'
 
 #   ---------------结束
    

@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		006628DF0F246472845A3313F84A8F1C /* LXAppDelegate+UMShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A48F900498D823CA684F1B31205D89E /* LXAppDelegate+UMShare.m */; };
 		02DD1378B8BF34C0A822E137203A2830 /* NSMutableAttributedString+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456D8CD35F64EA05982EF7F56F5496A /* NSMutableAttributedString+LX.m */; };
-		047210F35B0B96775861C153B5FC7EEF /* LXAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E526155C02B2E163C18E4934047462D /* LXAppDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		051EDD2F9CBC4256B2FB50D2D5114371 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 29672C5D51070EE8709B3DD87A37BCB4 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0666025B4184DFFFDBFF62790A19D3AE /* NSMutableAttributedString+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 76EE3FDD8B77FE3A5078E1710EA58CC4 /* NSMutableAttributedString+LX.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		076C108F5863D96D337022942520F699 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D4C94D431B5F7606ABB1977C29590 /* Masonry-dummy.m */; };
@@ -20,14 +18,12 @@
 		147123B9CCA2E0977038C631BC7AE17A /* XAObjcMetaprogramming.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4EC42F4030D68DD99CA8E33D1D8617 /* XAObjcMetaprogramming.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		154A2FAEAF1BE8EAEEBBFB2A09B0877D /* NSDecimalNumber+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EE95CBF2CDEE11A0DE92F320CD8916 /* NSDecimalNumber+LX.m */; };
 		1719E9B729622236F43BF32DFB25FF72 /* Pods-LXShare_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6B2F35CB48189688CD13965306F9C1 /* Pods-LXShare_Example-dummy.m */; };
-		171CCC3FB92D84A204D85461952DF581 /* LXAppDelegate+UMShare.h in Headers */ = {isa = PBXBuildFile; fileRef = C0E731DB6A12F1F26A05E16C82552C1D /* LXAppDelegate+UMShare.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1ACEA73A6D54C969A72A896C585A01FB /* LXMangerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C410325ED89925F0AF55F50DA109217 /* LXMangerHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1C24B240EAD549DB7E9E0A98E13029CB /* XAWeaveHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B663FC1123CE67113E11FD977C12C763 /* XAWeaveHandler.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		239F2FAA42F070B83C3FC98FBE8D580D /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AACA8B77C90EF327199745E4E47F04F /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		294F05F884707D80A6B5EEE6551CF07C /* UIButton+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC5138D3B26DB2E36E397B9F4E28934 /* UIButton+LX.m */; };
 		2AF71760CB10C6625FAF75CD41959E2B /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = C2A49E38040CC2A93F7938CF58BD961D /* DTError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2C648595CC7D3BC9A06A0D3DE8021861 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DCCFA604FA7FA46A468811BF4EB382 /* MASLayoutConstraint.m */; };
-		2D5E5B35C39A49D70DFB7BFE066FBEEA /* LXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8FA3755CE5FB94B953EE23FB0DDF7C /* LXAppDelegate.m */; };
 		2D6B9F49D8733C5E8B977F742FE9C861 /* UIImageView+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = D95FBBD9488547D40F2B9A202A7A9AF3 /* UIImageView+LX.m */; };
 		2FB9A1B336C8A9A947510DED652A94E1 /* UIColor+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = A30E34F94E97FA308383911B7B791A87 /* UIColor+LX.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		323D4D619147FD10EF69B8C1B0398757 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 262FD07545B93D9383B20B073FC395C0 /* NSArray+MASAdditions.m */; };
@@ -91,7 +87,6 @@
 		C9A7F46B26286F08DA462848764106AC /* LXToolManger.h in Headers */ = {isa = PBXBuildFile; fileRef = 00C57A3C603AB95E0793A0819627A5AA /* LXToolManger.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CBAEB65302D77773005C58B47BD569CA /* UILabel+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 557F409C2931711272F629A6D3DC0A6A /* UILabel+LX.m */; };
 		CD23A3F5C1F1D0E9C6169B31D7FEF154 /* NSDictionary+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = BA02C0D3EFA8337BE3CBDA6D09E7F83A /* NSDictionary+LX.m */; };
-		CFAB5CF5C300BBEC577CB9C524977F35 /* XAspect-LXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC73A39CFE91FA79F18B564E796703D6 /* XAspect-LXAppDelegate.m */; };
 		D43C312C067472D5FB8C26CE9975BF57 /* DateTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4067B4D88587C1D80EB37721A4525A77 /* DateTools-dummy.m */; };
 		D46671D5D3C54994CF3256918360C27A /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = DDD9B2A04087D7BD1BA3DA4B4DEC1977 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D53CE10AF4DE04F5E32DE94E8C933E09 /* XAFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7576CCDF6909811D512235FA3A768F1D /* XAFoundation.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -174,14 +169,13 @@
 		264978BCE4F38E67B2986145E1B2A141 /* UIViewController+Navigation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Navigation.h"; path = "LXShare/Classes/UIViewController+Navigation.h"; sourceTree = "<group>"; };
 		2658EDB7F574FA15886307DBA6F41D15 /* XAspect */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = XAspect; path = libXAspect.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		29672C5D51070EE8709B3DD87A37BCB4 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
-		31F35B907F94BA69A09FC15BFF6137B1 /* XACExtensions.c */ = {isa = PBXFileReference; includeInIndex = 1; name = XACExtensions.c; path = XAspect/Core/XACExtensions.c; sourceTree = "<group>"; };
+		31F35B907F94BA69A09FC15BFF6137B1 /* XACExtensions.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = XACExtensions.c; path = XAspect/Core/XACExtensions.c; sourceTree = "<group>"; };
 		339F325F1D8F4E300AA6E4FB8C7D794A /* NSDate+DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+DateTools.h"; path = "DateTools/DateTools/NSDate+DateTools.h"; sourceTree = "<group>"; };
 		3456D8CD35F64EA05982EF7F56F5496A /* NSMutableAttributedString+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+LX.m"; path = "LXShare/Classes/NSMutableAttributedString+LX.m"; sourceTree = "<group>"; };
 		3497882CE53AE89EAE3E1226FBA0DEBF /* UITableView+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+LX.m"; path = "LXShare/Classes/UITableView+LX.m"; sourceTree = "<group>"; };
 		35E9147A7BA3A673A79D7D3CD63845E9 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		3B8786E75808F7C290788806400F6227 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		3E4D2FA54C473C8933E5F0883D7DD6B2 /* UIImage+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+LX.h"; path = "LXShare/Classes/UIImage+LX.h"; sourceTree = "<group>"; };
-		3E526155C02B2E163C18E4934047462D /* LXAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LXAppDelegate.h; path = LXShare/Classes/LXAppDelegate.h; sourceTree = "<group>"; };
 		3F2F0C7DCFCFEE3366E7D8A0B3B9EA83 /* XAspect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XAspect.h; path = XAspect/XAspect.h; sourceTree = "<group>"; };
 		3F9BEACC10B4D5B18396E52128B4968E /* XAExtObjcMetamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XAExtObjcMetamacros.h; path = XAspect/Macros/XAExtObjcMetamacros.h; sourceTree = "<group>"; };
 		4067B4D88587C1D80EB37721A4525A77 /* DateTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateTools-dummy.m"; sourceTree = "<group>"; };
@@ -199,7 +193,7 @@
 		5A2E350F48F094715BD66C759FC656E5 /* DateTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTools.release.xcconfig; sourceTree = "<group>"; };
 		5C3A1E1E79F80EF4220026294F889466 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
 		5C9151D35CC1B703EEAC70D2361FA55C /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
-		67D93E3B39FE87758486B9D2C34C2B13 /* LXShare.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LXShare.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		67D93E3B39FE87758486B9D2C34C2B13 /* LXShare.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LXShare.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		69928EA04EBD32B4A3E9AE3E81AD1AC1 /* DTTimePeriodChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodChain.h; path = DateTools/DateTools/DTTimePeriodChain.h; sourceTree = "<group>"; };
 		6BED95B0C772326BD11ED36B9EDFCC8F /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
 		6D343C6977192BA6B4EC223938AC52DE /* DTConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTConstants.h; path = DateTools/DateTools/DTConstants.h; sourceTree = "<group>"; };
@@ -207,7 +201,7 @@
 		6F0515710F2E9460139582DA80556D35 /* LXUMShareConfigManger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LXUMShareConfigManger.m; path = LXShare/Classes/LXUMShareConfigManger.m; sourceTree = "<group>"; };
 		71EE95CBF2CDEE11A0DE92F320CD8916 /* NSDecimalNumber+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDecimalNumber+LX.m"; path = "LXShare/Classes/NSDecimalNumber+LX.m"; sourceTree = "<group>"; };
 		7576CCDF6909811D512235FA3A768F1D /* XAFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XAFoundation.h; path = XAspect/Macros/XAFoundation.h; sourceTree = "<group>"; };
-		76B78FD158E9ADE10E36517405FAEA05 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		76B78FD158E9ADE10E36517405FAEA05 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		76EE3FDD8B77FE3A5078E1710EA58CC4 /* NSMutableAttributedString+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+LX.h"; path = "LXShare/Classes/NSMutableAttributedString+LX.h"; sourceTree = "<group>"; };
 		7826B1612665F447FFB66CB723F17A4A /* NSDate+DateTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DateTools.m"; path = "DateTools/DateTools/NSDate+DateTools.m"; sourceTree = "<group>"; };
 		789454D1A184C18FFEDB44496AFA6664 /* LXShare-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXShare-prefix.pch"; sourceTree = "<group>"; };
@@ -219,7 +213,6 @@
 		829A1F26C71752A678D2635DAD296338 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		8384FF673ABCB4766953554AB2883BAA /* DTTimePeriodChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodChain.m; path = DateTools/DateTools/DTTimePeriodChain.m; sourceTree = "<group>"; };
 		86A50EFC9AE6F6EF8F84D0563814942D /* UIViewController+Navigation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Navigation.m"; path = "LXShare/Classes/UIViewController+Navigation.m"; sourceTree = "<group>"; };
-		8A48F900498D823CA684F1B31205D89E /* LXAppDelegate+UMShare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "LXAppDelegate+UMShare.m"; path = "LXShare/Classes/LXAppDelegate+UMShare.m"; sourceTree = "<group>"; };
 		8C549BAE22392F612F201E57ED73564C /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodCollection.m; path = DateTools/DateTools/DTTimePeriodCollection.m; sourceTree = "<group>"; };
 		8D5F47E439F73654B63E68542DF6E6D4 /* XAspect-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XAspect-dummy.m"; sourceTree = "<group>"; };
 		8E12922876A7CE6AC18D9C96C4865C8D /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
@@ -230,7 +223,7 @@
 		99A63A71C4050AF553DF3425F301AF58 /* Pods-LXShare_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXShare_Example.release.xcconfig"; sourceTree = "<group>"; };
 		99F93CD18BCED34715816DF3E2379921 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		9A4EC42F4030D68DD99CA8E33D1D8617 /* XAObjcMetaprogramming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XAObjcMetaprogramming.h; path = XAspect/Macros/XAObjcMetaprogramming.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DC7B02F0E84C9F7DE99CBF41170C0FE /* Pods-LXShare_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXShare_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		9FC8B8083CAC1FF2398DCE27207FE9EC /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodGroup.m; path = DateTools/DateTools/DTTimePeriodGroup.m; sourceTree = "<group>"; };
 		A30E34F94E97FA308383911B7B791A87 /* UIColor+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+LX.h"; path = "LXShare/Classes/UIColor+LX.h"; sourceTree = "<group>"; };
@@ -250,12 +243,10 @@
 		BD52D969981DA60E3D3E85171523AB59 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
 		BF1B133E8495538AE445A3DDC8038158 /* LXShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LXShare.debug.xcconfig; sourceTree = "<group>"; };
 		C062B343BDEBE890C12C86AAF2DC0BA2 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
-		C0E731DB6A12F1F26A05E16C82552C1D /* LXAppDelegate+UMShare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LXAppDelegate+UMShare.h"; path = "LXShare/Classes/LXAppDelegate+UMShare.h"; sourceTree = "<group>"; };
 		C27040F7D1D1C6E19BFCD9F8D5632563 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
 		C2A49E38040CC2A93F7938CF58BD961D /* DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTError.h; path = DateTools/DateTools/DTError.h; sourceTree = "<group>"; };
 		C85FFB6475FBCB57D3E6D09F4E4DCBA9 /* LXTimeConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LXTimeConfig.m; path = LXShare/Classes/LXTimeConfig.m; sourceTree = "<group>"; };
 		CC0FFF467B7C3AE72A6C584F7DD6A2B7 /* UITextField+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+LX.m"; path = "LXShare/Classes/UITextField+LX.m"; sourceTree = "<group>"; };
-		CC73A39CFE91FA79F18B564E796703D6 /* XAspect-LXAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XAspect-LXAppDelegate.m"; path = "LXShare/Classes/XAspect-LXAppDelegate.m"; sourceTree = "<group>"; };
 		D2E028ADC6B5A5D3A97BB9138DE2A092 /* LXTimeConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LXTimeConfig.h; path = LXShare/Classes/LXTimeConfig.h; sourceTree = "<group>"; };
 		D3E7AA47AF3799BE6225A151643A0335 /* UIColor+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+LX.m"; path = "LXShare/Classes/UIColor+LX.m"; sourceTree = "<group>"; };
 		D3EAEB57FC0A6C2B22B5EE2761E188B5 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
@@ -263,13 +254,12 @@
 		D7525C1094165D3C42FCD2EB07221F31 /* NSArray+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+LX.m"; path = "LXShare/Classes/NSArray+LX.m"; sourceTree = "<group>"; };
 		D95FBBD9488547D40F2B9A202A7A9AF3 /* UIImageView+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+LX.m"; path = "LXShare/Classes/UIImageView+LX.m"; sourceTree = "<group>"; };
 		DB9E24AA36AE6807660599757FBF2166 /* DateTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTools-prefix.pch"; sourceTree = "<group>"; };
-		DC8FA3755CE5FB94B953EE23FB0DDF7C /* LXAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LXAppDelegate.m; path = LXShare/Classes/LXAppDelegate.m; sourceTree = "<group>"; };
 		DDD9B2A04087D7BD1BA3DA4B4DEC1977 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		DEEFD9EBF32892B12C7156C5641177E3 /* LXShare */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = LXShare; path = libLXShare.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E03D85CB0CDC391E14224B2B6BDF99FF /* Pods-LXShare_Example */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-LXShare_Example"; path = "libPods-LXShare_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B1398CE137DF1DBF2EC862AABAC95E /* XAspect-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XAspect-prefix.pch"; sourceTree = "<group>"; };
 		E19AF20877AB5B1ECD97676941DD244D /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
-		E9AAD27A9E2EB3E3191EAA2DD8A21480 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E9AAD27A9E2EB3E3191EAA2DD8A21480 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EDF7F3774F0F72C4168AC6BCA550811E /* DateTools.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DateTools.bundle; path = DateTools/DateTools/DateTools.bundle; sourceTree = "<group>"; };
 		EF0DBE83C6A7A74E5256B23FAF39C619 /* UIAlertController+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+LX.h"; path = "LXShare/Classes/UIAlertController+LX.h"; sourceTree = "<group>"; };
 		F0F924552DB285F60F077E3647138C15 /* LXToolManger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LXToolManger.m; path = LXShare/Classes/LXToolManger.m; sourceTree = "<group>"; };
@@ -354,7 +344,6 @@
 				B4CAA40F6F1E4B092EBD2BA901A20DB7 /* Macros */,
 				0DFAB99CDF85638D6EE27B019616C5F0 /* Support Files */,
 			);
-			name = XAspect;
 			path = XAspect;
 			sourceTree = "<group>";
 		};
@@ -379,10 +368,6 @@
 		38BED4D08DDC9EE906780462F6293174 /* LXShare */ = {
 			isa = PBXGroup;
 			children = (
-				3E526155C02B2E163C18E4934047462D /* LXAppDelegate.h */,
-				DC8FA3755CE5FB94B953EE23FB0DDF7C /* LXAppDelegate.m */,
-				C0E731DB6A12F1F26A05E16C82552C1D /* LXAppDelegate+UMShare.h */,
-				8A48F900498D823CA684F1B31205D89E /* LXAppDelegate+UMShare.m */,
 				0C410325ED89925F0AF55F50DA109217 /* LXMangerHeader.h */,
 				7D9FF5B6D915845E391C4AE0271F9F85 /* LXTextView.h */,
 				B99ED476F6A3E82B2FD51B914DC44886 /* LXTextView.m */,
@@ -418,7 +403,6 @@
 				CC0FFF467B7C3AE72A6C584F7DD6A2B7 /* UITextField+LX.m */,
 				264978BCE4F38E67B2986145E1B2A141 /* UIViewController+Navigation.h */,
 				86A50EFC9AE6F6EF8F84D0563814942D /* UIViewController+Navigation.m */,
-				CC73A39CFE91FA79F18B564E796703D6 /* XAspect-LXAppDelegate.m */,
 				7EFF636FADAD13ADF881CA6386A2FF75 /* Pod */,
 				5671A3A4FCCB339A1386D964014B5E61 /* Support Files */,
 			);
@@ -559,7 +543,6 @@
 				C551C3D76E9B2673D119AD0630AEA0D1 /* Resources */,
 				56C0026A0FA338205CB6AA101C57421D /* Support Files */,
 			);
-			name = DateTools;
 			path = DateTools;
 			sourceTree = "<group>";
 		};
@@ -600,7 +583,6 @@
 				8E12922876A7CE6AC18D9C96C4865C8D /* ViewController+MASAdditions.m */,
 				1E2C46C72C4487A6F686972479541645 /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -655,8 +637,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				047210F35B0B96775861C153B5FC7EEF /* LXAppDelegate.h in Headers */,
-				171CCC3FB92D84A204D85461952DF581 /* LXAppDelegate+UMShare.h in Headers */,
 				1ACEA73A6D54C969A72A896C585A01FB /* LXMangerHeader.h in Headers */,
 				B16CD350AC7305F0938BDAF7F90F6CAB /* LXTextView.h in Headers */,
 				1276A7E8FB9CFE514041E293CD7E0671 /* LXTimeConfig.h in Headers */,
@@ -847,8 +827,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D5E5B35C39A49D70DFB7BFE066FBEEA /* LXAppDelegate.m in Sources */,
-				006628DF0F246472845A3313F84A8F1C /* LXAppDelegate+UMShare.m in Sources */,
 				3EA2A5CA75231C6D70022386EBB9160C /* LXShare-dummy.m in Sources */,
 				70FDFE1149B3F65ABF2FAD53EAFC9BD8 /* LXTextView.m in Sources */,
 				A800F56E161F8FE35630ECB9505B7A19 /* LXTimeConfig.m in Sources */,
@@ -867,7 +845,6 @@
 				9DFB40DAD7FC858475CD39E3F5AECF23 /* UITableView+LX.m in Sources */,
 				A13955CED25B08D43ECDACC3A1A05D22 /* UITextField+LX.m in Sources */,
 				B7638D2DB40C0B778C71BD1105E0EB06 /* UIViewController+Navigation.m in Sources */,
-				CFAB5CF5C300BBEC577CB9C524977F35 /* XAspect-LXAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1274,8 +1251,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

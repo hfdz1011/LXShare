@@ -7,17 +7,10 @@
 //
 
 #import "LX_AppDelegate.h"
-#import "LXViewController.h"
 #import "LXMangerHeader.h"
+#import "LXTestViewController.h"
 
 @implementation LX_AppDelegate
-
-static inline void Prevent_App_Flashback(NSException *exception)
-{
-    //防止APP闪退
-    [[NSRunLoop currentRunLoop] run];
-    [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSRunLoopCommonModes];
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -25,16 +18,15 @@ static inline void Prevent_App_Flashback(NSException *exception)
     LXUMShareConfigManger *um = [LXUMShareConfigManger sharedInstance];
     um.umAppKey = @"124";
     
-    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    
     NSLog(@"输出内容为：%@\n",um.umAppKey);
     
-    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[LXViewController new]];
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[LXTestViewController new]];
     
     [self.window makeKeyAndVisible];
-    
-    NSSetUncaughtExceptionHandler(Prevent_App_Flashback);
-        
+            
     return YES;
 }
 

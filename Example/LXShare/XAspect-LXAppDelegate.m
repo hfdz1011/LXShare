@@ -1,12 +1,13 @@
 //
 //  XAspect-LXAppDelegate.m
-//  Pods
+//  LXShare_Example
 //
-//  Created by 万商通 on 2022/3/23.
+//  Created by 万商通 on 2022/3/24.
+//  Copyright © 2022 hfdz1011. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "LXAppDelegate.h"
+#import "LX_AppDelegate.h"
 #import "XAspect.h"
 #import "LXUMShareConfigManger.h"
 
@@ -22,9 +23,9 @@
  @param AtAspectOfClass: 固定字段, 不能修改
  @param AppDelegate: 需要注入代码的类
  */
-#define AtAspectOfClass LXAppDelegate
+#define AtAspectOfClass LX_AppDelegate
 // 开辟空间, 这个参数类名需和上面的类一致
-@classPatchField(LXAppDelegate)
+@classPatchField(LX_AppDelegate)
 
 /**
  需要添加的方法

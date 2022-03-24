@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0022FF0C26C12D2500769558 /* LXNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0022FF0B26C12D2500769558 /* LXNextViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* LX_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LX_AppDelegate.m */; };
-		6003F5A7195388D20070C39A /* LXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LXViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -24,6 +22,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		D97C8ABDEF776946DEB7A12F /* libPods-LXShare_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 243660A76C916A6233376D0D /* libPods-LXShare_Example.a */; };
+		DFE387F627EC1AC1001FD6DD /* LXTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE387F527EC1AC1001FD6DD /* LXTestViewController.m */; };
+		DFE387FC27EC2136001FD6DD /* XAspect-LXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE387FB27EC2136001FD6DD /* XAspect-LXAppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0022FF0A26C12D2500769558 /* LXNextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXNextViewController.h; sourceTree = "<group>"; };
-		0022FF0B26C12D2500769558 /* LXNextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXNextViewController.m; sourceTree = "<group>"; };
 		099FCEA9B4E70B49214343C1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		243660A76C916A6233376D0D /* libPods-LXShare_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LXShare_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* LXShare_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXShare_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,8 +49,6 @@
 		6003F59B195388D20070C39A /* LXShare-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LXShare-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* LX_AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LX_AppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* LX_AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LX_AppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* LXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* LXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* LXShare_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXShare_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -66,6 +62,9 @@
 		BF580DEE6748B92763D8B87C /* Pods-LXShare_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXShare_Example.debug.xcconfig"; path = "Target Support Files/Pods-LXShare_Example/Pods-LXShare_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CB49CC7859660D0853C267E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DF44F2EC27EB2B3800329905 /* LXShare_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LXShare_Example.entitlements; sourceTree = "<group>"; };
+		DFE387F427EC1AC1001FD6DD /* LXTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXTestViewController.h; sourceTree = "<group>"; };
+		DFE387F527EC1AC1001FD6DD /* LXTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXTestViewController.m; sourceTree = "<group>"; };
+		DFE387FB27EC2136001FD6DD /* XAspect-LXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "XAspect-LXAppDelegate.m"; sourceTree = "<group>"; };
 		EFAF31916EF1EBD85D484914 /* LXShare.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LXShare.podspec; path = ../LXShare.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -134,10 +133,9 @@
 				6003F59C195388D20070C39A /* LX_AppDelegate.h */,
 				6003F59D195388D20070C39A /* LX_AppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* LXViewController.h */,
-				6003F5A6195388D20070C39A /* LXViewController.m */,
-				0022FF0A26C12D2500769558 /* LXNextViewController.h */,
-				0022FF0B26C12D2500769558 /* LXNextViewController.m */,
+				DFE387F427EC1AC1001FD6DD /* LXTestViewController.h */,
+				DFE387F527EC1AC1001FD6DD /* LXTestViewController.m */,
+				DFE387FB27EC2136001FD6DD /* XAspect-LXAppDelegate.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -344,9 +342,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* LX_AppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* LXViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				0022FF0C26C12D2500769558 /* LXNextViewController.m in Sources */,
+				DFE387F627EC1AC1001FD6DD /* LXTestViewController.m in Sources */,
+				DFE387FC27EC2136001FD6DD /* XAspect-LXAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
