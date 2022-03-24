@@ -16,7 +16,7 @@
  @param AtAspect: 字段固定, 不能修改
  @param LZProjectName: 这个可以自定义, 一般和自己需要注入代码的类有关
 */
-#define AtAspect LogAppDelegate
+#define AtAspect AppDelegate
 
 /**
  需要注入代码的类

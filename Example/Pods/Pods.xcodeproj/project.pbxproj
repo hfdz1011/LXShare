@@ -255,7 +255,7 @@
 		D95FBBD9488547D40F2B9A202A7A9AF3 /* UIImageView+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+LX.m"; path = "LXShare/Classes/UIImageView+LX.m"; sourceTree = "<group>"; };
 		DB9E24AA36AE6807660599757FBF2166 /* DateTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTools-prefix.pch"; sourceTree = "<group>"; };
 		DDD9B2A04087D7BD1BA3DA4B4DEC1977 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		DEEFD9EBF32892B12C7156C5641177E3 /* LXShare */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = LXShare; path = libLXShare.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEEFD9EBF32892B12C7156C5641177E3 /* libLXShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLXShare.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E03D85CB0CDC391E14224B2B6BDF99FF /* Pods-LXShare_Example */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-LXShare_Example"; path = "libPods-LXShare_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B1398CE137DF1DBF2EC862AABAC95E /* XAspect-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XAspect-prefix.pch"; sourceTree = "<group>"; };
 		E19AF20877AB5B1ECD97676941DD244D /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
@@ -452,7 +452,7 @@
 			isa = PBXGroup;
 			children = (
 				4AF171581392AD234F23BE913F0C22FE /* DateTools */,
-				DEEFD9EBF32892B12C7156C5641177E3 /* LXShare */,
+				DEEFD9EBF32892B12C7156C5641177E3 /* libLXShare.a */,
 				1FFED36A657123030ABB700256D73F15 /* Masonry */,
 				E03D85CB0CDC391E14224B2B6BDF99FF /* Pods-LXShare_Example */,
 				2658EDB7F574FA15886307DBA6F41D15 /* XAspect */,
@@ -748,7 +748,7 @@
 			);
 			name = LXShare;
 			productName = LXShare;
-			productReference = DEEFD9EBF32892B12C7156C5641177E3 /* LXShare */;
+			productReference = DEEFD9EBF32892B12C7156C5641177E3 /* libLXShare.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {

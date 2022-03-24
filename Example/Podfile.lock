@@ -3,7 +3,6 @@ PODS:
   - LXShare (0.0.5):
     - DateTools
     - Masonry
-    - XAspect
   - Masonry (1.1.0)
   - XAspect (1.0.5):
     - XAspect/Core (= 1.0.5)
@@ -14,6 +13,7 @@ PODS:
 
 DEPENDENCIES:
   - LXShare (from `../`)
+  - XAspect
 
 SPEC REPOS:
   trunk:
@@ -27,10 +27,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
-  LXShare: 1df1d1c9a4a5b7d27db5faa03501a1d65f608075
+  LXShare: d59e04f38c09d7bc116095b9fd6e4e57fa1f45d7
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   XAspect: db50bf487f92dbb8557a7a5365556966c8493af8
 
-PODFILE CHECKSUM: 4361fd35c3d31a22a5d689d35c9e66cb2727a6bb
+PODFILE CHECKSUM: c9917134220e2d2690ae4261fe717282811974a9
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
