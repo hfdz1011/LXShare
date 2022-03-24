@@ -12,7 +12,7 @@
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* LX_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LX_AppDelegate.m */; };
+		6003F59E195388D20070C39A /* LXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LXAppDelegate.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -23,7 +23,8 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		D97C8ABDEF776946DEB7A12F /* libPods-LXShare_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 243660A76C916A6233376D0D /* libPods-LXShare_Example.a */; };
 		DFE387F627EC1AC1001FD6DD /* LXTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE387F527EC1AC1001FD6DD /* LXTestViewController.m */; };
-		DFE387FC27EC2136001FD6DD /* XAspect-LXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE387FB27EC2136001FD6DD /* XAspect-LXAppDelegate.m */; };
+		DFE3880D27EC4C50001FD6DD /* XAspect-LXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE3880C27EC4C50001FD6DD /* XAspect-LXAppDelegate.m */; };
+		DFE3889E27EC66A4001FD6DD /* LXUMShareConfigManger.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE3889D27EC66A4001FD6DD /* LXUMShareConfigManger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +48,8 @@
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* LXShare-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LXShare-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* LX_AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LX_AppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* LX_AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LX_AppDelegate.m; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* LXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXAppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* LXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXAppDelegate.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* LXShare_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXShare_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -64,7 +65,9 @@
 		DF44F2EC27EB2B3800329905 /* LXShare_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LXShare_Example.entitlements; sourceTree = "<group>"; };
 		DFE387F427EC1AC1001FD6DD /* LXTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXTestViewController.h; sourceTree = "<group>"; };
 		DFE387F527EC1AC1001FD6DD /* LXTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXTestViewController.m; sourceTree = "<group>"; };
-		DFE387FB27EC2136001FD6DD /* XAspect-LXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "XAspect-LXAppDelegate.m"; sourceTree = "<group>"; };
+		DFE3880C27EC4C50001FD6DD /* XAspect-LXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "XAspect-LXAppDelegate.m"; sourceTree = "<group>"; };
+		DFE3889C27EC66A4001FD6DD /* LXUMShareConfigManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXUMShareConfigManger.h; sourceTree = "<group>"; };
+		DFE3889D27EC66A4001FD6DD /* LXUMShareConfigManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXUMShareConfigManger.m; sourceTree = "<group>"; };
 		EFAF31916EF1EBD85D484914 /* LXShare.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LXShare.podspec; path = ../LXShare.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -130,14 +133,16 @@
 		6003F593195388D20070C39A /* Example for LXShare */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* LX_AppDelegate.h */,
-				6003F59D195388D20070C39A /* LX_AppDelegate.m */,
+				6003F59C195388D20070C39A /* LXAppDelegate.h */,
+				6003F59D195388D20070C39A /* LXAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				DFE387F427EC1AC1001FD6DD /* LXTestViewController.h */,
 				DFE387F527EC1AC1001FD6DD /* LXTestViewController.m */,
-				DFE387FB27EC2136001FD6DD /* XAspect-LXAppDelegate.m */,
+				DFE3880C27EC4C50001FD6DD /* XAspect-LXAppDelegate.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				DFE3889C27EC66A4001FD6DD /* LXUMShareConfigManger.h */,
+				DFE3889D27EC66A4001FD6DD /* LXUMShareConfigManger.m */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for LXShare";
@@ -341,10 +346,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* LX_AppDelegate.m in Sources */,
+				6003F59E195388D20070C39A /* LXAppDelegate.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				DFE3889E27EC66A4001FD6DD /* LXUMShareConfigManger.m in Sources */,
 				DFE387F627EC1AC1001FD6DD /* LXTestViewController.m in Sources */,
-				DFE387FC27EC2136001FD6DD /* XAspect-LXAppDelegate.m in Sources */,
+				DFE3880D27EC4C50001FD6DD /* XAspect-LXAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

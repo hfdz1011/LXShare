@@ -8,7 +8,7 @@
 
 @import UIKit;
 
-@interface LX_AppDelegate : UIResponder <UIApplicationDelegate>
+@interface LXAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

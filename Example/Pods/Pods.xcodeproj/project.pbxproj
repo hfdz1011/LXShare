@@ -63,14 +63,12 @@
 		8E27C5614240C1D1C7A56A1A3822949E /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = B90A56AF316BAFC6303F588C4690BCA4 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8E71751385E883CE11E2A33821058BE7 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E12922876A7CE6AC18D9C96C4865C8D /* ViewController+MASAdditions.m */; };
 		969244DB0FA0545671EBEEA84FA2884E /* UIImageView+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 938BD67D179F870B6DF267E4455787E0 /* UIImageView+LX.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		99494F83F359CA045A3E15FAA8B6469E /* LXUMShareConfigManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0515710F2E9460139582DA80556D35 /* LXUMShareConfigManger.m */; };
 		9BE2B563FC2CC9F0E7E476F156DAC26E /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F482E7760DAC0E1100E58CEA05C0D1A9 /* View+MASAdditions.m */; };
 		9DE59DB3467120909EFFB65E14C58800 /* UIViewController+Navigation.h in Headers */ = {isa = PBXBuildFile; fileRef = 264978BCE4F38E67B2986145E1B2A141 /* UIViewController+Navigation.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9DFB40DAD7FC858475CD39E3F5AECF23 /* UITableView+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 3497882CE53AE89EAE3E1226FBA0DEBF /* UITableView+LX.m */; };
 		A0E91C620A6838DFDEADB4BA9B65B8C8 /* XAspect-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5F47E439F73654B63E68542DF6E6D4 /* XAspect-dummy.m */; };
 		A13955CED25B08D43ECDACC3A1A05D22 /* UITextField+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0FFF467B7C3AE72A6C584F7DD6A2B7 /* UITextField+LX.m */; };
 		A282EC47B16DF697191F858EAE922104 /* UIImage+LX.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E4D2FA54C473C8933E5F0883D7DD6B2 /* UIImage+LX.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A56C4F87FDA68A3FD3DDC39AABD30750 /* LXUMShareConfigManger.h in Headers */ = {isa = PBXBuildFile; fileRef = A73BCCD7AFA64BBE8255470BD1A52F64 /* LXUMShareConfigManger.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A800F56E161F8FE35630ECB9505B7A19 /* LXTimeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C85FFB6475FBCB57D3E6D09F4E4DCBA9 /* LXTimeConfig.m */; };
 		AC4BA83A099DE595B3BAF889D7EB5255 /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 339F325F1D8F4E300AA6E4FB8C7D794A /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B16CD350AC7305F0938BDAF7F90F6CAB /* LXTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9FF5B6D915845E391C4AE0271F9F85 /* LXTextView.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -198,7 +196,6 @@
 		6BED95B0C772326BD11ED36B9EDFCC8F /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
 		6D343C6977192BA6B4EC223938AC52DE /* DTConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTConstants.h; path = DateTools/DateTools/DTConstants.h; sourceTree = "<group>"; };
 		6D57BBEEC6ECD6FBA0BAA8940A42983D /* DTConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTConstants.m; path = DateTools/DateTools/DTConstants.m; sourceTree = "<group>"; };
-		6F0515710F2E9460139582DA80556D35 /* LXUMShareConfigManger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LXUMShareConfigManger.m; path = LXShare/Classes/LXUMShareConfigManger.m; sourceTree = "<group>"; };
 		71EE95CBF2CDEE11A0DE92F320CD8916 /* NSDecimalNumber+LX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDecimalNumber+LX.m"; path = "LXShare/Classes/NSDecimalNumber+LX.m"; sourceTree = "<group>"; };
 		7576CCDF6909811D512235FA3A768F1D /* XAFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XAFoundation.h; path = XAspect/Macros/XAFoundation.h; sourceTree = "<group>"; };
 		76B78FD158E9ADE10E36517405FAEA05 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -227,7 +224,6 @@
 		9DC7B02F0E84C9F7DE99CBF41170C0FE /* Pods-LXShare_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXShare_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		9FC8B8083CAC1FF2398DCE27207FE9EC /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodGroup.m; path = DateTools/DateTools/DTTimePeriodGroup.m; sourceTree = "<group>"; };
 		A30E34F94E97FA308383911B7B791A87 /* UIColor+LX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+LX.h"; path = "LXShare/Classes/UIColor+LX.h"; sourceTree = "<group>"; };
-		A73BCCD7AFA64BBE8255470BD1A52F64 /* LXUMShareConfigManger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LXUMShareConfigManger.h; path = LXShare/Classes/LXUMShareConfigManger.h; sourceTree = "<group>"; };
 		A9AE54F6DD11F8B47BF877BE4794C34E /* XAspect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XAspect.debug.xcconfig; sourceTree = "<group>"; };
 		AC64197822ABE2C64327FEBE29A10C98 /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodCollection.h; path = DateTools/DateTools/DTTimePeriodCollection.h; sourceTree = "<group>"; };
 		AD6B2F35CB48189688CD13965306F9C1 /* Pods-LXShare_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LXShare_Example-dummy.m"; sourceTree = "<group>"; };
@@ -375,8 +371,6 @@
 				C85FFB6475FBCB57D3E6D09F4E4DCBA9 /* LXTimeConfig.m */,
 				00C57A3C603AB95E0793A0819627A5AA /* LXToolManger.h */,
 				F0F924552DB285F60F077E3647138C15 /* LXToolManger.m */,
-				A73BCCD7AFA64BBE8255470BD1A52F64 /* LXUMShareConfigManger.h */,
-				6F0515710F2E9460139582DA80556D35 /* LXUMShareConfigManger.m */,
 				BABFC0A19AA710B4C7BAC5AE3B80A009 /* NSArray+LX.h */,
 				D7525C1094165D3C42FCD2EB07221F31 /* NSArray+LX.m */,
 				53F1AAD0E3DB91D53E74B95EBF3073F2 /* NSDecimalNumber+LX.h */,
@@ -641,7 +635,6 @@
 				B16CD350AC7305F0938BDAF7F90F6CAB /* LXTextView.h in Headers */,
 				1276A7E8FB9CFE514041E293CD7E0671 /* LXTimeConfig.h in Headers */,
 				C9A7F46B26286F08DA462848764106AC /* LXToolManger.h in Headers */,
-				A56C4F87FDA68A3FD3DDC39AABD30750 /* LXUMShareConfigManger.h in Headers */,
 				F695BB3EF2F20A443AD87A7781663F0F /* NSArray+LX.h in Headers */,
 				F8E21F3CC60E036586F43076A6B89344 /* NSDecimalNumber+LX.h in Headers */,
 				80E00B0409BA9019C46DE3C3FA23E9A5 /* NSDictionary+LX.h in Headers */,
@@ -831,7 +824,6 @@
 				70FDFE1149B3F65ABF2FAD53EAFC9BD8 /* LXTextView.m in Sources */,
 				A800F56E161F8FE35630ECB9505B7A19 /* LXTimeConfig.m in Sources */,
 				4E9CD31250D9CD534D03B33CC44D0537 /* LXToolManger.m in Sources */,
-				99494F83F359CA045A3E15FAA8B6469E /* LXUMShareConfigManger.m in Sources */,
 				0B78F7B927641B9EEE2FF92991AA350F /* NSArray+LX.m in Sources */,
 				154A2FAEAF1BE8EAEEBBFB2A09B0877D /* NSDecimalNumber+LX.m in Sources */,
 				CD23A3F5C1F1D0E9C6169B31D7FEF154 /* NSDictionary+LX.m in Sources */,

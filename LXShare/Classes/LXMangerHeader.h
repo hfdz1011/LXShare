@@ -24,10 +24,6 @@
 #import "Masonry.h"
 #import "UIViewController+Navigation.h"
 
-//------------------??
-#import "LXUMShareConfigManger.h"
-
-
 //======================config=================
 
 #define K_Font_Regular   @"PingFangSC-Regular"

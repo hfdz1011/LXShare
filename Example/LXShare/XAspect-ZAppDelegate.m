@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LXAppDelegate.h"
+#import "ZAppDelegate.h"
 #import "XAspect.h"
 #import "LXUMShareConfigManger.h"
 
 #define AtAspect AppDelegate
-#define AtAspectOfClass LXAppDelegate
-@classPatchField(LXAppDelegate)
+#define AtAspectOfClass ZAppDelegate
+@classPatchField(ZAppDelegate)
 
 AspectPatch(-, BOOL, application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions)
 {
@@ -21,8 +21,6 @@ AspectPatch(-, BOOL, application:(UIApplication *)application didFinishLaunching
     NSLog(@"日志初始化");
 
     LXUMShareConfigManger *umManger = [LXUMShareConfigManger sharedInstance];
-   
-    
     if (umManger.umAppKey.length) {
         NSLog(@"开始注册");
         
