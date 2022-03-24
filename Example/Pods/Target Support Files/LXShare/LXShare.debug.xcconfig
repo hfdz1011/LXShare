@@ -1,8 +1,7 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/LXShare
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/UMAPM/UMAPM_1.5.6" "${PODS_ROOT}/UMCCommonLog/UMCommonLog" "${PODS_ROOT}/UMCSecurityPlugins/thirdparties" "${PODS_ROOT}/UMCommon/UMCommon_7.3.5" "${PODS_ROOT}/UMDevice/UMDevice_2.1.0" "${PODS_ROOT}/UMPush/UMPush" "${PODS_ROOT}/UMShare/UMShare"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/LXShare" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DateTools" "${PODS_ROOT}/Headers/Public/LXShare" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/UMShare" "${PODS_ROOT}/Headers/Public/XAspect"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/LXShare" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DateTools" "${PODS_ROOT}/Headers/Public/LXShare" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/XAspect"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}

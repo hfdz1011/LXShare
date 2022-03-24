@@ -70,41 +70,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-## UMAPM
-
-Copyright 2011 - 2020 umeng.com. All rights reserved.
-
-
-## UMCCommonLog
-
-Copyright 2011 - 2021 umeng.com. All rights reserved.
-
-
-## UMCSecurityPlugins
-
-Copyright 2011 - 2018 umeng.com. All rights reserved.
-
-
-## UMCommon
-
-Copyright 2011 - 2021 umeng.com. All rights reserved.
-
-
-## UMDevice
-
-Copyright 2011 - 2021 umeng.com. All rights reserved.
-
-
-## UMPush
-
-Copyright 2011 - 2018 umeng.com. All rights reserved.
-
-
-## UMShare
-
-Copyright 2011 - 2021 umeng.com. All rights reserved.
-
-
 ## XAspect
 
 **Copyright (c) 2015 Kang-Yu Xaree Lee**
