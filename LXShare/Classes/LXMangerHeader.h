@@ -58,6 +58,4 @@
 #define CLog(format, ...)  NSLog(format, ## __VA_ARGS__)
 #define NSLog(FORMAT, ...) printf("%s\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 
-
-
 #endif /* LXMangerHeader_h */

@@ -41,9 +41,7 @@
 + (NSString *)lx_hidenCenterPhoneNumber:(NSString *)phoneString
 {
     NSString *phoneNew = [[NSString alloc] init];
-    
     for (int i = 0; i < phoneString.length; i++) {
-        
         NSString *str = [[NSString alloc] init];
         
         if (!(i > 2 && i < 7)) {
@@ -65,11 +63,9 @@
     int digit = 0;
     int addend = 0;
     BOOL timesTwo = false;
-    for (int i = (int)(digitsOnly.length - 1); i >= 0; i--)
-    {
+    for (int i = (int)(digitsOnly.length - 1); i >= 0; i--){
         digit = [digitsOnly characterAtIndex:i] - '0';
-        if (timesTwo)
-        {
+        if (timesTwo){
             addend = digit * 2;
             if (addend > 9) {
                 addend -= 9;
@@ -90,11 +86,9 @@
 {
     NSString *digitsOnly = @"";
     char c;
-    for (int  i = 0; i < s.length; i++)
-    {
+    for (int  i = 0; i < s.length; i++) {
         c = [s characterAtIndex:i];
-        if (isdigit(c))
-        {
+        if (isdigit(c)){
             digitsOnly =[digitsOnly stringByAppendingFormat:@"%c",c];
         }
     }
@@ -105,9 +99,7 @@
 /// @param array 数组
 + (NSString *)lx_jsonStringFormArray:(NSArray*)array
 {
-    NSData *data = [NSJSONSerialization dataWithJSONObject:array
-                                                   options:NSJSONWritingPrettyPrinted
-                                                     error:nil];
+    NSData *data = [NSJSONSerialization dataWithJSONObject:array options:NSJSONWritingPrettyPrinted error:nil];
     if (data == nil) {
         return nil;
     }
@@ -150,7 +142,6 @@
 /// @param dictory 字典
 + (NSString *)lx_jsonStringFormDictory:(NSDictionary *)dictory
 {
-    
     NSError *error;
     
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictory options:NSJSONWritingPrettyPrinted error:&error];
@@ -205,14 +196,10 @@
     if (jsonString == nil) {
         return nil;
     }
-    
     NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
     NSError *err;
-    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
-                                                        options:NSJSONReadingMutableContainers
-                                                          error:&err];
-    if(err)
-    {
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers  error:&err];
+    if(err) {
         return nil;
     }
     return dic;
@@ -265,7 +252,6 @@
     [qrUIImage drawInRect:CGRectMake(0, 0, qrUIImage.size.width, qrUIImage.size.height)];
     
     if (logoIconName.length) {
-        
         //再把小图片画上去
         UIImage *sImage = [UIImage imageNamed:logoIconName];
         CGFloat sImageW = 140;
@@ -274,10 +260,8 @@
         CGFloat sImgaeY = (qrUIImage.size.height - sImageH) * 0.5;
         [sImage drawInRect:CGRectMake(sImageX, sImgaeY, sImageW, sImageH)];
     }
-    
     //获取当前画得的这张图片
     UIImage *finalyImage = UIGraphicsGetImageFromCurrentImageContext();
-    
     UIGraphicsEndImageContext();
     
     return finalyImage;
@@ -334,8 +318,6 @@
     }
 }
 
-//~~~~~~~~
-
 ///精度参数的处理 -解决解析float或double 精度异常
 + (NSString *)lx_decimalNumberWithDouble:(NSString *)changeString
 {
@@ -353,32 +335,24 @@
     int a = (int)cardNumber.length/4;
     int b = (int)cardNumber.length%4;
     int c = a;
-    if (b>0)
-    {
+    if (b>0){
         c = a+1;
     }
-    else
-    {
+    else {
         c = a;
     }
-    for (int i = 0 ; i<c; i++)
-    {
+    for (int i = 0 ; i<c; i++) {
         NSString *string = @"";
         
-        if (i == (c-1))
-        {
-            if (b>0)
-            {
+        if (i == (c-1)) {
+            if (b>0) {
                 string = [cardNumber substringWithRange:NSMakeRange(4*(c-1), b)];
             }
-            else
-            {
+            else{
                 string = [cardNumber substringWithRange:NSMakeRange(4*i, 4)];
             }
             
-        }
-        else
-        {
+        } else {
             string = [cardNumber substringWithRange:NSMakeRange(4*i, 4)];
         }
         getString = [NSString stringWithFormat:@"%@ %@",getString,string];
@@ -393,10 +367,8 @@
  * @param cornerRadii 需要设置的圆角大小 CGSize
  * @param roundView 需要设置圆角的控件
  **/
-+ (void)lx_addCornerWithRoundedRect:(CGRect)rect
-                    RoundingCorners:(UIRectCorner)corners
-                        cornerRadii:(CGSize)cornerRadii
-                          roundView:(UIView *)roundView
++ (void)lx_addCornerWithRoundedRect:(CGRect)rect RoundingCorners:(UIRectCorner)corners
+                        cornerRadii:(CGSize)cornerRadii  roundView:(UIView *)roundView
 {
     [roundView layoutIfNeeded];
     UIBezierPath* rounded = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:corners cornerRadii:cornerRadii];
@@ -408,7 +380,6 @@
 /// @param base64String base64字符
 + (NSString *)lx_base64ToJsonString:(NSString *)base64String
 {
-    
     NSData *data = [[NSData alloc] initWithBase64EncodedString:base64String
                                                        options:NSDataBase64DecodingIgnoreUnknownCharacters];
     return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
@@ -455,7 +426,6 @@
     return data;
 }
 
-
 /// 给钱千位分隔符
 /// @param money 钱
 /// @param isBool 是否带￥
@@ -478,7 +448,6 @@
     }
     return formatString;
 }
-
 
 /// 获取随机数
 /// @param kNumber 长度
@@ -534,7 +503,6 @@
 /// sha1加密处理
 /// @param str 需要处理的字符串
 +(NSString*)lx_sha1WithStr:(NSString *)str
-
 {
     const char *cstr = [str cStringUsingEncoding:NSUTF8StringEncoding];
     NSData *data = [NSData dataWithBytes:cstr length: strlen(cstr)];
@@ -554,7 +522,6 @@
 /// @param lastSpace 值与值拼接符号 如：& 对应值 key:value&key:value
 + (NSString *)lx_encryptionParameterSortingWithDictory:(NSMutableDictionary *)dictory keySpaceValue:(NSString *)firstSpace valueSpaceValue:(NSString *)lastSpace
 {
-    
     NSArray *sortedArray = [[dictory allKeys] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2){
         return [obj1 compare:obj2 options:NSNumericSearch];
     }];
@@ -575,7 +542,6 @@
 /// @param newWidth 新宽度
 + (CGFloat)lx_backChangeHeightActionWithOldWidth:(CGFloat)oldWidth withOldHeight:(CGFloat)oldHeight withNewWidth:(CGFloat)newWidth
 {
-    
     CGFloat itemWidth = newWidth;
     CGFloat image_width = oldWidth;
     CGFloat image_height = oldHeight;
@@ -588,7 +554,6 @@
 /// @param newHeight 新高度
 + (CGFloat)lx_backChangeWidthActionWithOldWidth:(CGFloat)oldWidth withOldHeight:(CGFloat)oldHeight withNewHeight:(CGFloat)newHeight
 {
-    
     CGFloat itemHeight = newHeight;
     CGFloat image_width = oldWidth;
     CGFloat image_height = oldHeight;
@@ -622,7 +587,6 @@
 /// @param heights 高度 如果为‘0’或者‘MAXFLOAT’或者‘CGFLOAT_MAX’，该方法为计算文字高度
 + (CGSize)lx_calculationString:(NSString *)string withFont:(UIFont *)stringFont withWidth:(CGFloat)widths withHeight:(CGFloat)heights
 {
-  
     if (widths == MAXFLOAT || widths == CGFLOAT_MAX || widths == 0) {
         return  [string boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, heights)
                                            options:NSStringDrawingTruncatesLastVisibleLine| NSStringDrawingUsesFontLeading |NSStringDrawingUsesLineFragmentOrigin
@@ -638,6 +602,27 @@
     }else{
         return CGSizeMake(0, 0);
     }
+}
+
+/// 登录设备是否是iPhoneX以上
++(BOOL)lx_isIphoneXAbove
+{
+    if (@available(iOS 11.0, *)) {
+        UIWindow * window = [[[UIApplication sharedApplication] delegate] window];
+        if (window.safeAreaInsets.bottom > 0.0) {
+            return YES;
+        } else {
+            return NO;
+        }
+    } else {
+        return NO;
+    }
+}
+
+/// 返回APP名称
++ (NSString *)lx_backAPPName
+{
+    return [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleDisplayName"];
 }
 
 @end
