@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonHMAC.h>
+#import "DateTools.h"
 
 @implementation LXToolManger
 /// 保存值
@@ -624,5 +625,143 @@
 {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleDisplayName"];
 }
+
+
++ (NSDate *)timeStringToDate:(NSString *)timeString withType:(NSInteger)timeType
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    switch (timeType) {
+        case 0:
+            [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+            break;
+        case 1:
+            [dateFormatter setDateFormat:@"yyyyMMddHHmmssSSS"];
+            break;
+        case 2:
+            [dateFormatter setDateFormat:@"yyyyMMddHHmmss"];
+            break;
+        case 3:
+            [dateFormatter setDateFormat:@"yyyyMMdd"];
+            break;
+        case 4:
+            [dateFormatter setDateFormat:@"yyyyMM"];
+            break;
+        case 5:
+            [dateFormatter setDateFormat:@"yyyy-MM"];
+            break;
+        default:
+            break;
+    }
+    return [dateFormatter dateFromString:timeString];
+}
+
++ (NSString *)dateToTimeString:(NSDate *)date withType:(NSInteger)timeType
+{
+    NSString *lastString = @"";
+    switch (timeType) {
+        case 0:
+            lastString = [NSString stringWithFormat:@"%ld.%02ld.%02ld",(long)date.year,date.month,date.day];
+            break;
+        case 1:
+            lastString = [NSString stringWithFormat:@"%ld-%02ld-%02ld",(long)date.year,date.month,date.day];
+            break;
+        case 2:
+            lastString = [NSString stringWithFormat:@"%ld-%02ld-%02ld %02ld:%02ld:%02ld",(long)date.year,date.month,date.day,(long)date.hour,date.minute,date.second];
+            break;
+        case 3:
+            lastString = [NSString stringWithFormat:@"%ld年%02ld月%02ld日",(long)date.year,date.month,date.day];
+            break;
+        case 4:
+            lastString = [NSString stringWithFormat:@"%ld-%02ld-%02ld 00:00:00",(long)date.year,date.month,date.day];
+            break;
+        case 5:
+            lastString = [NSString stringWithFormat:@"%ld-%02ld-%02ld 23:59:59",(long)date.year,date.month,date.day];
+            break;
+        case 6:
+            lastString = [NSString stringWithFormat:@"%ld%02ld%02ld%02ld%02ld%02ld",(long)date.year,date.month,date.day,(long)date.hour,date.minute,date.second];
+            break;
+        case 7:
+            lastString = [NSString stringWithFormat:@"%02ld:%02ld",(long)date.hour,date.minute];
+            break;
+        case 8:
+            lastString = [NSString stringWithFormat:@"%ld年%02ld月",(long)date.year,date.month];
+            break;
+        case 9:
+            lastString = [NSString stringWithFormat:@"%ld.%02ld",(long)date.year,date.month];
+            break;
+        case 10:
+            lastString = [NSString stringWithFormat:@"%02ld-%02ld",(long)date.month,date.day];
+            break;
+        case 11:
+            lastString = [NSString stringWithFormat:@"%ld-%02ld",(long)date.year,date.month];
+            break;
+        case 12:
+            lastString = [NSString stringWithFormat:@"%ld.%02ld.%02ld %02ld:%02ld:%02ld",(long)date.year,date.month,date.day,(long)date.hour,date.minute,date.second];
+            break;
+        case 13:
+            lastString = [NSString stringWithFormat:@"%ld/%02ld/%02ld",(long)date.year,(long)date.month,date.day];
+            break;
+        case 14:
+            lastString = [NSString stringWithFormat:@"%02ld-%02ld %02ld:%02ld:%02ld",date.month,date.day,(long)date.hour,date.minute,date.second];
+            break;
+        case 15:
+            lastString = [NSString stringWithFormat:@"%ld%02ld%02ld000000",(long)date.year,date.month,date.day];
+            break;
+        case 16:
+            lastString = [NSString stringWithFormat:@"%ld%02ld%02ld235959",(long)date.year,date.month,date.day];
+            break;
+        case 17:
+            lastString = [NSString stringWithFormat:@"%ld.%02ld.%02ld %02ld:%02ld:%02ld",(long)date.year,date.month,date.day,(long)date.hour,date.minute,date.second];
+            break;
+        case 18:
+            lastString = [NSString stringWithFormat:@"%02ld-%02ld %02ld:%02ld:%02ld",date.month,date.day,(long)date.hour,date.minute,date.second];
+            break;
+        default:
+            break;
+    }
+    return lastString;
+}
+
+
+
++ (NSString *)lx_timeString:(NSString *)times TimeType:(NSInteger) timeType backTimeType:(NSInteger)backType
+{
+    return [LXToolManger dateToTimeString:[LXToolManger timeStringToDate:times withType:timeType] withType:backType];
+}
+
+
++ (NSInteger)lx_backWeekDay:(NSDate *)date
+{
+    NSInteger weekday = date.weekday;
+    int index = 0;
+    switch (weekday) {
+        case 1://星期天
+            index = 6;
+            break;
+        case 2://星期一
+            index = 0;
+            break;
+        case 3://星期二
+            index = 1;
+            break;
+        case 4://星期三
+            index = 2;
+            break;
+        case 5://星期四
+            index = 3;
+            break;
+        case 6://星期五
+            index = 4;
+            break;
+        case 7://星期六
+            index = 5;
+            break;
+        default:
+            break;
+    }
+    return index;
+}
+
+
 
 @end
