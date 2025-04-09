@@ -40,19 +40,25 @@
 #define KStringIsEmpty(str)                ([str isKindOfClass:[NSNull class]] || [str isEqual: @"(null)"] || [str isEqual: @"<null>"] || [str isEqual: [NSNull null]] || str == nil || [str length] < 1 ? YES : NO )
 
 
-#define rmStatusBarH ([UIApplication sharedApplication].statusBarFrame.size.height)//(44/20)
-#define KDEVICE_IS_IPHONE_X ((rmStatusBarH > 20.0) ? YES : NO)
+#define rmStatusBarH ({ \
+    UIWindowScene *scene = UIApplication.sharedApplication.windows.firstObject.windowScene; \
+    CGFloat height = scene.statusBarManager.statusBarFrame.size.height ?: 20.0; \
+    height; \
+})
 
-//状态栏、导航栏、标签栏高度
-#define KHeight_StatusBar         [[UIApplication sharedApplication] statusBarFrame].size.height
+#define KDEVICE_IS_IPHONE_X ({ \
+    UIWindow *window = UIApplication.sharedApplication.windows.firstObject; \
+    BOOL isNotched = (window.safeAreaInsets.bottom > 0.0); \
+    isNotched; \
+})
 
-#define KHeight_NavBar                      44.f
 
+// 状态栏、导航栏、标签栏高度
+#define KHeight_StatusBar rmStatusBarH
+#define KHeight_NavBar 44.0f
 #define KNavigationBarHeight (KHeight_StatusBar + KHeight_NavBar)
-
-#define KTabbarHeight                    (KDEVICE_IS_IPHONE_X ? 83.0f:49.0f)
-
-#define KTabbarSafeBottomMargin          (KDEVICE_IS_IPHONE_X ? 34.0f:0.0f)
+#define KTabbarHeight (KDEVICE_IS_IPHONE_X ? 83.0f : 49.0f)
+#define KTabbarSafeBottomMargin (KDEVICE_IS_IPHONE_X ? 34.0f : 0.0f)
 
 //控制台的完整的输出
 #define CLog(format, ...)  NSLog(format, ## __VA_ARGS__)
